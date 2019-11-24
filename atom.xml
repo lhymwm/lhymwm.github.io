@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>Dream</title>
-    <updated>2019-11-24T04:55:53.704Z</updated>
+    <updated>2019-11-24T15:43:24.980Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io//atom.xml"/>
@@ -10,6 +10,26 @@
     <logo>https://lhymwm.github.io//images/avatar.png</logo>
     <icon>https://lhymwm.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Dream</rights>
+    <entry>
+        <title type="html"><![CDATA[换眼镜]]></title>
+        <id>https://lhymwm.github.io//post/huan-yan-jing</id>
+        <link href="https://lhymwm.github.io//post/huan-yan-jing">
+        </link>
+        <updated>2019-11-24T15:23:28.000Z</updated>
+        <content type="html"><![CDATA[<p>我换了一幅眼镜<br>
+是和B同学一起去潘家园换的</p>
+<p>起初并无意去换<br>
+然而在店中看了镜子里的自己<br>
+突然有换了的冲动</p>
+<p>换了眼镜犹如换了一幅皮囊<br>
+我觉得我或是冲动大于了理智<br>
+很多时候皮囊总是容易换的<br>
+但是内涵或者深层次的东西并不</p>
+<p>我决定该戒掉些习惯<br>
+虽然这些习惯并不如丢掉一些外在的东西般容易<br>
+但是这样的改变才是更深刻的</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[重拾前辈的爱情观]]></title>
         <id>https://lhymwm.github.io//post/chong-shi-qian-bei-de-ai-qing-guan</id>
