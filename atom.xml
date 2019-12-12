@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>Dream</title>
-    <updated>2019-12-12T05:21:07.282Z</updated>
+    <updated>2019-12-12T15:20:05.693Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io//atom.xml"/>
@@ -10,6 +10,39 @@
     <logo>https://lhymwm.github.io//images/avatar.png</logo>
     <icon>https://lhymwm.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Dream</rights>
+    <entry>
+        <title type="html"><![CDATA[一生只够爱一人]]></title>
+        <id>https://lhymwm.github.io//post/yi-sheng-zhi-gou-ai-yi-ren</id>
+        <link href="https://lhymwm.github.io//post/yi-sheng-zhi-gou-ai-yi-ren">
+        </link>
+        <updated>2019-12-12T05:03:57.000Z</updated>
+        <content type="html"><![CDATA[<p>我始终认为自己是一个专心的人，我信仰的也是一种两情相悦，相伴一生的爱情。<br>
+喜欢木心的这首诗：</p>
+<blockquote>
+<p>记得早先少年时<br>
+大家诚诚恳恳<br>
+说一句 是一句<br>
+清早上火车站<br>
+长街黑暗无行人<br>
+卖豆浆的小店冒着热气<br>
+从前的日色变得慢<br>
+车，马，邮件都慢<br>
+一生只够爱一个人<br>
+从前的锁也好看<br>
+钥匙精美有样子<br>
+你锁了 人家就懂了</p>
+</blockquote>
+<p>当然，爱可能并不必然意味着终身相伴，有时远远地看着对方幸福地笑便觉得心安。<br>
+我想，这种来自心底纯粹且宝贵的安宁可能是更值得我们去坚守与珍藏一生的。<br>
+喜欢顾城《门前》这首诗中的几句：</p>
+<blockquote>
+<p>草 在结它的种子<br>
+风 在吹它的叶子<br>
+我们站着 不说话<br>
+就十分美好</p>
+</blockquote>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[爱不是追逐占有]]></title>
         <id>https://lhymwm.github.io//post/ai-bu-shi-zhui-zhu-zhan-you</id>
