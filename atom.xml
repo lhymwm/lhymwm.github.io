@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>Dream</title>
-    <updated>2019-12-14T15:38:34.714Z</updated>
+    <updated>2019-12-14T16:03:22.238Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io//atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://lhymwm.github.io//images/avatar.png</logo>
     <icon>https://lhymwm.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Dream</rights>
+    <entry>
+        <title type="html"><![CDATA[关于宁静]]></title>
+        <id>https://lhymwm.github.io//post/guan-yu-ning-jing</id>
+        <link href="https://lhymwm.github.io//post/guan-yu-ning-jing">
+        </link>
+        <updated>2019-12-14T15:47:19.000Z</updated>
+        <content type="html"><![CDATA[<p>最近一段时间自己内心确实是有些浮躁了，因此也没有放下心来安静地读读书。那种习惯性地一个人来看看书，享受专注的时光才是好的。沉浸在一个人的世界里，可以忘记时间，进入所谓的心流的状态。心灵得到的舒展与安宁大抵才是最宝贵的，其他事物都藉由此而变得重要。所以，是时候该放下心来专注于自己该做的了，回归宁静，回归吾乡。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[一生只够爱一人]]></title>
         <id>https://lhymwm.github.io//post/yi-sheng-zhi-gou-ai-yi-ren</id>
@@ -50,8 +59,8 @@
         </link>
         <updated>2019-12-03T14:00:22.000Z</updated>
         <content type="html"><![CDATA[<p>虽然没和任何人爬过几座春秋，也没有亲身彻头彻尾地领悟到：爱不是追逐占有。<br>
-但是，我还是决定在一种称作“喜欢”的感觉面前选择一种近乎于上帝的视角————相信爱不是追逐占有，愿给爱的人以自由。从此这样，便不存在突然的欢喜抑或突然的失落。我相信，持久或者深沉的“喜欢”都当是内心的一种温柔且平静的释放。<br>
-愿这感情一如仲夏夜漫天的星光铺满你涓涓流淌的心河。</p>
+但是，我还是愿意在一种称作“喜欢”的感觉面前选择一种近乎于上帝的视角————相信爱不是追逐占有，愿给爱的人以自由。从此这样，便不存在突然的欢喜抑或突然的失落。我相信，持久或者深沉的“喜欢”都当是内心的一种温柔且宁静的释放。<br>
+给你的爱像古老的帆，一年一年把心海铺满。</p>
 ]]></content>
     </entry>
     <entry>
