@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>Dream</title>
-    <updated>2019-12-16T11:00:13.765Z</updated>
+    <updated>2019-12-16T11:01:59.526Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io//atom.xml"/>
@@ -16,7 +16,7 @@
         <link href="https://lhymwm.github.io//post/xin-shang-de-hua">
         </link>
         <updated>2019-12-16T10:46:53.000Z</updated>
-        <content type="html"><![CDATA[<p>#关于“人生”</p>
+        <content type="html"><![CDATA[<h1 id="关于人生">关于“人生”</h1>
 <ol>
 <li>一个人的价值，在于他贡献了什么，而不在于他获得了什么！——爱因斯坦</li>
 <li>未经反思自省的人生不值得去过The unexamined life is not worth living.——苏格拉底</li>
