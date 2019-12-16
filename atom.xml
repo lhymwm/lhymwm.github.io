@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>Dream</title>
-    <updated>2019-12-14T16:05:21.104Z</updated>
+    <updated>2019-12-16T10:59:22.796Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io//atom.xml"/>
@@ -10,6 +10,38 @@
     <logo>https://lhymwm.github.io//images/avatar.png</logo>
     <icon>https://lhymwm.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Dream</rights>
+    <entry>
+        <title type="html"><![CDATA[欣赏的话]]></title>
+        <id>https://lhymwm.github.io//post/xin-shang-de-hua</id>
+        <link href="https://lhymwm.github.io//post/xin-shang-de-hua">
+        </link>
+        <updated>2019-12-16T10:46:53.000Z</updated>
+        <content type="html"><![CDATA[<p>#关于“人生”</p>
+<ol>
+<li>一个人的价值，在于他贡献了什么，而不在于他获得了什么！——爱因斯坦</li>
+<li>未经反思自省的人生不值得去过The unexamined life is not worth living.——苏格拉底</li>
+<li>人的一切痛苦都是源于对自己无能的愤怒。 ——王小波 （作家）</li>
+<li>Stay hungry. Stay foolish. ——史蒂夫.乔布斯引自《全球概览》</li>
+<li>许多人所谓的成熟，不过是被习俗磨去了棱角，变得世故而实际了；那不是成熟，而是精神的早衰和个性的夭亡！真正的成熟，应当是独特个性的形成，真实自我的发现，精神上的结果和丰收。——《在世纪的转折点上》尼采 （哲学家）</li>
+<li>非淡泊无以明志，非宁静无以致远。 ——《淮南子》刘安</li>
+<li>对爱情的渴望，对知识的追求，对人类苦难不可遏制的同情心，这三种纯洁而无比强烈的激情支配着我的一生。Three passions，simple but overwhelmingly strong，have governed my life：the longing for love，the search for knowledge，and unbearable pity for the suffering of mankind.——《我为什么而活着》罗素 （哲学家 数学家 思想家）<br>
+...长期更新</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一些欣赏的人物]]></title>
+        <id>https://lhymwm.github.io//post/yi-xie-xin-shang-de-ren-wu</id>
+        <link href="https://lhymwm.github.io//post/yi-xie-xin-shang-de-ren-wu">
+        </link>
+        <updated>2019-12-16T10:41:49.000Z</updated>
+        <content type="html"><![CDATA[<p>自由主义者：胡适、李敖<br>
+音乐人:许嵩<br>
+词人：纳兰性德<br>
+主持人：窦文涛<br>
+···长期更新</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[关于宁静]]></title>
         <id>https://lhymwm.github.io//post/guan-yu-ning-jing</id>
