@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>Dream</title>
-    <updated>2019-12-16T10:59:22.796Z</updated>
+    <updated>2019-12-16T10:59:39.295Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io//atom.xml"/>
@@ -30,7 +30,7 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[一些欣赏的人物]]></title>
+        <title type="html"><![CDATA[欣赏的人]]></title>
         <id>https://lhymwm.github.io//post/yi-xie-xin-shang-de-ren-wu</id>
         <link href="https://lhymwm.github.io//post/yi-xie-xin-shang-de-ren-wu">
         </link>
