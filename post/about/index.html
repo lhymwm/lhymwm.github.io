@@ -3,7 +3,7 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Dream</title>
-<link rel="shortcut icon" href="https://lhymwm.github.io//favicon.ico?v=1576508167036">
+<link rel="shortcut icon" href="https://lhymwm.github.io//favicon.ico?v=1577775082747">
 <link rel="stylesheet" href="https://lhymwm.github.io//styles/main.css">
 <meta name="description" content="stay hungry，stay foolish" />
 
@@ -11,11 +11,19 @@
 <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
   </head>
   <body>
     <div class="head-top-line"></div>
     <div class="header-box">
-      <header class="header">
+      
+<header class="header">
   <div class="blog-header" id="header">
     <div class="site-meta">
       <div class="nav-toggle" id="nav_toggle">
@@ -25,7 +33,7 @@
           <div class="line line-bottom"></div>
         </div>
       </div>
-      <div class="site-title slide-in">
+      <div class="site-title">
         <a href="/" class="brand">
           <span>Dream</span>
         </a>
@@ -33,58 +41,40 @@
       <p class="subtitle">Quick notes</p>
     </div>
     <nav class="site-nav" id="site_nav">
-      <ul>
-        <li class="nav-item ">
-          
+      <ul id="nav_ul">
+        
+          <li class="nav-item ">
             
-              
-                <a href="/">
-                  <i class="iconfont icon-home"></i> 首页
-                </a>
-              
+              <a href="/">
+                <i class="iconfont icon-home"></i> 首页
+              </a>
             
-          
+          </li>
+        
+          <li class="nav-item ">
             
-          
+              <a href="/archives">
+                <i class="iconfont icon-archive"></i> 归档
+              </a>
             
-          
+          </li>
+        
+          <li class="nav-item ">
             
-          
-        </li>
-        <li class="nav-item ">
-          
+              <a href="/tags">
+                <i class="iconfont icon-tags"></i> 标签
+              </a>
             
-          
+          </li>
+        
+          <li class="nav-item ">
             
-              
-                <a href="/archives">
-                  <i class="iconfont icon-archive"></i> 归档
-                </a>
-              
+              <a href="/post/about">
+                <i class="iconfont icon-info_sign"></i> 关于
+              </a>
             
-          
-            
-          
-            
-          
-        </li>
-        <li class="nav-item ">
-          
-            
-          
-            
-          
-            
-              
-                <a href="/tags">
-                  <i class="iconfont icon-tags"></i> 标签
-                </a>
-              
-            
-          
-            
-          
-        </li>
+          </li>
+        
         <li class="nav-item">
           <a>
             <i class="iconfont icon-search"></i> 搜索
@@ -101,17 +91,19 @@
   let navToggle = document.querySelector('#nav_toggle'),
   siteNav = document.querySelector('#site_nav');
   
-  function initEvent() {
-    navToggle.addEventListener('click',navClick);
-  }
-
   function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
     navToggle.classList.toggle('nav-toggle-active');
     siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
   }
 
-  window.addEventListener("load", initEvent);
-  
+  navToggle.addEventListener('click',navClick);  
 </script>
     </div>
     <div class="main-continer">
@@ -119,19 +111,72 @@
         <div class="section-layout-wrapper">
           
 <div class="sidebar">
-  <div class="sidebar-wrapper" id="sidebar">
-    
-      <div class="post-list-sidebar">
-        <div class="sidebar-title">
-          <span class="sidebar-title-item sidebar-title-active">文章目录</span>
-          <span class="sidebar-title-item">站点概览</span>
-        </div>
-      </div>
-    
-    <div class="post-sidebar-body">
+    <div class="sidebar-wrapper" id="sidebar">
       
-        <div class="post-toc">
-          <div class="toc-box">
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body" id="sidebar_body">
+        
+          <div class="post-side-meta" id="post_side_meta">
+            <div class="sidebar-wrapper">
+  <div class="sidebar-item">
+    <img class="site-author-image" src="https://lhymwm.github.io//images/avatar.png"/>
+    <p class="site-author-name">Dream</p>
+    <p class="site-description">stay hungry，stay foolish</p>
+  </div>
+  <div class="sidebar-item side-item-stat">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        <span class="site-item-stat-count">10</span>
+        <span class="site-item-stat-name">日志</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">4</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">4</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  <div class="sidebar-item">
+    <span class="site-item-rss">
+        <i class="iconfont icon-rss"></i>
+        <a href="https://lhymwm.github.io//atom.xml" target="_blank">RSS</a>
+    </span>
+  </div>
+  <div class="sidebar-item sidebar-item-social">
+    <div class="social-item">
+      <a href="https://www.github.com/hsxyhao">
+        <i class="iconfont icon-github"></i> GitHub
+      </a>
+      <a href="">
+        <i class="iconfont icon-twitter"></i> Twitter
+      </a>
+    </div>
+    <div class="social-item">
+      <a href="">
+        <i class="iconfont icon-globe"></i> 豆瓣
+      </a>
+      <a href="">
+        <i class="iconfont icon-globe"></i> 知乎
+      </a>
+    </div>
+  </div>
+</div>
+          </div>
+          <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+            <div class="toc-box">
   <div class="toc-wrapper" id="toc_wrapper">
     <ul class="markdownIt-TOC">
 <li>
@@ -185,6 +230,9 @@ function addTocNumber(elem, deep) {
 
 
 document.addEventListener('scroll', function(e) {
+  if (lList.length <= 0) {
+    return;
+  }
   let scrollTop = document.body.scrollTop;
   let dir;
 
@@ -198,36 +246,40 @@ document.addEventListener('scroll', function(e) {
   if (scrollTop <= 0) {
     if (lastIndex >= 0 && lastIndex < hList.length) {
       lList[lastIndex].classList.remove(activeClass);
-      lastIndex = -1;
     }
     return;
   }
 
-  let current = 0;
+  let current = 0, hasFind = false;
   for (let i = 0; i < hList.length; i++) {
     if (hList[i].offsetTop > scrollTop) {
       current = i;
+      hasFind = true;
       break;
     }
   }
-  current--;
-    if (dir === 'down') {
-      if (current > lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex) 
-        lastIndex = current;
-        removeParentActiveClass();
-        addActiveLiElemment(lList[current].parentElement,tocContent);
-      }
-    } else {
-      if (current < lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex);
-        lastIndex = current;
-        removeParentActiveClass();
-        lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
-      }
+  if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+    current = hList.length - 1;
+  } else {
+    current--;
+  }
+  if (dir === 'down') {
+    if (current > lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex) 
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
     }
+  } else {
+    if (current < lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex);
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  }
 });
 
 function removeParentActiveClass() {
@@ -260,7 +312,7 @@ function addActiveLiElemment(elem, parent) {
   }
 }
 
-window.addEventListener('load', function() {
+function showToc() {
   if (tocWrapper) {
     postBody = document.querySelector('#post_body');
     for (let i = 0; i < postBody.children.length; i++) {
@@ -275,7 +327,15 @@ window.addEventListener('load', function() {
     } else {
       tocContent.classList.add('expanded');
     }
+  }
+}
+addTocNumber(tocContent, '');
 
+window.addEventListener('load', function() {
+  showToc();
+  document.querySelector('#sidebar').style='display: block;';
+  tocWrapper.classList.add('toc-active');
+  setTimeout(function() {
     if ("createEvent" in document) {
       let evt = document.createEvent("HTMLEvents");
       evt.initEvent("scroll", false, true);
@@ -284,75 +344,72 @@ window.addEventListener('load', function() {
     else {
       document.fireEvent("scroll");
     }
-    addTocNumber(tocContent, '');
-  }
-  document.querySelector('#sidebar').style='display: block;';
+  }, 500)
 })
 
-
-
 </script>
-        </div>
-        <div class="post-side-meta">
-          <div class="sidebar-wrapper">
-  <div class="sidebar-item">
-    <img class="site-author-image" src="https://lhymwm.github.io//images/avatar.png"/>
-    <p class="site-author-name">Dream</p>
-    <p class="site-description">stay hungry，stay foolish</p>
-  </div>
-  <div class="sidebar-item side-item-stat">
-    <div class="sidebar-item-box">
-      <a href="/archives/">
-        <span class="site-item-stat-count">10</span>
-        <span class="site-item-stat-name">日志</span>
-      </a>
+          </div>
+        
+      </div>
     </div>
-    <div class="sidebar-item-box">
-      <a href="">
-        <span class="site-item-stat-count">4</span>
-        <span class="site-item-stat-name">分类</span>
-      </a>
-    </div>
-    <div class="sidebar-item-box">
-      <a href="/tags/">
-        <span class="site-item-stat-count">4</span>
-        <span class="site-item-stat-name">标签</span>
-      </a>
-    </div>
-  </div>
-  <div class="sidebar-item">
-    <span class="site-item-rss">
-        <i class="iconfont icon-rss"></i>
-        <a href="https://lhymwm.github.io//atom.xml" target="_blank">RSS</a>
-    </span>
-  </div>
-  <div class="sidebar-item sidebar-item-social">
-    <div class="social-item">
-      <a href="https://www.github.com/hsxyhao">
-        <i class="iconfont icon-github"></i> GitHub
-      </a>
-      <a href="">
-        <i class="iconfont icon-twitter"></i> Twitter
-      </a>
-    </div>
-    <div class="social-item">
-      <a href="">
-        <i class="iconfont icon-globe"></i> 豆瓣
-      </a>
-      <a href="">
-        <i class="iconfont icon-globe"></i> 知乎
-      </a>
-    </div>
-  </div>
-</div>
-        </div>
-      
-    </div>
-  </div>
 </div>
 <script>
-  let sidebar = document.querySelector('#sidebar');
-  let limitTop = sidebar.offsetTop;
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+
+  }
+
+  postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
   let hasFix = false;
   window.addEventListener('scroll', function(e) {
     if (document.body.scrollTop >= limitTop) {
@@ -369,18 +426,18 @@ window.addEventListener('load', function() {
   });
 </script>
           <div class="section-box">
-            <div class="section">
+            <div class="section post">
               <div class="article-box">
     <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://lhymwm.github.io//post/about">
+    <a class="post-title-link" href="https://lhymwm.github.io/post/about">
       关于我
     </a>
   </h1>
   <div class="post-meta">
-    <span class="meta-item">
+    <span class="meta-item pc-show">
       <i class="iconfont icon-calendar_empty"></i>
-      <span class="pc-show">发布于</span>
+      <span>发布于</span>
       <span>2019-11-22</span>
     </span>
     
@@ -392,12 +449,12 @@ window.addEventListener('load', function() {
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="iconfont icon-keyboard"></i>
-      <span class="pc-show">280字数</span>
+      <span>280<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
 </div>
-              <div class="post-body next-mk-body" id="post_body">
+              <div class="post-body next-md-body" id="post_body">
                 <p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
 <h2 id="关于本站">🏠 关于本站</h2>
 <h3 id="建站初衷">建站初衷</h3>
@@ -427,7 +484,7 @@ window.addEventListener('load', function() {
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://lhymwm.github.io//post/about" title="关于我">https://lhymwm.github.io//post/about</a>
+      <a href="https://lhymwm.github.io/post/about" title="关于我">https://lhymwm.github.io/post/about</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -441,7 +498,8 @@ window.addEventListener('load', function() {
     <div class="nav-prev">
       
         <i class="iconfont icon-angle_left"></i>
-        <a href="https://lhymwm.github.io//post/chong-shi-qian-bei-de-ai-qing-guan">重拾前辈的爱情观</a>
+        <a class="nav-pc-next" href="https://lhymwm.github.io/post/chong-shi-qian-bei-de-ai-qing-guan">重拾前辈的爱情观</a class="nav-pc-next">
+        <a class="nav-mobile-prev" href="https://lhymwm.github.io/post/chong-shi-qian-bei-de-ai-qing-guan">上一篇</a>
       
     </div>
     <div class="nav-next">
@@ -449,6 +507,27 @@ window.addEventListener('load', function() {
     </div>
   </div>
 </div>
+              
+                
+                  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: 'lhymwm',
+    clientSecret: '341125lh',
+    repo: 'lhymwm.github.io',
+    owner: 'lhymwm',
+    admin: ['lhymwm'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+  gitalk.render('gitalk-container')
+</script>
+                
+                
               
             </div>
           </div>
@@ -480,18 +559,13 @@ window.addEventListener('load', function() {
   back2TopText = document.querySelector('#back_to_top_text');
 
   function scrollAnimation(currentY, targetY) {
-    // 获取当前位置方法
-    // const currentY = document.documentElement.scrollTop || document.body.scrollTop
-
-    // 计算需要移动的距离
+   
     let needScrollTop = targetY - currentY
     let _currentY = currentY
     setTimeout(() => {
-      // 一次调用滑动帧数，每次调用会不一样
       const dist = Math.ceil(needScrollTop / 10)
       _currentY += dist
       window.scrollTo(_currentY, currentY)
-      // 如果移动幅度小于十个像素，直接移动，否则递归调用，实现动画效果
       if (needScrollTop > 10 || needScrollTop < -10) {
         scrollAnimation(_currentY, targetY)
       } else {
@@ -516,9 +590,15 @@ window.addEventListener('load', function() {
     }
     back2TopText.textContent = Math.floor(percent);
   });
+
+  // 动态调整站点概览高度
+  let sideBar = document.querySelector('.sidebar');
+  let navUl = document.querySelector('#nav_ul');
+  sideBar.style = 'margin-top:' + (navUl.children.length * 42 + 162) + 'px; opacity: 1;';
   // 代码高亮
-  hljs.initHighlightingOnLoad()
+  hljs.initHighlightingOnLoad();
 </script>
     </div>
   </body>
+  <script src="/media/js/motion.js"></script>
 </html>

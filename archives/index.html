@@ -3,7 +3,7 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Dream</title>
-<link rel="shortcut icon" href="https://lhymwm.github.io//favicon.ico?v=1576508167036">
+<link rel="shortcut icon" href="https://lhymwm.github.io//favicon.ico?v=1577775082747">
 <link rel="stylesheet" href="https://lhymwm.github.io//styles/main.css">
 <meta name="description" content="stay hungry，stay foolish" />
 
@@ -11,11 +11,19 @@
 <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
   </head>
   <body>
     <div class="head-top-line"></div>
     <div class="header-box">
-      <header class="header">
+      
+<header class="header">
   <div class="blog-header" id="header">
     <div class="site-meta">
       <div class="nav-toggle" id="nav_toggle">
@@ -25,7 +33,7 @@
           <div class="line line-bottom"></div>
         </div>
       </div>
-      <div class="site-title slide-in">
+      <div class="site-title">
         <a href="/" class="brand">
           <span>Dream</span>
         </a>
@@ -33,58 +41,40 @@
       <p class="subtitle">Quick notes</p>
     </div>
     <nav class="site-nav" id="site_nav">
-      <ul>
-        <li class="nav-item ">
-          
+      <ul id="nav_ul">
+        
+          <li class="nav-item ">
             
-              
-                <a href="/">
-                  <i class="iconfont icon-home"></i> 首页
-                </a>
-              
+              <a href="/">
+                <i class="iconfont icon-home"></i> 首页
+              </a>
             
-          
+          </li>
+        
+          <li class="nav-item nav-item-active">
             
-          
+              <a href="/archives">
+                <i class="iconfont icon-archive"></i> 归档
+              </a>
             
-          
+          </li>
+        
+          <li class="nav-item ">
             
-          
-        </li>
-        <li class="nav-item nav-item-active">
-          
+              <a href="/tags">
+                <i class="iconfont icon-tags"></i> 标签
+              </a>
             
-          
+          </li>
+        
+          <li class="nav-item ">
             
-              
-                <a href="/archives">
-                  <i class="iconfont icon-archive"></i> 归档
-                </a>
-              
+              <a href="/post/about">
+                <i class="iconfont icon-info_sign"></i> 关于
+              </a>
             
-          
-            
-          
-            
-          
-        </li>
-        <li class="nav-item ">
-          
-            
-          
-            
-          
-            
-              
-                <a href="/tags">
-                  <i class="iconfont icon-tags"></i> 标签
-                </a>
-              
-            
-          
-            
-          
-        </li>
+          </li>
+        
         <li class="nav-item">
           <a>
             <i class="iconfont icon-search"></i> 搜索
@@ -101,17 +91,19 @@
   let navToggle = document.querySelector('#nav_toggle'),
   siteNav = document.querySelector('#site_nav');
   
-  function initEvent() {
-    navToggle.addEventListener('click',navClick);
-  }
-
   function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
     navToggle.classList.toggle('nav-toggle-active');
     siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
   }
 
-  window.addEventListener("load", initEvent);
-  
+  navToggle.addEventListener('click',navClick);  
 </script>
     </div>
     <div class="main-continer">
@@ -183,119 +175,140 @@
     
     
       <div class="node-title">
-          <h2>2019</h2>
-      </div>  
+        <h2 class="tag-year">2019</h2>
+      </div>    
       
     
-    <a href="https://lhymwm.github.io//post/xin-shang-de-hua">
-      <article class="tag-node">
-        <h1>
-          12-16
-          <small>欣赏的话</small>
-        </h1>
-      </article>  
+    <a href="https://lhymwm.github.io/post/xin-shang-de-hua">
+      <div class="motion-warpper tag-archive-node">
+        <div class="tag-node">
+          <h1>
+            12-16
+            <small>欣赏的话</small>
+          </h1>
+        </div>  
+    </div>
     </a>
   
     
     
-    <a href="https://lhymwm.github.io//post/yi-xie-xin-shang-de-ren-wu">
-      <article class="tag-node">
-        <h1>
-          12-16
-          <small>欣赏的人</small>
-        </h1>
-      </article>  
+    <a href="https://lhymwm.github.io/post/yi-xie-xin-shang-de-ren-wu">
+      <div class="motion-warpper tag-archive-node">
+        <div class="tag-node">
+          <h1>
+            12-16
+            <small>欣赏的人</small>
+          </h1>
+        </div>  
+    </div>
     </a>
   
     
     
-    <a href="https://lhymwm.github.io//post/guan-yu-ning-jing">
-      <article class="tag-node">
-        <h1>
-          12-14
-          <small>关于宁静</small>
-        </h1>
-      </article>  
+    <a href="https://lhymwm.github.io/post/guan-yu-ning-jing">
+      <div class="motion-warpper tag-archive-node">
+        <div class="tag-node">
+          <h1>
+            12-14
+            <small>关于宁静</small>
+          </h1>
+        </div>  
+    </div>
     </a>
   
     
     
-    <a href="https://lhymwm.github.io//post/yi-sheng-zhi-gou-ai-yi-ren">
-      <article class="tag-node">
-        <h1>
-          12-12
-          <small>一生只够爱一人</small>
-        </h1>
-      </article>  
+    <a href="https://lhymwm.github.io/post/yi-sheng-zhi-gou-ai-yi-ren">
+      <div class="motion-warpper tag-archive-node">
+        <div class="tag-node">
+          <h1>
+            12-12
+            <small>一生只够爱一人</small>
+          </h1>
+        </div>  
+    </div>
     </a>
   
     
     
-    <a href="https://lhymwm.github.io//post/ai-bu-shi-zhui-zhu-zhan-you">
-      <article class="tag-node">
-        <h1>
-          12-03
-          <small>爱不是追逐占有</small>
-        </h1>
-      </article>  
+    <a href="https://lhymwm.github.io/post/ai-bu-shi-zhui-zhu-zhan-you">
+      <div class="motion-warpper tag-archive-node">
+        <div class="tag-node">
+          <h1>
+            12-03
+            <small>爱不是追逐占有</small>
+          </h1>
+        </div>  
+    </div>
     </a>
   
     
     
-    <a href="https://lhymwm.github.io//post/ao-man-yu-pian-jian">
-      <article class="tag-node">
-        <h1>
-          12-01
-          <small>傲慢与偏见</small>
-        </h1>
-      </article>  
+    <a href="https://lhymwm.github.io/post/ao-man-yu-pian-jian">
+      <div class="motion-warpper tag-archive-node">
+        <div class="tag-node">
+          <h1>
+            12-01
+            <small>傲慢与偏见</small>
+          </h1>
+        </div>  
+    </div>
     </a>
   
     
     
-    <a href="https://lhymwm.github.io//post/zai-ting-lesslessyou-tao-hua-greatergreater">
-      <article class="tag-node">
-        <h1>
-          11-29
-          <small>再听《有桃花》</small>
-        </h1>
-      </article>  
+    <a href="https://lhymwm.github.io/post/zai-ting-lesslessyou-tao-hua-greatergreater">
+      <div class="motion-warpper tag-archive-node">
+        <div class="tag-node">
+          <h1>
+            11-29
+            <small>再听《有桃花》</small>
+          </h1>
+        </div>  
+    </div>
     </a>
   
     
     
-    <a href="https://lhymwm.github.io//post/huan-yan-jing">
-      <article class="tag-node">
-        <h1>
-          11-24
-          <small>换眼镜</small>
-        </h1>
-      </article>  
+    <a href="https://lhymwm.github.io/post/huan-yan-jing">
+      <div class="motion-warpper tag-archive-node">
+        <div class="tag-node">
+          <h1>
+            11-24
+            <small>换眼镜</small>
+          </h1>
+        </div>  
+    </div>
     </a>
   
     
     
-    <a href="https://lhymwm.github.io//post/chong-shi-qian-bei-de-ai-qing-guan">
-      <article class="tag-node">
-        <h1>
-          11-24
-          <small>重拾前辈的爱情观</small>
-        </h1>
-      </article>  
+    <a href="https://lhymwm.github.io/post/chong-shi-qian-bei-de-ai-qing-guan">
+      <div class="motion-warpper tag-archive-node">
+        <div class="tag-node">
+          <h1>
+            11-24
+            <small>重拾前辈的爱情观</small>
+          </h1>
+        </div>  
+    </div>
     </a>
   
     
     
-    <a href="https://lhymwm.github.io//post/about">
-      <article class="tag-node">
-        <h1>
-          11-22
-          <small>关于我</small>
-        </h1>
-      </article>  
+    <a href="https://lhymwm.github.io/post/about">
+      <div class="motion-warpper tag-archive-node">
+        <div class="tag-node">
+          <h1>
+            11-22
+            <small>关于我</small>
+          </h1>
+        </div>  
+    </div>
     </a>
   
 </div>
+
 
 <div class="page">
   <ul class="pagination-ul">
@@ -343,18 +356,13 @@
   back2TopText = document.querySelector('#back_to_top_text');
 
   function scrollAnimation(currentY, targetY) {
-    // 获取当前位置方法
-    // const currentY = document.documentElement.scrollTop || document.body.scrollTop
-
-    // 计算需要移动的距离
+   
     let needScrollTop = targetY - currentY
     let _currentY = currentY
     setTimeout(() => {
-      // 一次调用滑动帧数，每次调用会不一样
       const dist = Math.ceil(needScrollTop / 10)
       _currentY += dist
       window.scrollTo(_currentY, currentY)
-      // 如果移动幅度小于十个像素，直接移动，否则递归调用，实现动画效果
       if (needScrollTop > 10 || needScrollTop < -10) {
         scrollAnimation(_currentY, targetY)
       } else {
@@ -379,9 +387,15 @@
     }
     back2TopText.textContent = Math.floor(percent);
   });
+
+  // 动态调整站点概览高度
+  let sideBar = document.querySelector('.sidebar');
+  let navUl = document.querySelector('#nav_ul');
+  sideBar.style = 'margin-top:' + (navUl.children.length * 42 + 162) + 'px; opacity: 1;';
   // 代码高亮
-  hljs.initHighlightingOnLoad()
+  hljs.initHighlightingOnLoad();
 </script>
     </div>
   </body>
+  <script src="/media/js/motion.js"></script>
 </html>
