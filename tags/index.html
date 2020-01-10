@@ -3,7 +3,7 @@
       <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Dream</title>
-<link rel="shortcut icon" href="https://lhymwm.github.io//favicon.ico?v=1578631848919">
+<link rel="shortcut icon" href="https://lhymwm.github.io//favicon.ico?v=1578632625782">
 <link rel="stylesheet" href="https://lhymwm.github.io//styles/main.css">
 
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -23,7 +23,7 @@
     <div class="head-top-line"></div>
     <div class="header-box">
       
-<div class=" ">
+<div class=" pisces">
   <header class="header">
     <div class="blog-header" id="header">
       <div class="nav-toggle" id="nav_toggle">
@@ -42,7 +42,7 @@
           
         </div>
         
-          <p class="subtitle"></p>
+          <p class="subtitle">精于心，简于形</p>
         
       </div>
       <nav class="site-nav" id="site_nav">
@@ -115,7 +115,7 @@
     </div>
     <div class="main-continer">
       
-      <div class="section-layout ">
+      <div class="section-layout pisces">
         <div class="section-layout-wrapper">
           <div class="sidebar">
     <div class="sidebar-wrapper">
@@ -148,7 +148,11 @@
   
   
     
-      <div class="sidebar-item" style="border-top: 1px dotted #ccc;">
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://lhymwm.github.io//atom.xml" target="_blank">RSS</a>
+        </span>
       </div>
     
   
@@ -156,36 +160,14 @@
     <div class="sidebar-item sidebar-item-social">
       <div class="social-item">
           
-            <a href="">
+            <a href="https://github.com/lhymwm">
               <i class="fa fa-github-alt"></i> Github
             </a>
           
           
-            <a href="">
-              <i class="fa fa-graduation-cap"></i> 掘金
-            </a>
           
           
-            <a href="">
-              <i class="fa fa-book"></i> 简书
-            </a>
           
-          
-            <a href="" title="">
-              <i class="fa fa-twitter"></i> Twitter
-            </a>
-          
-          
-            <a class="social-img" href="">
-              <img src="" />
-              <i class="fa fa-wechat "></i> 微信
-            </a>
-          
-          
-            <a class="social-img" href="">
-              <img src="" />
-              <i class="fa fa-qq"></i> QQ
-            </a>
           
       </div>
     </div>
@@ -422,7 +404,7 @@
   </footer>
   
   
-  <div class=" back-to-top" id="back_to_top">
+  <div class="pisces back-to-top" id="back_to_top">
     <i class="fa fa-arrow-up"></i>
     
     <span class="scrollpercent">
@@ -478,10 +460,10 @@
   });
 
   // 动态调整站点概览高度
-  if (back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+  if (back2Top.classList.contains('pisces')) {
     let sideBar = document.querySelector('.sidebar');
     let navUl = document.querySelector('#nav_ul');
-    sideBar.style = 'margin-top:' + (navUl.children.length * 42 + 162) + 'px;';
+    sideBar.style = 'margin-top:' + (navUl.children.length * 42 + 162) + 'px; opacity: 1;';
   }
   
   let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
