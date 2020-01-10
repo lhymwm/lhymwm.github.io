@@ -130,16 +130,26 @@ let menuMotion = function(MotionExector) {
 
 let postListMotion = function(MotionExector) {
   let posts = document.querySelectorAll(Element_Class.post);
+  let geminiSiteMeta = document.querySelector('.pisces .sidebar') 
+  || document.querySelector('.gemini .sidebar');
 
-  if (posts.length > 0) {
-    window.Velocity(posts ,'transition.slideDownIn', {
-      stagger: 100,
-      drag: true,
+  if (geminiSiteMeta) {
+    window.Velocity(posts, 'transition.slideDownIn', { })
+  } else {
+    window.Velocity(posts, 'transition.slideDownIn', { 
       complete: function() {
         MotionExector.next();
       }
-    });
-  } else {
+    })
+  }
+  geminiSiteMeta && window.Velocity(geminiSiteMeta,'transition.slideUpIn',{
+    stagger: 100, 
+    drag: true,
+    complete: function() {
+      MotionExector.next();
+    }
+  });
+  if (posts.length <=0 && !geminiSiteMeta) {
     MotionExector.next();
   }
 }
