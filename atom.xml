@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>Dream</title>
-    <updated>2020-01-10T11:18:22.086Z</updated>
+    <updated>2020-01-11T03:54:26.221Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -10,6 +10,279 @@
     <logo>https://lhymwm.github.io/images/avatar.png</logo>
     <icon>https://lhymwm.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dream</rights>
+    <entry>
+        <title type="html"><![CDATA[书单]]></title>
+        <id>https://lhymwm.github.io/post/shu-dan</id>
+        <link href="https://lhymwm.github.io/post/shu-dan">
+        </link>
+        <updated>2020-01-10T14:42:25.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>
+<p>效率</p>
+</li>
+<li>
+<p>学术</p>
+<ol>
+<li>药物经济学</li>
+<li>药事管理学科</li>
+<li>药物流行病学</li>
+<li>统计
+<ol>
+<li>stata</li>
+<li>R语言</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>医药</p>
+<ol>
+<li>医药基础知识
+<ol>
+<li>专业课知识
+<ol>
+<li>临床</li>
+<li>药学</li>
+</ol>
+</li>
+<li>通俗读物</li>
+</ol>
+</li>
+<li>医药体制</li>
+<li>医药行业
+<ol>
+<li>化学制药</li>
+<li>生物制品</li>
+<li>药用辅料</li>
+<li>医疗服务</li>
+<li>医疗器械</li>
+<li>医药商业</li>
+<li>医药生物</li>
+<li>中药</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>经济</p>
+<ol>
+<li>经济学
+<ol>
+<li>教材</li>
+<li>理论</li>
+<li>评论</li>
+<li>通俗读物</li>
+</ol>
+</li>
+<li>金融</li>
+<li>投资</li>
+<li>经济学家</li>
+<li>博弈论
+<ol>
+<li>通俗读物</li>
+<li>理论</li>
+</ol>
+</li>
+<li>市场营销</li>
+<li>其他</li>
+</ol>
+</li>
+<li>
+<p>IT</p>
+<ol>
+<li>python</li>
+</ol>
+</li>
+<li>
+<p>心理学</p>
+<ol>
+<li>通俗读物</li>
+<li>认知心理学</li>
+<li>人格心理学</li>
+<li>社会心理学</li>
+<li>性心理学</li>
+<li>教育心理学</li>
+<li>进化心理学</li>
+<li>其他</li>
+</ol>
+</li>
+<li>
+<p>管理</p>
+</li>
+<li>
+<p>历史</p>
+<ol>
+<li>世界史</li>
+<li>欧洲史</li>
+<li>中国
+<ol>
+<li>古代史</li>
+<li>近代史</li>
+<li>丛书
+<ol>
+<li>剑桥中国史</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>古希腊</li>
+<li>古罗马</li>
+<li>美国</li>
+<li>英国</li>
+<li>法国</li>
+<li>德国<br>
+10.日本</li>
+</ol>
+</li>
+<li>
+<p>哲学</p>
+<ol>
+<li>通俗读物</li>
+<li>哲学史</li>
+<li>哲学家
+<ol>
+<li>苏格拉底</li>
+<li>柏拉图</li>
+<li>亚里士多德</li>
+<li>笛卡尔</li>
+<li>康德</li>
+<li>尼采</li>
+<li>罗素</li>
+<li>波普尔</li>
+<li>维特根斯坦</li>
+<li>其他哲学家</li>
+</ol>
+</li>
+<li>形而上学</li>
+<li>知识论与认识论</li>
+<li>逻辑学</li>
+<li>伦理学</li>
+<li>科学哲学</li>
+<li>美学</li>
+<li>其他</li>
+</ol>
+</li>
+<li>
+<p>文艺</p>
+<ol>
+<li>中国
+<ol>
+<li>文化</li>
+<li>文学家、艺术家</li>
+<li>其他</li>
+</ol>
+</li>
+<li>日本
+<ol>
+<li>文化</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>社会学</p>
+<ol>
+<li>传媒</li>
+<li>其他</li>
+</ol>
+</li>
+<li>
+<p>军事</p>
+<ol>
+<li>军事理论</li>
+<li>现代军事史
+<ol>
+<li>二战
+<ol>
+<li>综合</li>
+<li>东欧战场</li>
+<li>西欧与北非战场</li>
+<li>太平洋战场</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>政治</p>
+<ol>
+<li>政治理论
+<ol>
+<li>民主与宪政</li>
+<li>自由主义</li>
+<li>保守主义</li>
+<li>资本主义</li>
+<li>共产主义</li>
+<li>社会主义</li>
+<li>极权主义与威权主义</li>
+<li>外交与国际关系</li>
+<li>非暴力抗争</li>
+<li>女权运动</li>
+<li>其他</li>
+</ol>
+</li>
+<li>中国
+<ol>
+<li>中共历史</li>
+<li>政治人物
+<ol>
+<li>共产党</li>
+<li>国民党
+<ol>
+<li>蒋经国</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>美国
+<ol>
+<li>政治制度</li>
+<li>政治人物</li>
+<li>外交</li>
+<li>情报系统</li>
+<li>其他</li>
+</ol>
+</li>
+<li>苏联
+<ol>
+<li>苏共历史</li>
+<li>政治人物
+<ol>
+<li>普列汉诺夫</li>
+<li>斯大林</li>
+<li>托洛茨基</li>
+<li>赫鲁晓夫</li>
+<li>勃列日涅夫</li>
+<li>戈尔巴乔夫</li>
+<li>爱他人物</li>
+</ol>
+</li>
+<li>大清洗与古拉格</li>
+<li>其他</li>
+</ol>
+</li>
+<li>英国</li>
+<li>法国</li>
+<li>德国</li>
+<li>其他国家
+<ol>
+<li>北朝鲜</li>
+<li>柬埔寨</li>
+<li>西班牙</li>
+<li>捷克斯洛伐克</li>
+<li>波兰</li>
+<li>罗马尼亚</li>
+<li>古巴</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[欣赏的话]]></title>
         <id>https://lhymwm.github.io/post/xin-shang-de-hua</id>
@@ -196,35 +469,6 @@
 <blockquote>
 <p>在物质至上的时代潮流下，想提醒年轻的朋友，男女结合最最重要的是感情，双方理解的程度，理解深才能相互欣赏吸引、支持鼓励，两情相悦。门当户对及其他，并不重要。我以为，夫妻间最重要的是朋友关系，即使不能做知心朋友，也该是能做得伴侣朋友或相互尊重的伴侣。</p>
 </blockquote>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于我]]></title>
-        <id>https://lhymwm.github.io/post/about</id>
-        <link href="https://lhymwm.github.io/post/about">
-        </link>
-        <updated>2019-11-22T11:09:48.000Z</updated>
-        <content type="html"><![CDATA[<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h3 id="建站初衷">建站初衷</h3>
-<p>小站主要记录博主的所见所闻，所思所想。之所以记录，是想以后重“拾”自己的一个心路历程，大抵会有所宽慰。同时，也希望通过本博客能够汇聚对某些话题有共同兴趣的人，可以共同学习探讨，此谓是件乐事。<br>
-博客用的是<strong>Gridea</strong> 的静态博客程序；评论用的是<strong>Valine</strong>；博客主题源于<a href="https://blog.shanbu.fun/post/about/">山卜方</a>。</p>
-<h3 id="博客历程">博客历程</h3>
-<ul>
-<li>2019年11月22日：创立博客</li>
-</ul>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<p>医学院在读的药学生，所学专业是自然科学，但对经济学、社会学、历史学等人文社会学科有浓厚兴趣。<br>
-十六型人格测试类型：<a href="https://www.16personalities.com/ch/isfj-%E4%BA%BA%E6%A0%BC">ISFJ-A 守卫者</a><br>
-政治坐标：<a href="https://www.idrlabs.com/cn/political-coordinates/test.php">8.3% 右派, 25% 自由主义者</a><br>
-很欣赏的音乐人：许嵩<br>
-很欣赏的主持人：窦文涛<br>
-欣赏的传统词人：纳兰性德</p>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<p>读书写作，瞎折腾电脑<br>
-对政治有遥远的兴趣，对历史有遥远的兴趣；对经济有现时的兴趣，对计算机有现时的兴趣😁</p>
-<h2 id="联系我呀">📬 联系我呀</h2>
-<p>email：3426972712@qq.com</p>
 ]]></content>
     </entry>
 </feed>
