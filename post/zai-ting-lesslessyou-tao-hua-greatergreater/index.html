@@ -1,10 +1,15 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>再听《有桃花》 | Dream</title>
-<link rel="shortcut icon" href="https://lhymwm.github.io//favicon.ico?v=1579363661212">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="https://lhymwm.github.io//favicon.ico?v=1579364598868">
 <link rel="stylesheet" href="https://lhymwm.github.io//styles/main.css">
+
+
+<link rel="stylesheet" href="/media/css/pisces.css">
 
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -193,6 +198,7 @@
       </div>
     </div>
   
+
 </div>
         
       </div>
@@ -253,12 +259,13 @@
     this.classList.remove(SLIDE_UP_IN);
   });
 
-  let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
-  let hasFix = false;
 
-  if (!sidebarBody.classList.contains('muse')) {
+  if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+    let hasFix = false;
+    let scrollEl = document.querySelector('.main-continer');
+    let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
     window.addEventListener('scroll', function(e) {
-    if (document.body.scrollTop >= limitTop) {
+    if (document.scrollingElement.scrollTop >= limitTop) {
       if (!hasFix) {
         sidebar.classList.add('sidebar-fixed');
         hasFix = true;
@@ -359,7 +366,7 @@
 谁是谁的桃花<br>
 有桃花 有桃花 有机遇</p>
 </blockquote>
-<p>感觉自己有时会突然陷入一种自以为的美好中，不过我还得好好努力。想去熟悉一个人，对一个人好，本身应该是不存在错的。但是，在对方没有兴趣深交的情况下，很多工作都是徒劳。那就默默地继续熟悉罢！其实，许嵩歌词里的那句“可我知道他们都不懂你”，我觉得才是最重要的，一种对对方深刻的理解才是支持两个人相处长久最需要的东西。</p>
+<p>感觉自己有时会突然陷入一种自以为的美好中，不过我还得好好努力。想去熟悉一个人，对一个人好，本身应该是不存在错的。但是，在对方没有兴趣深交的情况下，很多工作都是徒劳。~~那就默默地继续熟悉罢！~~其实，许嵩歌词里的那句“可我知道他们都不懂你”，我觉得才是最重要的，一种对对方深刻的理解才是支持两个人相处长久最需要的东西。</p>
 
               </div>
               <div class="post-footer">
@@ -386,14 +393,14 @@
     <div class="nav-prev">
       
         <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" href="https://lhymwm.github.io/post/ao-man-yu-pian-jian">傲慢与偏见</a class="nav-pc-next">
-        <a class="nav-mobile-prev" href="https://lhymwm.github.io/post/ao-man-yu-pian-jian">上一篇</a>
+        <a class="nav-pc-next" title="傲慢与偏见" href="https://lhymwm.github.io/post/ao-man-yu-pian-jian">傲慢与偏见</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="傲慢与偏见" href="https://lhymwm.github.io/post/ao-man-yu-pian-jian">上一篇</a>
       
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" href="https://lhymwm.github.io/post/huan-yan-jing">换眼镜</a>
-        <a class="nav-mobile-next" href="https://lhymwm.github.io/post/huan-yan-jing">下一篇</a>
+        <a class="nav-pc-next" title="换眼镜" href="https://lhymwm.github.io/post/huan-yan-jing">换眼镜</a>
+        <a class="nav-mobile-next" title="换眼镜" href="https://lhymwm.github.io/post/huan-yan-jing">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>
@@ -445,6 +452,7 @@
     </span>
     
   </div>
+  
 </div>
 
 <script>
@@ -474,13 +482,13 @@
   }
 
   back2Top.addEventListener("click", function(e) {
-    scrollAnimation(body.scrollTop, 0);
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
     e.stopPropagation();
     return false;
   });
   
   window.addEventListener('scroll', function(e) {
-    let percent = body.scrollTop / (body.scrollHeight - body.clientHeight) * 100;
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
     if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
       back2Top.classList.add('back-top-active');
     }
