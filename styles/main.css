@@ -1971,4 +1971,6 @@ body {
     }
     .mist .site-title i {
       background: #FFF;
+    }.box-shadow-wrapper {
+      box-shadow: none !important;
     }
