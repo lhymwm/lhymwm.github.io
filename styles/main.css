@@ -1999,4 +1999,6 @@ body {
     }
     .mist .site-title i {
       background: #FFF;
+    }.box-shadow-wrapper {
+      padding: 10px;
     }
