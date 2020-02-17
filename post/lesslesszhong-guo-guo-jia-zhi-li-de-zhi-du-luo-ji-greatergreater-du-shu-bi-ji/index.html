@@ -6,7 +6,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="stay hungry, stay foolish">
 <meta name="theme-color" content="#000">
-<title>关于宁静 | Dream</title>
+<title>《中国国家治理的制度逻辑》读书笔记 | Dream</title>
 <link rel="shortcut icon" href="https://lhymwm.github.io//favicon.ico?v=1581962134862">
 <link rel="stylesheet" href="https://lhymwm.github.io//styles/main.css">
 
@@ -25,8 +25,8 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
 
-    <meta name="description" content="关于宁静" />
-    <meta name="keywords" content="生活" />
+    <meta name="description" content="《中国国家治理的制度逻辑》读书笔记" />
+    <meta name="keywords" content="政治,读书" />
   </head>
   <body>
     <div class="head-top-line"></div>
@@ -139,9 +139,17 @@
 <div class="sidebar">
     <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
       
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
       <div class="sidebar-body gemini" id="sidebar_body">
         
-          
+          <div class="post-side-meta" id="post_side_meta">
+            
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="https://lhymwm.github.io//images/avatar.png"/>
@@ -203,6 +211,187 @@
 
 
 </div>
+          </div>
+          <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+            <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number auto" id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E7%BB%93%E8%AF%AD-%E4%B8%AD%E5%9B%BD%E5%9B%BD%E5%AE%B6%E6%B2%BB%E7%90%86%E7%9A%84%E5%88%B6%E5%BA%A6%E9%80%BB%E8%BE%91">结语 中国国家治理的制度逻辑</a>
+<ul>
+<li><a href="#%E7%A8%B3%E5%AE%9A-%E5%81%9C%E6%BB%9E%E4%B8%8E%E5%BE%AA%E7%8E%AF%E4%B8%AD%E5%8D%8E%E5%B8%9D%E5%9B%BD%E5%9B%BD%E5%AE%B6%E6%B2%BB%E7%90%86%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%89%B9%E5%BE%81">稳定、停滞与循环：中华帝国国家治理的基本特征</a></li>
+<li><a href="#%E5%BD%93%E4%BB%A3%E4%B8%AD%E5%9B%BD%E7%9A%84%E5%9B%BD%E5%AE%B6%E6%B2%BB%E7%90%86%E9%80%BB%E8%BE%91%E5%BB%B6%E7%BB%AD%E4%B8%8E%E8%BD%AC%E5%9E%8B">当代中国的国家治理逻辑：延续与转型</a></li>
+<li><a href="#%E5%9B%BD%E5%AE%B6%E6%B2%BB%E7%90%86%E7%9A%84%E6%8C%91%E6%88%98%E5%92%8C%E6%9C%AA%E6%9D%A5">国家治理的挑战和未来</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+
+<script>
+
+let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1; 
+let active = 'active-show', activeClass = 'active-current';
+let tocWrapper = document.querySelector('#toc_wrapper');
+let tocContent = tocWrapper.children[0];
+let autoNumber = tocWrapper&&tocWrapper.classList.contains('auto-number');
+
+function addTocNumber(elem, deep) {
+  if (!elem) {
+    return;
+  }
+  let prop = elem.__proto__;
+
+  if (prop === HTMLUListElement.prototype) {
+    for (let i = 0; i < elem.children.length; i++) {
+      addTocNumber(elem.children[i], deep + (i + 1) + '.');
+    }
+  } else if (prop === HTMLLIElement.prototype) {
+    // 保存li元素
+    lList.push(elem);
+    for (let i = 0; i < elem.children.length; i++) {
+      let cur = elem.children[i];
+      if (cur.__proto__ === HTMLAnchorElement.prototype) {
+        if (autoNumber) {
+          cur.text =  deep + ' ' + cur.text;
+        }
+      } else if (cur.__proto__ === HTMLUListElement.prototype) {
+        addTocNumber(cur, deep);
+      }
+    }
+  }
+}
+
+
+document.addEventListener('scroll', function(e) {
+  if (lList.length <= 0) {
+    return;
+  }
+  let scrollTop = document.scrollingElement.scrollTop;
+  let dir;
+
+  if (lastTop - scrollTop > 0) {
+    dir = 'up';
+  } else {
+    dir = 'down';
+  }
+
+  lastTop = scrollTop;
+  if (scrollTop <= 0) {
+    if (lastIndex >= 0 && lastIndex < hList.length) {
+      lList[lastIndex].classList.remove(activeClass);
+    }
+    return;
+  }
+
+  let current = 0, hasFind = false;
+  for (let i = 0; i < hList.length; i++) {
+    if (hList[i].offsetTop > scrollTop) {
+      current = i;
+      hasFind = true;
+      break;
+    }
+  }
+  if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+    current = hList.length - 1;
+  } else {
+    current--;
+  }
+  if (dir === 'down') {
+    if (current > lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex) 
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  } else {
+    if (current < lastIndex) {
+      addActiveClass(current);
+      removeActiveClass(lastIndex);
+      lastIndex = current;
+      removeParentActiveClass();
+      lList[current] && addActiveLiElemment(lList[current].parentElement,tocContent);
+    }
+  }
+});
+
+function removeParentActiveClass() {
+  let parents = tocContent.querySelectorAll('.'+active)
+  parents.forEach(function(elem) {
+    elem.classList.remove(active);
+  });
+}
+
+function addActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.add(activeClass);
+  }
+}
+
+function removeActiveClass(index) {
+  if (index >= 0 && index < hList.length) {
+    lList[index].classList.remove(activeClass);
+  }
+}
+
+function addActiveLiElemment(elem, parent) {
+  if (!elem || elem === parent) {
+    return;
+  } else {
+    if (elem.__proto__ === HTMLLIElement.prototype) {
+      elem.classList.add(active);
+    }
+    addActiveLiElemment(elem.parentElement, parent);
+  }
+}
+
+function showToc() {
+  if (tocWrapper) {
+    postBody = document.querySelector('#post_body');
+    for (let i = 0; i < postBody.children.length; i++) {
+      if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+        hList.push(postBody.children[i]);
+      }
+    }
+    if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+    } else if (tocWrapper.classList.contains('no_compress')){
+      tocContent.classList.add('expanded');
+    } else {
+      if (hList.length > 10) {
+        active = 'active-hidden'
+        tocContent.classList.add('closed');
+      } else {
+        tocContent.classList.add('expanded');
+      }
+    }
+  }
+}
+addTocNumber(tocContent, '');
+
+window.addEventListener('load', function() {
+  showToc();
+  document.querySelector('#sidebar').style='display: block;';
+  tocWrapper.classList.add('toc-active');
+  setTimeout(function() {
+    if ("createEvent" in document) {
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("scroll", false, true);
+      document.dispatchEvent(evt);
+    }
+    else {
+      document.fireEvent("scroll");
+    }
+  }, 500)
+})
+
+</script>
+          </div>
         
       </div>
     </div>
@@ -288,8 +477,8 @@
               <div class="article-box">
     <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://lhymwm.github.io/post/guan-yu-ning-jing">
-      关于宁静
+    <a class="post-title-link" href="https://lhymwm.github.io/post/lesslesszhong-guo-guo-jia-zhi-li-de-zhi-du-luo-ji-greatergreater-du-shu-bi-ji">
+      《中国国家治理的制度逻辑》读书笔记
     </a>
   </h1>
   <div class="post-meta">
@@ -297,7 +486,7 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2019-12-14</span>
+      <span>2020-02-18</span>
     </span>
     
       <span class="meta-item">
@@ -306,8 +495,14 @@
         <span class="pc-show">分类于</span>
         
           
-            <a href="https://lhymwm.github.io/tag/KYq-1oe0G">
-              <span>生活</span>
+            <a href="https://lhymwm.github.io/tag/dlaCxCZBE">
+              <span>政治</span>
+            </a>、
+          
+        
+          
+            <a href="https://lhymwm.github.io/tag/-0e_Ljztt">
+              <span>读书</span>
             </a>
           
         
@@ -316,18 +511,46 @@
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>1分钟</span>
+      <span>4分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>140<span class="pc-show">字数</span></span>
+      <span>1111<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
 </div>
               <div class="post-body next-md-body" id="post_body">
-                <p>最近一段时间自己内心确实是有些浮躁了，因此也没有放下心来安静地读读书。那种习惯性地一个人来看看书，享受专注的时光才是好的。沉浸在一个人的世界里，可以忘记时间，进入所谓的心流状态。心灵得到的舒展与安宁大抵才是最宝贵的，其他事物都藉由此而变得重要。所以，是时候该放下心来专注于自己该做的了，回归宁静，回归吾乡。</p>
+                <figure data-type="image" tabindex="1"><img src="https://tva1.sinaimg.cn/large/0082zybply1gbzxhdqlljj30u016stbf.jpg" alt="《中国国家治理的制度逻辑》" loading="lazy"></figure>
+<h2 id="结语-中国国家治理的制度逻辑">结语 中国国家治理的制度逻辑</h2>
+<h3 id="稳定-停滞与循环中华帝国国家治理的基本特征">稳定、停滞与循环：中华帝国国家治理的基本特征</h3>
+<blockquote>
+<p>从西汉到清末,中国社会都是由上、中、下三个层次整合而成的。社会上层是以王权为中心的大一统<strong>官僚机构</strong>,中层是<strong>士族缙绅</strong>对地方和农村事务的管理,下层是<strong>宗法家族组织</strong>。</p>
+</blockquote>
+<ul>
+<li>从“一统体制与有效治理”间矛盾到“国家权力与官僚权力”间紧张</li>
+<li>逐级分权治理制度</li>
+<li>“收放松紧”调节相济的治理机制</li>
+<li>国家治理逻辑再审视：效率与稳定之间的矛盾</li>
+</ul>
+<h3 id="当代中国的国家治理逻辑延续与转型">当代中国的国家治理逻辑：延续与转型</h3>
+<p>当代中国在许多方面延续了中华帝国的治理逻辑,但在另外一些方面也有了重要转变。</p>
+<ul>
+<li>封闭与开放。</li>
+<li>组织制度。在当代中国<strong>卡理斯玛权威</strong>对国家建设“奇迹”的追求推动了严密组织形式的建立,为执政党和官僚权力之间提供了新的纽带。</li>
+<li>观念制度。</li>
+</ul>
+<h3 id="国家治理的挑战和未来">国家治理的挑战和未来</h3>
+<ul>
+<li>官僚体制化是近年来中国社会演变的一个大趋势。</li>
+<li>建立<strong>法治国家</strong>的困境。第一,司法体制的有效运行需要一系列关于立法、司法、监察和执法领域中的变革,这意味着一个新的、独立的权威体系。第二,独立的司法裁决又对地方政府解决实际问题的能力加以刚性约束,从而限制了有效治理的灵活性。</li>
+<li><strong>理性化官僚政府</strong>发展缓慢。</li>
+<li><strong>专业化过程</strong>在中国社会发展中举步维艰。在现代社会中,专业化过程成为培育<strong>专业精神、产生共享观念</strong>的一个重要渊源。专业化发展需要有其各自的专业化过程,从教育、培训、职业自律到专业协会和杂志等一系列制度。然而这些专业化过程有相对独立性,形成各自领域中的专业权威,难以纳入一统体制的逻辑之中,甚至形成对一统体制的挑战,当一个专业人员(如教授)必须按照政治动员的需要来参加各种教化活动时,他(她)必须把自己的专业价值判断束之高阁,去扮演这一仪式化过程的司仪角色。如此这般,专业化过程不断被打断、被虚化,成为象征性符号,而不是塑造专业化的基本价值和共享观念。</li>
+<li>从根本上解决<strong>权威体制</strong>与<strong>有效治理</strong>之间的矛盾,需要在制度安排上另辟蹊径。其一是通过新的治理模式来减缓、转化这一矛盾。例如,通过<strong>制度化的途径将权力和利益</strong>分而治之。其二是减少各级政府特别是中央政府的一些管理功能,<strong>缩小“有效治理”的范围</strong>,以社会机制替代之。需要强调的是,<strong>权宜之计的分权或权力下放</strong>并不能使集权导致的种种困境迎刃而解(Treisman,2007) ,这一点在当代<strong>中国集权与放权</strong>间不断转换和震荡过程中已经显露无遗。</li>
+<li>可以预见,中国社会的<strong>多元化发展演变</strong>、<strong>各种社会力量组织能力</strong>与国家治理逻辑互动,将会成为中国发展的主要推动或制约力量,塑造国家治理未来的制度安排和发展方向。</li>
+<li>当代中国正处于一个寻求新的支配形式和新的合法性基础的过程中,逐步稳妥地走向<strong>法理权威</strong>、建立<strong>法治国家</strong>,这是执政党多年来提出的目标和制度建设的方向。这是一个上下求索、艰难漫长又令人充满憧憬的过程,其中<strong>执政党、官僚体制、民众</strong>三者关系的构建成为关键所在,特别是如何在法理权威的合法性基础上寻找和建立中国社会和民众所接受、认同的支配形式,建立相应的制度设施,在这个基础上重新构建国家、官僚体制、民众之间的权威关系。</li>
+</ul>
 
               </div>
               <div class="post-footer">
@@ -338,7 +561,7 @@
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://lhymwm.github.io/post/guan-yu-ning-jing" title="关于宁静">关于宁静</a>
+      <a href="https://lhymwm.github.io/post/lesslesszhong-guo-guo-jia-zhi-li-de-zhi-du-luo-ji-greatergreater-du-shu-bi-ji" title="《中国国家治理的制度逻辑》读书笔记">《中国国家治理的制度逻辑》读书笔记</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -347,21 +570,19 @@
   </ul>
   <div class="tags">
     
-      <a href="https://lhymwm.github.io/tag/KYq-1oe0G"># 生活</a>
+      <a href="https://lhymwm.github.io/tag/dlaCxCZBE"># 政治</a>
+    
+      <a href="https://lhymwm.github.io/tag/-0e_Ljztt"># 读书</a>
     
   </div>
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="欣赏的人" href="https://lhymwm.github.io/post/yi-xie-xin-shang-de-ren-wu">欣赏的人</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="欣赏的人" href="https://lhymwm.github.io/post/yi-xie-xin-shang-de-ren-wu">上一篇</a>
-      
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="一生只够爱一人" href="https://lhymwm.github.io/post/yi-sheng-zhi-gou-ai-yi-ren">一生只够爱一人</a>
-        <a class="nav-mobile-next" title="一生只够爱一人" href="https://lhymwm.github.io/post/yi-sheng-zhi-gou-ai-yi-ren">下一篇</a>
+        <a class="nav-pc-next" title="《李光耀观天下》读书笔记" href="https://lhymwm.github.io/post/lesslessli-guang-yao-guan-tian-xia-greatergreater-du-shu-bi-ji">《李光耀观天下》读书笔记</a>
+        <a class="nav-mobile-next" title="《李光耀观天下》读书笔记" href="https://lhymwm.github.io/post/lesslessli-guang-yao-guan-tian-xia-greatergreater-du-shu-bi-ji">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>
