@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>Dream</title>
-    <updated>2020-02-23T06:49:31.731Z</updated>
+    <updated>2020-02-23T06:55:41.711Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -11,13 +11,26 @@
     <icon>https://lhymwm.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dream</rights>
     <entry>
+        <title type="html"><![CDATA[每周分享]]></title>
+        <id>https://lhymwm.github.io/post/mei-zhou-fen-xiang/</id>
+        <link href="https://lhymwm.github.io/post/mei-zhou-fen-xiang/">
+        </link>
+        <updated>2020-02-23T06:52:37.000Z</updated>
+        <content type="html"><![CDATA[<p>这里记录我一周读过的或者看过的觉着有意思的信息。</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[如何独立思考🤔]]></title>
         <id>https://lhymwm.github.io/post/ru-he-du-li-si-kao/</id>
         <link href="https://lhymwm.github.io/post/ru-he-du-li-si-kao/">
         </link>
         <updated>2020-02-22T15:42:40.000Z</updated>
-        <content type="html"><![CDATA[<p><em>本文整理自网络，如有侵权，请留言或者邮件博主删除</em><br>
+        <summary type="html"><![CDATA[<p><em>声明：本文整理自网络，如有侵权，请留言或者邮件博主删除。</em><br>
 “<strong>独立</strong>”是“<strong>自由</strong>”的前提，没有“<strong>独立思考</strong>”就没有“<strong>思想自由</strong>”🤔。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><em>声明：本文整理自网络，如有侵权，请留言或者邮件博主删除。</em><br>
+“<strong>独立</strong>”是“<strong>自由</strong>”的前提，没有“<strong>独立思考</strong>”就没有“<strong>思想自由</strong>”🤔。</p>
+<!-- more -->
 <h2 id="1大脑的两种运行机制">1.大脑的两种运行机制</h2>
 <p>大脑有两种运作机制，系统一和系统二，系统一擅长的领域是无意识的活动，而相对不擅长（通常只能靠系统二完成的）通常是有意识的活动，并需要在一段时间内保持注意力集中。面对越苦难的任务，<strong>注意力</strong>集中的程度就越高。而为了保持注意力高度集中，就需要动用<strong>自控力</strong>。而为了长久地维持自控力，人体就需要消耗<strong>能量</strong>。自控力无疑是一件宝贵资源。自控力不仅与能量有关，而且也受个人情绪、睡眠、醉酒等的影响。</p>
 <h3 id="11两个系统的差异">1.1两个系统的差异</h3>
@@ -232,19 +245,6 @@
 <li>如果说清晰、准确、有逻辑的思维是走向观念革新的第一步，那么观念的革新首先体现在语言和表达上。就像奥威尔所说的，抵制不良英语并非是件无足轻重的小事，也不只是职业作家所该关心的事。同样的，抵制不良中文也不是件无足轻重的小事。作为知识人，我们无力改变现实的秩序，但至少可以通过改变语言的秩序来间接地改变现实的秩序。 —— 周濂</li>
 <li></li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[欣赏的人]]></title>
-        <id>https://lhymwm.github.io/post/yi-xie-xin-shang-de-ren-wu/</id>
-        <link href="https://lhymwm.github.io/post/yi-xie-xin-shang-de-ren-wu/">
-        </link>
-        <updated>2019-12-16T10:41:49.000Z</updated>
-        <content type="html"><![CDATA[<p>自由主义者：胡适、李敖<br>
-音乐人:许嵩<br>
-词人：纳兰性德<br>
-主持人：窦文涛<br>
-···长期更新</p>
 ]]></content>
     </entry>
 </feed>
