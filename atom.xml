@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>Dream</title>
-    <updated>2020-02-23T06:55:41.711Z</updated>
+    <updated>2020-02-26T07:16:08.586Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -16,7 +16,8 @@
         <link href="https://lhymwm.github.io/post/mei-zhou-fen-xiang/">
         </link>
         <updated>2020-02-23T06:52:37.000Z</updated>
-        <content type="html"><![CDATA[<p>这里记录我一周读过的或者看过的觉着有意思的信息。</p>
+        <content type="html"><![CDATA[<p>刊首语：<br>
+这里记录我一周读过的或者看过的觉着有意思的信息。</p>
 ]]></content>
     </entry>
     <entry>
