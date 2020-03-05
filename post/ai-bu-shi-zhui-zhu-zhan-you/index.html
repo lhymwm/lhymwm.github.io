@@ -7,7 +7,7 @@
 <meta name="description" content="stay hungry, stay foolish">
 <meta name="theme-color" content="#000">
 <title>爱不是追逐占有 | Dream</title>
-<link rel="shortcut icon" href="https://lhymwm.github.io//favicon.ico?v=1583166548722">
+<link rel="shortcut icon" href="https://lhymwm.github.io//favicon.ico?v=1583404578731">
 <link rel="stylesheet" href="https://lhymwm.github.io//styles/main.css">
 
 <link rel="stylesheet" href="/media/css/gemini.css">
@@ -51,7 +51,7 @@
           
         </div>
         
-          <p class="subtitle">stay hungry, stay foolish</p>
+          <p class="subtitle">精于心，简于形</p>
         
       </div>
       <nav class="site-nav" id="site_nav">
@@ -137,16 +137,25 @@
           
 
 <div class="sidebar">
+  
     <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
       
       <div class="sidebar-body gemini" id="sidebar_body">
         
           
+            
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="https://lhymwm.github.io//images/avatar.png"/>
     <p class="site-author-name">Dream</p>
-    <p class="site-description right-motion">stay hungry, stay foolish</p>
+    <p class="site-description right-motion">stay hungry，stay foolish</p>
   </div>
   <div class="sidebar-item side-item-stat right-motion">
     <div class="sidebar-item-box">
@@ -171,11 +180,7 @@
   </div>
   
     
-      <div class="sidebar-item">
-        <span class="site-item-rss">
-            <i class="fa fa-rss"></i>
-            <a href="https://lhymwm.github.io//atom.xml" target="_blank">RSS</a>
-        </span>
+      <div class="sidebar-item" style="border-top: 1px dotted #ccc; margin-top: 10px;">
       </div>
     
   
@@ -185,17 +190,10 @@
         
           
             <a href="https://www.douban.com/people/151166631/">
-              <i class="fa https://img3.doubanio.com/f/frodo/144e6fb7d96701944e7dbb1a9bad51bdb1debe29/pics/app/logo.png"></i> 豆瓣
+              <i class="fa fa-globe"></i> 豆瓣
             </a>
           
         
-        
-          
-            <a class="social-img" href="#">
-              <img src="" />
-              <i class="fa "></i> 
-            </a>
-          
         
       </div>
     </div>
@@ -203,9 +201,11 @@
 
 
 </div>
+          
         
       </div>
     </div>
+  
 </div>
 <script>
   const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
@@ -258,35 +258,35 @@
     showElement.classList.add(SIDEBAR_BODY_ACTIVE);
   }
 
-  postToc.addEventListener('transitionend', function() {
+  postToc && postToc.addEventListener('transitionend', function() {
     this.classList.remove(SLIDE_UP_IN);
   });
 
-
-  if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
-    let hasFix = false;
-    let scrollEl = document.querySelector('.main-continer');
-    let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
-    window.addEventListener('scroll', function(e) {
-    if (document.scrollingElement.scrollTop >= limitTop) {
-      if (!hasFix) {
-        sidebar.classList.add('sidebar-fixed');
-        hasFix = true;
-      }
-    } else {
-      if (hasFix) {
-        sidebar.classList.remove('sidebar-fixed');
-        hasFix = false;
-      }
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
     }
-  });
   }
   
 </script>
           <div class="section-box box-shadow-wrapper">
             <div class="section bg-color post post-page">
-              <div class="article-box">
-    <header class="post-header">
+              <header class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://lhymwm.github.io/post/ai-bu-shi-zhui-zhu-zhan-you/">
       爱不是追逐占有
@@ -298,10 +298,10 @@
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
       <span>2019-12-03</span>
+      <span class="post-meta-divider pc-show">|</span>
     </span>
     
       <span class="meta-item">
-        <span class="post-meta-divider pc-show">|</span>
         <i class="fa fa-folder-o"></i>
         <span class="pc-show">分类于</span>
         
@@ -323,9 +323,9 @@
       <i class="fa fa-file-word-o"></i>
       <span>154<span class="pc-show">字数</span></span>
     </span>
+    
   </div>
 </header>
-</div>
               <div class="post-body next-md-body" id="post_body">
                 <p>虽然没和任何人爬过几座春秋，也没有亲身彻头彻尾地领悟到：爱不是追逐占有。<br>
 但是，我还是愿意在一种称作“喜欢”的感觉面前选择一种近乎于上帝的视角————相信爱不是追逐占有，愿给爱的人以自由。从此这样，便不存在突然的欢喜抑或突然的失落。我相信，持久或者深沉的“喜欢”都当是内心的一种温柔且宁静的释放。<br>
@@ -370,8 +370,9 @@
   </div>
 </div>
               
-                
-                  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                \
+                  
+                    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
@@ -388,7 +389,8 @@
   })
   gitalk.render('gitalk-container')
 </script>
-                
+                  
+                  
                 
               
             </div>
@@ -398,7 +400,7 @@
       <div class="footer-box">
   <footer class="footer">
     <div class="copyright">
-      © 2019-2020 <i class="fa fa-heart"></i> HsxyHao
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By HsxyHao
     </div>
     <div class="poweredby">
       Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
@@ -550,6 +552,7 @@
 
   // 代码高亮
   hljs.initHighlightingOnLoad();
+
 </script>
     </div>
   </body>
