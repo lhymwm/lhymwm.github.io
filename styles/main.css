@@ -1898,7 +1898,13 @@ body {
         width: 960px;
         margin: 0 auto;
       }
-    body {
+    @font-face {
+      font-family: 'FZFSK';
+      src: url('/media/fonts/FZFSK.ttf');
+    }
+    * {
+        font-family: 'FZFSK';
+    }body {
       color: #555;
     }
     .next-md-body {
