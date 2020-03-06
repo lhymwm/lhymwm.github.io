@@ -1898,13 +1898,7 @@ body {
         width: 960px;
         margin: 0 auto;
       }
-    @font-face {
-      font-family: 'FZSSK';
-      src: url('/media/fonts/FZSSK.ttf');
-    }
-    * {
-        font-family: 'FZSSK';
-    }body {
+    body {
       color: #555;
     }
     .next-md-body {
