@@ -1899,11 +1899,11 @@ body {
         margin: 0 auto;
       }
     @font-face {
-      font-family: 'FZFSK1';
-      src: url('/media/fonts/FZFSK1.ttf');
+      font-family: 'FZSSK';
+      src: url('/media/fonts/FZSSK.ttf');
     }
     * {
-        font-family: 'FZFSK1';
+        font-family: 'FZSSK';
     }body {
       color: #555;
     }
