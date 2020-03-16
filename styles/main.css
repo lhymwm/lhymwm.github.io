@@ -1899,11 +1899,11 @@ body {
         margin: 0 auto;
       }
     @font-face {
-      font-family: 'SourceHanSerifCN-Regular';
-      src: url('/media/fonts/SourceHanSerifCN-Regular.ttf');
+      font-family: 'FZFSK';
+      src: url('/media/fonts/FZFSK.ttf');
     }
     * {
-        font-family: 'SourceHanSerifCN-Regular';
+        font-family: 'FZFSK';
     }body {
       color: #555;
     }
