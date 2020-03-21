@@ -1898,13 +1898,7 @@ body {
         width: 960px;
         margin: 0 auto;
       }
-    @font-face {
-      font-family: '思源宋体M';
-      src: url('/media/fonts/思源宋体M.ttf');
-    }
-    * {
-        font-family: '思源宋体M';
-    }body {
+    body {
       color: #555;
     }
     .next-md-body {
