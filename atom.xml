@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-03-21T12:53:43.780Z</updated>
+    <updated>2020-03-21T15:56:47.205Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -10,6 +10,68 @@
     <logo>https://lhymwm.github.io/images/avatar.png</logo>
     <icon>https://lhymwm.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 以梦为马</rights>
+    <entry>
+        <title type="html"><![CDATA[资料收集]]></title>
+        <id>https://lhymwm.github.io/post/guan-yu-zhong-wen-zi-you-pai-xue-zhe/</id>
+        <link href="https://lhymwm.github.io/post/guan-yu-zhong-wen-zi-you-pai-xue-zhe/">
+        </link>
+        <updated>2020-03-21T13:08:15.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="资料搜集的重要意义">资料搜集的重要意义</h1>
+<ul>
+<li>学会有效的资料搜集是报告撰写的的最核心环节之一，也是最锻炼自学能力的环节。</li>
+<li>一个合格的行业研究员，需要在1-2周内对一个行业从完全不了解到比较内行。这是建立在强大的资料搜索、信息整理和消化的能力基础上。</li>
+<li>首先报告中所有的论据都是从自己搜索的资料中来，而所有的观点都建立在对于现有资料的全方位了解和深度思考基础上。作为一个优秀研究员，在写行业报告时应该需要把所有能查到的资料都读一遍；而作为优秀的实习生，在写报告之前，至少需要对相关行业、公司中比较重要的资料都通读一遍。如果一个报告撰写时间1个月左右，我的建议是资料阅读和思考至少需要花10天以上的时间。</li>
+<li>个人建议学会使用印象笔记。因为行业工作每天需要接受海量的信息，将资料归类整理必不可少。印象笔记是一个非常适合资料归类整理的软件，个人认为最好的一点在于可以对信息进行分层级的归类，因为成体系的将信息吸收、在大脑里面建立一个系统性框架才是有效的学习。例如我会首先对医药板块各个子版块建立分组。</li>
+</ul>
+<h1 id="资料来源">资料来源</h1>
+<h2 id="研报">研报</h2>
+<ul>
+<li>慧博</li>
+<li>Wind</li>
+<li>建议看中信家电组、汽车、商贸零售的报告，很多都是当年新财富白金分析师带出来</li>
+<li>医药板块，看看海通、兴业、国君、银河、国金等报告，但总体质量不高，只建议参考，中信对于报告的要求跟其他券商比是最高的。</li>
+</ul>
+<h2 id="各大医药网站">各大医药网站</h2>
+<ul>
+<li>雪球：非常好的网站有些分析很深入，但信息比较琐碎，垃圾信息也很多，建议慢慢积累，找到一些写的比较好的作者关注。</li>
+<li>数据类<br>
+<img src="https://tva1.sinaimg.cn/large/00831rSTly1gd1y3d7yg4j30m40z2gs1.jpg" alt="数据库" loading="lazy"></li>
+<li>医药资讯类<br>
+<img src="https://tva1.sinaimg.cn/large/00831rSTly1gd1y5rjsl6j30m80sujxg.jpg" alt="医药资讯类" loading="lazy"></li>
+<li>政策类<br>
+<img src="https://tva1.sinaimg.cn/large/00831rSTly1gd1ybxhrqbj30hc0jcad7.jpg" alt="政策类" loading="lazy"></li>
+</ul>
+<h2 id="上市公司公告">上市公司公告</h2>
+<p>最第一手的资料；包括各种定期报告，收购、增发等。</p>
+<h2 id="卫计委统计年鉴">卫计委统计年鉴</h2>
+<p>写报告的神器，需要非常熟悉。</p>
+<h2 id="wind最重要的工具">Wind：最重要的工具</h2>
+<ul>
+<li>学会使用excel的wind插件，熟悉wind函数，基本所有常用数据都可以调出来。在excel利用wind函数，比在wind中直接浏览数据的好处在于可以利用公式构建任意勾稽关系，构建自己的分析体系。建议大家需要逐步熟悉wind。</li>
+<li>其他常用功能：
+<ul>
+<li>公司数据：公司按F9</li>
+<li>股票标签的“多维数据”“专题统计”模块比较常用</li>
+<li>宏观标签的经济数据库，尤其是行业数据的医药生物</li>
+</ul>
+<h2 id="google">Google</h2>
+<h2 id="文献中国知网等">文献：中国知网等</h2>
+<h2 id="咨询公司研报各大咨询公司网站">咨询公司研报：各大咨询公司网站</h2>
+<img src="https://tva1.sinaimg.cn/large/00831rSTly1gd1zk98gl6j30m60hqjuq.jpg" alt="咨询公司研报" loading="lazy">
+<h2 id="其他">其他</h2>
+<ul>
+<li>药智网：然后临床实验结果（包括临床几期进展，审批进度） 编号是CTR开头</li>
+<li>Clinicaltrials：国外临床进度     编号是N开头</li>
+<li>其他：Pdb、卫计委数据库、国家统计局、Wind、OECD health data（世界宏观数据）</li>
+<li>微信公众号：可以用搜狗来搜索相关推送，有些文章的质量还很高的</li>
+<li>公司官网：有一些概况、产品介绍、在研产品线、发展历史等信息</li>
+</ul>
+</li>
+</ul>
+<h1 id="注意事项">注意事项</h1>
+<p>数据一定要严谨准确，追本溯源，资料来源要标清楚出处。如果是文献或者是个人、机构的出版物，务必标明作者或机构。如果是文献，务必标明期刊名、期刊号，如下。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[医学中的人文]]></title>
         <id>https://lhymwm.github.io/post/yi-xue-zhong-de-ren-wen/</id>
@@ -134,43 +196,6 @@
 <p>更多的快乐、更充实的生活、兴趣与工作的结合。</p>
 <h2 id="从兴趣聊到多巴胺和心流">从兴趣聊到多巴胺和心流</h2>
 <p>心流指的是从事某个活动时，达到忘我的境界。多巴胺和心流都有助于消除认知负担。消除这种负担后，就更容易进行长久且复杂的思考。于是在这个领域的能力提升就会更显著。如此一来兴趣会被进一步强化，这就是由兴趣而产生的良性正反馈。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[《中国国家治理的制度逻辑》读书笔记]]></title>
-        <id>https://lhymwm.github.io/post/lesslesszhong-guo-guo-jia-zhi-li-de-zhi-du-luo-ji-greatergreater-du-shu-bi-ji/</id>
-        <link href="https://lhymwm.github.io/post/lesslesszhong-guo-guo-jia-zhi-li-de-zhi-du-luo-ji-greatergreater-du-shu-bi-ji/">
-        </link>
-        <updated>2020-02-17T17:53:21.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://tva1.sinaimg.cn/large/00831rSTly1gcfq0taajbj30u016stbf.jpg" alt="《中国国家治理的制度逻辑》" loading="lazy"></figure>
-<h1 id="结语-中国国家治理的制度逻辑">结语 中国国家治理的制度逻辑</h1>
-<h2 id="稳定-停滞与循环中华帝国国家治理的基本特征">稳定、停滞与循环：中华帝国国家治理的基本特征</h2>
-<blockquote>
-<p>从西汉到清末,中国社会都是由上、中、下三个层次整合而成的。社会上层是以王权为中心的大一统<strong>官僚机构</strong>,中层是<strong>士族缙绅</strong>对地方和农村事务的管理,下层是<strong>宗法家族组织</strong>。</p>
-</blockquote>
-<ul>
-<li>从“一统体制与有效治理”间矛盾到“国家权力与官僚权力”间紧张</li>
-<li>逐级分权治理制度</li>
-<li>“收放松紧”调节相济的治理机制</li>
-<li>国家治理逻辑再审视：效率与稳定之间的矛盾</li>
-</ul>
-<h2 id="当代中国的国家治理逻辑延续与转型">当代中国的国家治理逻辑：延续与转型</h2>
-<p>当代中国在许多方面延续了中华帝国的治理逻辑,但在另外一些方面也有了重要转变。</p>
-<ul>
-<li>封闭与开放。</li>
-<li>组织制度。在当代中国<strong>卡理斯玛权威</strong>对国家建设“奇迹”的追求推动了严密组织形式的建立,为执政党和官僚权力之间提供了新的纽带。</li>
-<li>观念制度。</li>
-</ul>
-<h2 id="国家治理的挑战和未来">国家治理的挑战和未来</h2>
-<ul>
-<li>官僚体制化是近年来中国社会演变的一个大趋势。</li>
-<li>建立<strong>法治国家</strong>的困境。第一,司法体制的有效运行需要一系列关于立法、司法、监察和执法领域中的变革,这意味着一个新的、独立的权威体系。第二,独立的司法裁决又对地方政府解决实际问题的能力加以刚性约束,从而限制了有效治理的灵活性。</li>
-<li><strong>理性化官僚政府</strong>发展缓慢。</li>
-<li><strong>专业化过程</strong>在中国社会发展中举步维艰。在现代社会中,专业化过程成为培育<strong>专业精神、产生共享观念</strong>的一个重要渊源。专业化发展需要有其各自的专业化过程,从教育、培训、职业自律到专业协会和杂志等一系列制度。然而这些专业化过程有相对独立性,形成各自领域中的专业权威,难以纳入一统体制的逻辑之中,甚至形成对一统体制的挑战,当一个专业人员(如教授)必须按照政治动员的需要来参加各种教化活动时,他(她)必须把自己的专业价值判断束之高阁,去扮演这一仪式化过程的司仪角色。如此这般,专业化过程不断被打断、被虚化,成为象征性符号,而不是塑造专业化的基本价值和共享观念。</li>
-<li>从根本上解决<strong>权威体制</strong>与<strong>有效治理</strong>之间的矛盾,需要在制度安排上另辟蹊径。其一是通过新的治理模式来减缓、转化这一矛盾。例如,通过<strong>制度化的途径将权力和利益</strong>分而治之。其二是减少各级政府特别是中央政府的一些管理功能,<strong>缩小“有效治理”的范围</strong>,以社会机制替代之。需要强调的是,<strong>权宜之计的分权或权力下放</strong>并不能使集权导致的种种困境迎刃而解(Treisman,2007) ,这一点在当代<strong>中国集权与放权</strong>间不断转换和震荡过程中已经显露无遗。</li>
-<li>可以预见,中国社会的<strong>多元化发展演变</strong>、<strong>各种社会力量组织能力</strong>与国家治理逻辑互动,将会成为中国发展的主要推动或制约力量,塑造国家治理未来的制度安排和发展方向。</li>
-<li>当代中国正处于一个寻求新的支配形式和新的合法性基础的过程中,逐步稳妥地走向<strong>法理权威</strong>、建立<strong>法治国家</strong>,这是执政党多年来提出的目标和制度建设的方向。这是一个上下求索、艰难漫长又令人充满憧憬的过程,其中<strong>执政党、官僚体制、民众</strong>三者关系的构建成为关键所在,特别是如何在法理权威的合法性基础上寻找和建立中国社会和民众所接受、认同的支配形式,建立相应的制度设施,在这个基础上重新构建国家、官僚体制、民众之间的权威关系。</li>
-</ul>
 ]]></content>
     </entry>
 </feed>
