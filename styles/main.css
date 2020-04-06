@@ -2085,13 +2085,13 @@ body {
       color: #ff6b6b;
       border-bottom-color: #ff6b6b;
     }.bg-color {
-      background-color: #343a40fe;
+      background-color: #f1f3f5fe;
     }
       .site-meta {
-        background: #f1f3f5 !important;
+        background: #212529 !important;
       }
       .head-top-line {
-        background: #f1f3f5 !important;
+        background: #212529 !important;
       }
     .brand {
       background: #000000fe;
