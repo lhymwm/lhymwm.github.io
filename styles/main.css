@@ -1993,7 +1993,7 @@ body {
       }
     @font-face {
       font-family: '思源宋体M';
-      src: url('https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@1.31/media/fonts/思源宋体M.ttf');
+      src: url('/media/fonts/思源宋体M.ttf');
     }
     * {
         font-family: '思源宋体M';
@@ -2030,26 +2030,26 @@ body {
       color: #868e96;
       border-bottom: 1px solid #868e96;
     }a:hover {
-      color: #adb5bd;
+      color: #495057;
     }
     
     .archive-timeline-box .tag-node:hover::before {
-      background-color: #adb5bd;
+      background-color: #495057;
     }
     
     .markdownIt-TOC a:hover {
-      color: #adb5bd;
-      border-bottom-color: #adb5bd;
+      color: #495057;
+      border-bottom-color: #495057;
     }
 
     .next-md-body a:hover, .friends-box a:hover {
-      color: #adb5bd;
-      border-bottom-color: #adb5bd;
+      color: #495057;
+      border-bottom-color: #495057;
     }
       .nav-item a {
-        color:  #212529;
+        color:  #868e96;
       }.nav-item a:hover {
-        color: #868e96;
+        color: #212529;
       }.nav-item-active {
       background: #f1f3f5fe;
     }
