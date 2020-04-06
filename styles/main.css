@@ -1983,22 +1983,22 @@ body {
     .nav-toggle .line {
       background-color: #eee !important;
     }.header {
-        width: 960px;
+        width: 1080px;
         margin: 0 auto;
       }
 
       .main-continer {
-        width: 960px;
+        width: 1080px;
         margin: 0 auto;
       }
     body {
-      color: #555;
+      color: #343a40;
     }
     .next-md-body {
-      color: #555;
+      color: #343a40;
     }
     .next-md-body h1, .next-md-body h2 {
-      border-bottom-color: #555;
+      border-bottom-color: #343a40;
     }
     .archive-timeline-box::after, .tag-timeline-wrapper::after {
       background: #eeeeeefe;
@@ -2041,15 +2041,15 @@ body {
       border-bottom-color: #006CFF;
     }
       .nav-item a {
-        color:  #343a40;
+        color:  #f1f3f5;
       }.nav-item a:hover {
-        color: #e9ecef;
+        color: #343a40;
       }.nav-item-active {
-      background: #f8f9fafe;
+      background: #212529fe;
     }
 
     .nav-item:hover {
-      background: #f8f9fafe;
+      background: #212529fe;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2085,7 +2085,7 @@ body {
       color: #ff6b6b;
       border-bottom-color: #ff6b6b;
     }.bg-color {
-      background-color: #fffffffe;
+      background-color: #343a40fe;
     }
       .site-meta {
         background: #f1f3f5 !important;
