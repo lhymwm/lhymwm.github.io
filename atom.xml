@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-04-06T20:20:45.563Z</updated>
+    <updated>2020-04-06T20:41:18.675Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -11,34 +11,68 @@
     <icon>https://lhymwm.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 以梦为马</rights>
     <entry>
-        <title type="html"><![CDATA[资料收集]]></title>
-        <id>https://lhymwm.github.io/post/guan-yu-zhong-wen-zi-you-pai-xue-zhe/</id>
-        <link href="https://lhymwm.github.io/post/guan-yu-zhong-wen-zi-you-pai-xue-zhe/">
+        <title type="html"><![CDATA[hexo博客插入音频、视频]]></title>
+        <id>https://lhymwm.github.io/post/hexo-bo-ke-cha-ru-yin-pin-shi-pin/</id>
+        <link href="https://lhymwm.github.io/post/hexo-bo-ke-cha-ru-yin-pin-shi-pin/">
         </link>
-        <updated>2020-03-21T13:08:15.000Z</updated>
-        <content type="html"><![CDATA[<p>网易云音乐：</p>
+        <updated>2020-04-06T20:38:45.000Z</updated>
+        <content type="html"><![CDATA[<p>瞎折腾了一波，这下知道了如何插入音频和视频了。<br>
+网易云音乐：</p>
+<pre><code>&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=430 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=114389&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
+</code></pre>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=430 height=86 src="//music.163.com/outchain/player?type=2&id=114389&auto=0&height=66"></iframe>
 <p>B站视频只适配于电脑端：</p>
+<pre><code>&lt;iframe id=sbrxp src=&quot;//player.bilibili.com/player.html?aid=37399076&amp;bvid=BV1Vt411Q78x&amp;cid=65733298&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot; style=&quot;width: 640px; height: 430px; max-width: 100%&quot;&gt; &lt;/iframe&gt;
+</code></pre>
 <iframe id=sbrxp src="//player.bilibili.com/player.html?aid=37399076&bvid=BV1Vt411Q78x&cid=65733298&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>
 <p>B站视频适配于移动端和电脑端：</p>
+<pre><code>&lt;div style=&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;&gt;&lt;iframe 
+src=&quot;//player.bilibili.com/player.html?aid=39807850&amp;cid=69927212&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; 
+frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot; style=&quot;position: absolute; width: 100%; 
+height: 100%; left: 0; top: 0;&quot;&gt; &lt;/iframe&gt;&lt;/div&gt;
+</code></pre>
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe 
 src="//player.bilibili.com/player.html?aid=39807850&cid=69927212&page=1" scrolling="no" border="0" 
 frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
 height: 100%; left: 0; top: 0;"> </iframe></div>
 <p>B站视频适配于移动端和电脑端：</p>
+<pre><code>&lt;iframe id=&quot;spkj&quot; src=&quot;https://player.bilibili.com/player.html?aid=39807850&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot; width=100%&gt; &lt;/iframe&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;  
+document.getElementById(&quot;spkj&quot;).style.height=document.getElementById(&quot;spkj&quot;).scrollWidth*0.76+&quot;px&quot;;
+&lt;/script&gt;
+</code></pre>
 <iframe id="spkj" src="https://player.bilibili.com/player.html?aid=39807850&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=100%> </iframe>
 <script type="text/javascript">  
 document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth*0.76+"px";
 </script>
-<p>音乐直链：<br>
-<audio src="https://sharefs.yun.kugou.com/202004070308/0749bcc720954608a8a080214e76b4e1/G209/M0A/1A/0B/EQ4DAF6IMG6ANQ4cADO8tHkl4_s235.mp3" controls="controls"></audio></p>
-<h1 id="资料搜集的重要意义">资料搜集的重要意义</h1>
+<p>音乐直链：</p>
+<pre><code>&lt;audio src=&quot;https://sharefs.yun.kugou.com/202004070308/0749bcc720954608a8a080214e76b4e1/G209/M0A/1A/0B/EQ4DAF6IMG6ANQ4cADO8tHkl4_s235.mp3&quot; controls=&quot;controls&quot;&gt;&lt;/audio&gt;
+</code></pre>
+<p><audio src="https://sharefs.yun.kugou.com/202004070308/0749bcc720954608a8a080214e76b4e1/G209/M0A/1A/0B/EQ4DAF6IMG6ANQ4cADO8tHkl4_s235.mp3" controls="controls"></audio></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[资料收集]]></title>
+        <id>https://lhymwm.github.io/post/guan-yu-zhong-wen-zi-you-pai-xue-zhe/</id>
+        <link href="https://lhymwm.github.io/post/guan-yu-zhong-wen-zi-you-pai-xue-zhe/">
+        </link>
+        <updated>2020-03-21T13:08:15.000Z</updated>
+        <summary type="html"><![CDATA[<p>资料搜集的重要意义：</p>
 <ul>
 <li>学会有效的资料搜集是报告撰写的的最核心环节之一，也是最锻炼自学能力的环节。</li>
 <li>一个合格的行业研究员，需要在1-2周内对一个行业从完全不了解到比较内行。这是建立在强大的资料搜索、信息整理和消化的能力基础上。</li>
 <li>首先报告中所有的论据都是从自己搜索的资料中来，而所有的观点都建立在对于现有资料的全方位了解和深度思考基础上。作为一个优秀研究员，在写行业报告时应该需要把所有能查到的资料都读一遍；而作为优秀的实习生，在写报告之前，至少需要对相关行业、公司中比较重要的资料都通读一遍。如果一个报告撰写时间1个月左右，我的建议是资料阅读和思考至少需要花10天以上的时间。</li>
 <li>个人建议学会使用印象笔记。因为行业工作每天需要接受海量的信息，将资料归类整理必不可少。印象笔记是一个非常适合资料归类整理的软件，个人认为最好的一点在于可以对信息进行分层级的归类，因为成体系的将信息吸收、在大脑里面建立一个系统性框架才是有效的学习。例如我会首先对医药板块各个子版块建立分组。</li>
 </ul>
+]]></summary>
+        <content type="html"><![CDATA[<p>资料搜集的重要意义：</p>
+<ul>
+<li>学会有效的资料搜集是报告撰写的的最核心环节之一，也是最锻炼自学能力的环节。</li>
+<li>一个合格的行业研究员，需要在1-2周内对一个行业从完全不了解到比较内行。这是建立在强大的资料搜索、信息整理和消化的能力基础上。</li>
+<li>首先报告中所有的论据都是从自己搜索的资料中来，而所有的观点都建立在对于现有资料的全方位了解和深度思考基础上。作为一个优秀研究员，在写行业报告时应该需要把所有能查到的资料都读一遍；而作为优秀的实习生，在写报告之前，至少需要对相关行业、公司中比较重要的资料都通读一遍。如果一个报告撰写时间1个月左右，我的建议是资料阅读和思考至少需要花10天以上的时间。</li>
+<li>个人建议学会使用印象笔记。因为行业工作每天需要接受海量的信息，将资料归类整理必不可少。印象笔记是一个非常适合资料归类整理的软件，个人认为最好的一点在于可以对信息进行分层级的归类，因为成体系的将信息吸收、在大脑里面建立一个系统性框架才是有效的学习。例如我会首先对医药板块各个子版块建立分组。</li>
+</ul>
+<!-- more -->
 <h1 id="资料来源">资料来源</h1>
 <h2 id="研报">研报</h2>
 <ul>
@@ -392,39 +426,6 @@ document.getElementById("spkj").style.height=document.getElementById("spkj").scr
         </link>
         <updated>2019-12-14T15:47:19.000Z</updated>
         <content type="html"><![CDATA[<p>最近一段时间自己内心确实是有些浮躁了，因此也没有放下心来安静地读读书。那种习惯性地一个人来看看书，享受专注的时光才是好的。沉浸在一个人的世界里，可以忘记时间，进入所谓的心流状态。心灵得到的舒展与安宁大抵才是最宝贵的，其他事物都藉由此而变得重要。所以，是时候该放下心来专注于自己该做的了，回归宁静，回归吾乡。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[一生只够爱一人]]></title>
-        <id>https://lhymwm.github.io/post/yi-sheng-zhi-gou-ai-yi-ren/</id>
-        <link href="https://lhymwm.github.io/post/yi-sheng-zhi-gou-ai-yi-ren/">
-        </link>
-        <updated>2019-12-12T05:03:57.000Z</updated>
-        <content type="html"><![CDATA[<p>我始终认为自己是一个专心的人，我信仰的也是一种两情相悦，相伴一生的爱情。<br>
-喜欢木心的这首诗：</p>
-<blockquote>
-<p>记得早先少年时<br>
-大家诚诚恳恳<br>
-说一句 是一句<br>
-清早上火车站<br>
-长街黑暗无行人<br>
-卖豆浆的小店冒着热气<br>
-从前的日色变得慢<br>
-车，马，邮件都慢<br>
-一生只够爱一个人<br>
-从前的锁也好看<br>
-钥匙精美有样子<br>
-你锁了 人家就懂了</p>
-</blockquote>
-<p>当然，爱可能并不必然意味着终身相伴，有时远远地看着对方幸福地笑便觉得心安。<br>
-我想，这种来自心底纯粹且宝贵的安宁可能是更值得我们去坚守与珍藏一生的。<br>
-喜欢顾城《门前》这首诗中的几句：</p>
-<blockquote>
-<p>草 在结它的种子<br>
-风 在吹它的叶子<br>
-我们站着 不说话<br>
-就十分美好</p>
-</blockquote>
 ]]></content>
     </entry>
 </feed>
