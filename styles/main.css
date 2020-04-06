@@ -2045,11 +2045,11 @@ body {
       }.nav-item a:hover {
         color: #222;
       }.nav-item-active {
-      background: #f9f9f9fe;
+      background: #343a40fe;
     }
 
     .nav-item:hover {
-      background: #f9f9f9fe;
+      background: #343a40fe;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2097,10 +2097,10 @@ body {
       background: #000000fe;
     }
     .main-title {
-      color: #FFF;
+      color: #343a40;
     }
     .mist .site-title i {
-      background: #FFFFFFfe;
+      background: #343a40fe;
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }
