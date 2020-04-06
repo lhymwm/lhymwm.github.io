@@ -1993,7 +1993,7 @@ body {
       }
     @font-face {
       font-family: '思源宋体M';
-      src: url('https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@1.32/media/fonts/思源宋体M.ttf');
+      src: url('/media/fonts/思源宋体M.ttf');
     }
     * {
         font-family: '思源宋体M';
@@ -2107,6 +2107,8 @@ body {
     }
     .mist .site-title i {
       background: #212529fe;
+    }.box-scale > #landlord {
+      transform: scale(0.8);
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }
