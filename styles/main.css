@@ -2017,12 +2017,12 @@ body {
     .node-title::before {
       background-color: #555;
     }a {
-      color: rgba(0,0,0,.98);
+      color: #343a40;
     }
     
     .next-md-body a, .friends-box a  {
-      color: rgba(0,0,0,.98);
-      border-bottom: 1px solid rgba(0,0,0,.98);
+      color: #343a40;
+      border-bottom: 1px solid #343a40;
     }a:hover {
       color: #006CFF;
     }
@@ -2043,13 +2043,13 @@ body {
       .nav-item a {
         color:  #343a40;
       }.nav-item a:hover {
-        color: #212529;
+        color: #e9ecef;
       }.nav-item-active {
-      background: #f1f3f5fe;
+      background: #f8f9fafe;
     }
 
     .nav-item:hover {
-      background: #f1f3f5fe;
+      background: #f8f9fafe;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2088,10 +2088,10 @@ body {
       background-color: #fffffffe;
     }
       .site-meta {
-        background: #000 !important;
+        background: #f1f3f5 !important;
       }
       .head-top-line {
-        background: #000 !important;
+        background: #f1f3f5 !important;
       }
     .brand {
       background: #000000fe;
