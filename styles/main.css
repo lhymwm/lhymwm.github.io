@@ -1991,7 +1991,13 @@ body {
         width: 1080px;
         margin: 0 auto;
       }
-    body {
+    @font-face {
+      font-family: '思源宋体M';
+      src: url('/media/fonts/思源宋体M.ttf');
+    }
+    * {
+        font-family: '思源宋体M';
+    }body {
       color: #495057;
     }
     .next-md-body {
