@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-04-06T21:46:07.169Z</updated>
+    <updated>2020-04-08T05:18:37.950Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -49,9 +49,9 @@ document.getElementById(&quot;spkj&quot;).style.height=document.getElementById(&
 document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth*0.76+"px";
 </script>
 <p>音乐直链：</p>
-<pre><code>&lt;audio src=&quot;https://sharefs.yun.kugou.com/202004070308/0749bcc720954608a8a080214e76b4e1/G209/M0A/1A/0B/EQ4DAF6IMG6ANQ4cADO8tHkl4_s235.mp3&quot; controls=&quot;controls&quot;&gt;&lt;/audio&gt;
+<pre><code>&lt;audio src=&quot;https://sharefs.yun.kugou.com/202004081309/e6ecd0a8c8e8f46864deac53bc22d2bd/G209/M0A/1A/0B/EQ4DAF6IMG6ANQ4cADO8tHkl4_s235.mp3&quot; controls=&quot;controls&quot;&gt;&lt;/audio&gt;
 </code></pre>
-<p><audio src="https://sharefs.yun.kugou.com/202004070308/0749bcc720954608a8a080214e76b4e1/G209/M0A/1A/0B/EQ4DAF6IMG6ANQ4cADO8tHkl4_s235.mp3" controls="controls"></audio></p>
+<p><audio src="https://sharefs.yun.kugou.com/202004081309/e6ecd0a8c8e8f46864deac53bc22d2bd/G209/M0A/1A/0B/EQ4DAF6IMG6ANQ4cADO8tHkl4_s235.mp3" controls="controls"></audio></p>
 ]]></content>
     </entry>
     <entry>
