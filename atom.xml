@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-04-10T06:27:34.000Z</updated>
+    <updated>2020-04-11T18:18:36.723Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -10,6 +10,203 @@
     <logo>https://lhymwm.github.io/images/avatar.png</logo>
     <icon>https://lhymwm.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 以梦为马</rights>
+    <entry>
+        <title type="html"><![CDATA[Pandoc Markdown写作规范]]></title>
+        <id>https://lhymwm.github.io/post/pandoc-markdown-xie-zuo-gui-fan/</id>
+        <link href="https://lhymwm.github.io/post/pandoc-markdown-xie-zuo-gui-fan/">
+        </link>
+        <updated>2020-04-11T17:21:25.000Z</updated>
+        <content type="html"><![CDATA[<p>看云是一个文档写作<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>和托管平台<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>。</p>
+<p>// 中间可以添加其他内容</p>
+<h1 id="写在前面">写在前面</h1>
+<p>本文是远程集体写书的格式规范说明文档。考虑到不少作者，已熟悉Markdown格式，因此，特别撰写一份基于Pandoc Markdown的写作格式规范。</p>
+<h1 id="语法导读">语法导读</h1>
+<ul>
+<li><a href="http://pages.tzengyuxio.me/pandoc/">Pandoc’s Markdown 語法中文翻譯</a></li>
+</ul>
+<h1 id="标题">标题</h1>
+<p>规范</p>
+<ul>
+<li>使用 Markdown 的标题格式 <code># 一级标题文字</code>、<code>## 二级标题文字</code> 等来书写标题，毋需人工指定标题序号如 1、1.1 等。</li>
+<li>标题层次深度至多为四级。</li>
+<li>建议在 <code>#</code> 号后面添加一个半角空格。</li>
+</ul>
+<p>技巧与帮助</p>
+<ul>
+<li>可以直接使用Github在线编辑</li>
+<li><a href="http://markdown.tw/">Markdown语法说明</a></li>
+</ul>
+<h1 id="提示语">提示语</h1>
+<p>规范</p>
+<ul>
+<li>
+<p>本书仅使用<code>note</code>, <code>danger</code>, <code>error</code>, <code>important</code>, <code>tip</code>, <code>warning</code>（注意，危险，错误，重要，提示，警告）六种提示语</p>
+</li>
+<li>
+<p>写法为在引用第一行，写： <code>**note**</code> 用来表示此段为提示的文本，再空一行后，开始写提示的正文，如下所示：</p>
+<blockquote>
+<p><strong>note</strong></p>
+<p>Marr，一个大牛。</p>
+</blockquote>
+</li>
+</ul>
+<p>检查了自定义生成的note、tip等的LaTex代码，优雅漂亮，如下：</p>
+<pre><code>\begin{quote}
+\textbf{note}
+
+Marr，一个大牛。
+\end{quote}
+</code></pre>
+<h1 id="定义">定义</h1>
+<p>规范</p>
+<ul>
+<li>
+<p>使用Term开头，空格，然后写定义。</p>
+<pre><code>  Term 1
+  
+  :   Definition 1
+  
+  Term 2 with *inline markup*
+  
+  :   Definition 2
+  
+          { some code, part of Definition 2 }
+  
+      Third paragraph of definition 2.
+</code></pre>
+</li>
+</ul>
+<h1 id="数学公式">数学公式</h1>
+<p>规范</p>
+<ul>
+<li>统一使用LaTex输出数学公式，参见：<a href="http://pages.tzengyuxio.me/pandoc/#%E6%95%B8%E5%AD%B8">Pandoc数学一节</a></li>
+<li>使用<code>$</code>表示行内输出；使用<code>$$</code>表示显示模式输出：</li>
+</ul>
+<p>示范：</p>
+<ul>
+<li>Inline mode <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>e</mi><mo>=</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">e=mc^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">e</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></li>
+<li>Display mode:</li>
+</ul>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mrow><mi>d</mi><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>l</mi><mi>i</mi><msub><mi>m</mi><mrow><mi>x</mi><mo>→</mo><mn>0</mn></mrow></msub><mfrac><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>+</mo><mi>h</mi><mo>)</mo><mo>−</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mi>h</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{df(x)}{dt}=lim_{x \to 0}{\frac{f(x+h)-f(x)}{h}}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.113em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">d</span><span class="mord mathdefault">t</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.113em;vertical-align:-0.686em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">i</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="mrel mtight">→</span><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">h</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault">h</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></span></p>
+<p>技巧与帮助</p>
+<ul>
+<li>LaTex数学公式，参见：<a href="http://zh.wikibooks.org/zh-cn/LaTeX/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F">LaTeX/数学公式</a></li>
+</ul>
+<h1 id="图片">图片</h1>
+<p>规范</p>
+<ul>
+<li>图片在各章下面，分别建立<code>figures</code>目录保存图片；并在<code>figures</code>目录下面建立<code>big</code>目录，用以保存制图的源文件，如ppt、keynote、gephi等；</li>
+<li>非矢量图片需300dpi及以上，以达到堪用的印刷品质，；</li>
+<li>引用图片，统一使用 Markdown 的规范：<code>![图片标题](图片相对地址)</code>；</li>
+<li>图片标题是否人工指定序号由写作者决定。如果打算人工指定，需按章定序，如如：<code>图16-1 社会网络分析结果示意图</code>；</li>
+<li>图片地址写法为：<code>figures/small_world.png</code>，图片命名由英文、数字和下划线构成，不能包括空格、非英文字符。</li>
+</ul>
+<h1 id="表格">表格</h1>
+<p>规范</p>
+<ul>
+<li>如无意外，使用pandoc简单表格；</li>
+<li>可使用R包<code>pander</code>或其他RMarkdown输出表格。</li>
+<li>表的命名方式，统一为: <code>表3-1 不同中心性测量指标之间的关系</code></li>
+</ul>
+<p>技巧与帮助</p>
+<p>参考：<a href="http://pages.tzengyuxio.me/pandoc/#%E7%B0%A1%E5%96%AE%E8%A1%A8%E6%A0%BC">Pandoc简单表格</a></p>
+<h1 id="脚注">脚注</h1>
+<p>脚注用于表示参考文献之外的内容，如本章部分没涉及到的内容或者有争议的话题。</p>
+<p>规范</p>
+<ul>
+<li>在正文中，写脚注的地方，前后加空格，如：<code>我们发现社会网络是由一个强大的（但大部分是无形的）的“秘书”统治 [^7]</code></li>
+<li>脚注统一写在参考文献之前,写完脚注了，才是参考文献。</li>
+<li>注的开头，统一使用：<code>注：</code>的写法。</li>
+</ul>
+<p>如：</p>
+<pre><code>[^7]:注：作者此处秘书指的是第一章中“非正式网络的力量”一节介绍的ACME咨询公司的例子中所提到的秘书处。
+</code></pre>
+<h1 id="版本">版本</h1>
+<p>规范</p>
+<ul>
+<li>RStudio当前最新版本，<code>0.97</code></li>
+<li>R当前最新版本，<code>3.0</code></li>
+</ul>
+<h1 id="r代码">R代码</h1>
+<p>规范</p>
+<ul>
+<li>在各章下面，创建<code>code</code>目录。然后，使用R包：<code>ProjectTemplate</code>创建本章的项目。如果本章都是同一个数据源，则创建为一个项目；如果数据源差异较大，则创建为不同项目。</li>
+</ul>
+<p>技巧与帮助</p>
+<ul>
+<li><a href="http://projecttemplate.net/getting_started.html">ProjectTemplate教程</a></li>
+<li><a href="http://www.johnmyleswhite.com/notebook/2010/08/26/projecttemplate/">ProjectTemplate</a></li>
+</ul>
+<h1 id="日常github提交">日常Github提交</h1>
+<p>规范</p>
+<ul>
+<li>基于<code>Git Flow</code></li>
+<li>如果不熟悉<code>Git</code>与<code>Git Flow</code>，建议直接在线编辑、在线提交。</li>
+</ul>
+<p>技巧与帮助</p>
+<ul>
+<li><a href="http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html">Git flow 备忘清单</a></li>
+<li><a href="http://ihower.tw/blog/archives/5140">Git flow 開發流程</a></li>
+<li><a href="http://fann.im/blog/2012/03/12/git-flow-notes/">Git-flow 使用笔记</a></li>
+</ul>
+<p>备注：如果是Windows下的朋友，也可以直接使用本在线编辑器，通过<code>signinToGithub</code>，登陆Github后，找到你的相应章节，提交即可。</p>
+<h1 id="参考文献">参考文献</h1>
+<p>规范</p>
+<ul>
+<li>统一使用APA第6版格式输出引文与文末参考文献；</li>
+<li>将每一章的参考文献保存在一个<code>bibtex</code>文件中；</li>
+<li>推荐使用参考文献软件为<code>Zotero</code>或<code>Endnote</code>。</li>
+<li>Pandoc默认支持参考文献，请使用<code>参考文献</code>作为末尾标题。</li>
+<li>参考文献写法是：<code>[@yangzhiping2001]</code>或者<code>[@__2003]</code>，@符号后面直接写bib文件的引用文献的唯一编号，如yangzhiping2001或者__2003</li>
+</ul>
+<p>示例：</p>
+<p>bib文件的内容是：</p>
+<pre><code>@article{yangzhiping2003,
+	title = {试评卡尼曼经济心理学研究及其影响 [J]},
+	volume = {26},
+	number = {4},
+	urldate = {2013-05-27},
+	journal = {心理科学},
+	author = {阳志平},
+	year = {2003},
+	pages = {724–726}
+}
+</code></pre>
+<p>引用键是：<code>yangzhiping2003</code>，那么，引用格式直接这么写：</p>
+<pre><code>阳志平在`[@yangzhiping2001]` 、`[@yangzhiping2002]`、`[@yangzhiping200]`中写道。。。
+</code></pre>
+<p>技巧与帮助</p>
+<p>在<a href="http://www.endnote.com/">EndNote</a>中，一个较好的习惯是，写完论文之后，借助于它的<code>Export Traveling Library</code>功能，将每篇论文的参考文献导出为一个新的Endnote文献管理库，如下图所示：</p>
+<figure data-type="image" tabindex="1"><img src="http://www.yangzhiping.com/images/psy/endnote.png" alt="image" loading="lazy"></figure>
+<h1 id="参考文献-2">参考文献</h1>
+<p>请加载附件中的<code>ouyang.bib</code>文件，即会出来本文引用的参考文献。点击<code>Citations</code>=&gt; <code>Load a Bibliography file</code></p>
+<h1 id="其它有用链接">其它有用链接</h1>
+<p>请参考：</p>
+<ul>
+<li><a href="http://www.rstudio.com/ide/docs/authoring/markdown_custom_rendering">Customizing Markdown Rendering</a></li>
+<li><a href="http://www.rstudio.com/ide/docs/authoring/using_markdown_equations">RStuido Markdown</a></li>
+<li><a href="http://stackoverflow.com/tags/pandoc/hot">StackOverFlow pandoc节点</a></li>
+<li><a href="http://johnmacfarlane.net/pandoc/try/">Try Pandoc</a></li>
+</ul>
+<p># Markdown 增加文献引用</p>
+<p>这边文章是介绍如何在 Markdown 中增加文献引用。<a href="#refer-anchor-1"><sup>1</sup></a></p>
+<p># 参考</p>
+<div id="refer-anchor-1"></div>
+<p>- [1] <a href="http://xueshu.baidu.com/">百度学术</a></p>
+<div id="refer-anchor-2"></div>
+<p>- [2] <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>写作格式采用Markdown格式，支持版本和多人写作。 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>发布的文档可以直接在平台阅读、分享和私有存储，并支持付费阅读。 <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[hexo博客插入音频、视频]]></title>
         <id>https://lhymwm.github.io/post/hexo-bo-ke-cha-ru-yin-pin-shi-pin/</id>
@@ -420,15 +617,6 @@ document.getElementById("spkj").style.height=document.getElementById("spkj").scr
 词人：纳兰性德<br>
 主持人：窦文涛<br>
 ···长期更新</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于宁静]]></title>
-        <id>https://lhymwm.github.io/post/guan-yu-ning-jing/</id>
-        <link href="https://lhymwm.github.io/post/guan-yu-ning-jing/">
-        </link>
-        <updated>2019-12-14T15:47:19.000Z</updated>
-        <content type="html"><![CDATA[<p>最近一段时间自己内心确实是有些浮躁了，因此也没有放下心来安静地读读书。那种习惯性地一个人来看看书，享受专注的时光才是好的。沉浸在一个人的世界里，可以忘记时间，进入所谓的心流状态。心灵得到的舒展与安宁大抵才是最宝贵的，其他事物都藉由此而变得重要。所以，是时候该放下心来专注于自己该做的了，回归宁静，回归吾乡。</p>
 ]]></content>
     </entry>
 </feed>
