@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-04-11T18:18:36.723Z</updated>
+    <updated>2020-04-11T18:38:19.777Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -16,13 +16,11 @@
         <link href="https://lhymwm.github.io/post/pandoc-markdown-xie-zuo-gui-fan/">
         </link>
         <updated>2020-04-11T17:21:25.000Z</updated>
-        <content type="html"><![CDATA[<p>看云是一个文档写作<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>和托管平台<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>。</p>
-<p>// 中间可以添加其他内容</p>
-<h1 id="写在前面">写在前面</h1>
+        <content type="html"><![CDATA[<h1 id="写在前面">写在前面</h1>
 <p>本文是远程集体写书的格式规范说明文档。考虑到不少作者，已熟悉Markdown格式，因此，特别撰写一份基于Pandoc Markdown的写作格式规范。</p>
 <h1 id="语法导读">语法导读</h1>
 <ul>
-<li><a href="http://pages.tzengyuxio.me/pandoc/">Pandoc’s Markdown 語法中文翻譯</a></li>
+<li>[Pandoc’s Markdown 語法中文翻譯]</li>
 </ul>
 <h1 id="标题">标题</h1>
 <p>规范</p>
@@ -34,7 +32,7 @@
 <p>技巧与帮助</p>
 <ul>
 <li>可以直接使用Github在线编辑</li>
-<li><a href="http://markdown.tw/">Markdown语法说明</a></li>
+<li>[Markdown语法说明]</li>
 </ul>
 <h1 id="提示语">提示语</h1>
 <p>规范</p>
@@ -79,7 +77,7 @@ Marr，一个大牛。
 <h1 id="数学公式">数学公式</h1>
 <p>规范</p>
 <ul>
-<li>统一使用LaTex输出数学公式，参见：<a href="http://pages.tzengyuxio.me/pandoc/#%E6%95%B8%E5%AD%B8">Pandoc数学一节</a></li>
+<li>统一使用LaTex输出数学公式，参见：[Pandoc数学一节]</li>
 <li>使用<code>$</code>表示行内输出；使用<code>$$</code>表示显示模式输出：</li>
 </ul>
 <p>示范：</p>
@@ -91,7 +89,7 @@ Marr，一个大牛。
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.113em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">d</span><span class="mord mathdefault">t</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.113em;vertical-align:-0.686em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">i</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="mrel mtight">→</span><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">h</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault">h</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></span></p>
 <p>技巧与帮助</p>
 <ul>
-<li>LaTex数学公式，参见：<a href="http://zh.wikibooks.org/zh-cn/LaTeX/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F">LaTeX/数学公式</a></li>
+<li>LaTex数学公式，参见：[LaTeX/数学公式]</li>
 </ul>
 <h1 id="图片">图片</h1>
 <p>规范</p>
@@ -110,7 +108,7 @@ Marr，一个大牛。
 <li>表的命名方式，统一为: <code>表3-1 不同中心性测量指标之间的关系</code></li>
 </ul>
 <p>技巧与帮助</p>
-<p>参考：<a href="http://pages.tzengyuxio.me/pandoc/#%E7%B0%A1%E5%96%AE%E8%A1%A8%E6%A0%BC">Pandoc简单表格</a></p>
+<p>参考：[Pandoc简单表格]</p>
 <h1 id="脚注">脚注</h1>
 <p>脚注用于表示参考文献之外的内容，如本章部分没涉及到的内容或者有争议的话题。</p>
 <p>规范</p>
@@ -135,8 +133,8 @@ Marr，一个大牛。
 </ul>
 <p>技巧与帮助</p>
 <ul>
-<li><a href="http://projecttemplate.net/getting_started.html">ProjectTemplate教程</a></li>
-<li><a href="http://www.johnmyleswhite.com/notebook/2010/08/26/projecttemplate/">ProjectTemplate</a></li>
+<li>[ProjectTemplate教程]</li>
+<li>[ProjectTemplate]</li>
 </ul>
 <h1 id="日常github提交">日常Github提交</h1>
 <p>规范</p>
@@ -146,9 +144,9 @@ Marr，一个大牛。
 </ul>
 <p>技巧与帮助</p>
 <ul>
-<li><a href="http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html">Git flow 备忘清单</a></li>
-<li><a href="http://ihower.tw/blog/archives/5140">Git flow 開發流程</a></li>
-<li><a href="http://fann.im/blog/2012/03/12/git-flow-notes/">Git-flow 使用笔记</a></li>
+<li>[Git flow 备忘清单]</li>
+<li>[Git flow 開發流程]</li>
+<li>[Git-flow 使用笔记]</li>
 </ul>
 <p>备注：如果是Windows下的朋友，也可以直接使用本在线编辑器，通过<code>signinToGithub</code>，登陆Github后，找到你的相应章节，提交即可。</p>
 <h1 id="参考文献">参考文献</h1>
@@ -177,34 +175,19 @@ Marr，一个大牛。
 <pre><code>阳志平在`[@yangzhiping2001]` 、`[@yangzhiping2002]`、`[@yangzhiping200]`中写道。。。
 </code></pre>
 <p>技巧与帮助</p>
-<p>在<a href="http://www.endnote.com/">EndNote</a>中，一个较好的习惯是，写完论文之后，借助于它的<code>Export Traveling Library</code>功能，将每篇论文的参考文献导出为一个新的Endnote文献管理库，如下图所示：</p>
+<p>在[EndNote]中，一个较好的习惯是，写完论文之后，借助于它的<code>Export Traveling Library</code>功能，将每篇论文的参考文献导出为一个新的Endnote文献管理库，如下图所示：</p>
 <figure data-type="image" tabindex="1"><img src="http://www.yangzhiping.com/images/psy/endnote.png" alt="image" loading="lazy"></figure>
-<h1 id="参考文献-2">参考文献</h1>
 <p>请加载附件中的<code>ouyang.bib</code>文件，即会出来本文引用的参考文献。点击<code>Citations</code>=&gt; <code>Load a Bibliography file</code></p>
 <h1 id="其它有用链接">其它有用链接</h1>
 <p>请参考：</p>
 <ul>
-<li><a href="http://www.rstudio.com/ide/docs/authoring/markdown_custom_rendering">Customizing Markdown Rendering</a></li>
-<li><a href="http://www.rstudio.com/ide/docs/authoring/using_markdown_equations">RStuido Markdown</a></li>
-<li><a href="http://stackoverflow.com/tags/pandoc/hot">StackOverFlow pandoc节点</a></li>
-<li><a href="http://johnmacfarlane.net/pandoc/try/">Try Pandoc</a></li>
+<li>[Customizing Markdown Rendering]</li>
+<li>[RStuido Markdown]</li>
+<li>[StackOverFlow pandoc节点]</li>
+<li>[Try Pandoc]</li>
 </ul>
 <p># Markdown 增加文献引用</p>
 <p>这边文章是介绍如何在 Markdown 中增加文献引用。<a href="#refer-anchor-1"><sup>1</sup></a></p>
-<p># 参考</p>
-<div id="refer-anchor-1"></div>
-<p>- [1] <a href="http://xueshu.baidu.com/">百度学术</a></p>
-<div id="refer-anchor-2"></div>
-<p>- [2] <a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></p>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>写作格式采用Markdown格式，支持版本和多人写作。 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn2" class="footnote-item"><p>发布的文档可以直接在平台阅读、分享和私有存储，并支持付费阅读。 <a href="#fnref2" class="footnote-backref">↩︎</a></p>
-</li>
-</ol>
-</section>
 ]]></content>
     </entry>
     <entry>
