@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-04-12T08:41:50.851Z</updated>
+    <updated>2020-04-16T05:56:09.363Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://lhymwm.github.io/images/avatar.png</logo>
     <icon>https://lhymwm.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 以梦为马</rights>
+    <entry>
+        <title type="html"><![CDATA[坂井泉水]]></title>
+        <id>https://lhymwm.github.io/post/ban-jing-quan-shui/</id>
+        <link href="https://lhymwm.github.io/post/ban-jing-quan-shui/">
+        </link>
+        <updated>2020-04-16T05:52:36.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gdvkbandhtj31340qrn3d.jpg" alt="坂井泉水" loading="lazy"><br>
+<img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gdvke5b7zej31340qdjxl.jpg" alt="坂井泉水" loading="lazy"><br>
+坂井泉水姐姐真的很美丽，特别是眼睛很灵动，很清澈，给人一种“清水出芙蓉，天然去雕饰”之感。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Pandoc Markdown写作规范]]></title>
         <id>https://lhymwm.github.io/post/pandoc-markdown-xie-zuo-gui-fan/</id>
@@ -587,19 +598,6 @@ document.getElementById("spkj").style.height=document.getElementById("spkj").scr
 <li>如果说清晰、准确、有逻辑的思维是走向观念革新的第一步，那么观念的革新首先体现在语言和表达上。就像奥威尔所说的，抵制不良英语并非是件无足轻重的小事，也不只是职业作家所该关心的事。同样的，抵制不良中文也不是件无足轻重的小事。作为知识人，我们无力改变现实的秩序，但至少可以通过改变语言的秩序来间接地改变现实的秩序。 —— 周濂</li>
 <li></li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[欣赏的人]]></title>
-        <id>https://lhymwm.github.io/post/yi-xie-xin-shang-de-ren-wu/</id>
-        <link href="https://lhymwm.github.io/post/yi-xie-xin-shang-de-ren-wu/">
-        </link>
-        <updated>2019-12-16T10:41:49.000Z</updated>
-        <content type="html"><![CDATA[<p>自由主义者：胡适、李敖<br>
-音乐人:许嵩<br>
-词人：纳兰性德<br>
-主持人：窦文涛<br>
-···长期更新</p>
 ]]></content>
     </entry>
 </feed>
