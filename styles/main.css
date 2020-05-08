@@ -118,7 +118,6 @@ body {
   line-height: 2;
   width: 100%;
   overflow-x: hidden;
-  user-select: none;
 }
 sub,
 sup {
@@ -176,6 +175,9 @@ blockquote {
   width: 0;
   transition: width 1000ms ease-in-out 0s;
 }
+.post-body {
+  overflow: hidden;
+}
 .post-body img {
   cursor: zoom-in;
 }
@@ -194,6 +196,17 @@ pre > span.copy-code {
 }
 pre > span.copy-code:hover {
   color: #FFF;
+}
+.nav-item .fa {
+  width: 16px;
+  text-align: center;
+}
+.MathJax {
+  outline: 0;
+}
+.MathJax_Display {
+  overflow-x: auto;
+  overflow-y: hidden !important;
 }
 .head-top-line {
   height: 3px;
@@ -239,10 +252,8 @@ pre > span.copy-code:hover {
   color: #fc6423;
   border: none;
   font-size: 16px;
-  border-top: 1px dotted #ccc;
-  border-bottom: 1px dotted #ccc;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .site-item-rss a {
   color: #fc6423;
@@ -262,7 +273,7 @@ pre > span.copy-code:hover {
   text-align: center;
   font-size: 0.8125em;
   color: #999;
-  margin: 0 0 25px 0;
+  margin: 0 0 10px 0;
 }
 .sidebar-item-social {
   margin-top: 5px;
@@ -1139,8 +1150,22 @@ pre > span.copy-code:hover {
   align-items: center;
   justify-content: center;
   z-index: 99999;
-  visibility: hidden;
-  display: none;
+}
+.search-mask .stat-box {
+  line-height: 40px;
+  margin: 0 40px;
+}
+.stat-box hr {
+  background-color: #ddd;
+  border: 0;
+  height: 3px;
+  background-image: repeating-linear-gradient(-45deg, #fff, #fff 4px, transparent 4px, transparent 8px);
+}
+.search-mask .page {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .search-box {
   width: 700px;
@@ -1166,6 +1191,9 @@ pre > span.copy-code:hover {
 .search-title .fa-times-circle {
   color: silver;
 }
+.search-title .fa-times-circle:hover {
+  color: red;
+}
 .input-box {
   flex: 1;
 }
@@ -1183,6 +1211,29 @@ pre > span.copy-code:hover {
   overflow: scroll;
   padding: 10px 30px;
   flex: 1;
+}
+.result-title em {
+  font-style: normal;
+  color: #f00;
+  background-color: #f7f7f7;
+  padding: 0 2px;
+}
+#page_ul {
+  text-align: center;
+}
+#page_ul span {
+  margin: 0 10px;
+  padding: 5px 12px;
+  line-height: 28px;
+  border-bottom: 1px solid transparent;
+  user-select: none;
+}
+#page_ul span:hover {
+  border-bottom: 1px solid black;
+}
+#page_ul .current {
+  color: #fff;
+  background: #ccc;
 }
 .item a {
   display: block;
@@ -2078,7 +2129,7 @@ body {
       }
     @font-face {
       font-family: '思源宋体M';
-      src: url('https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.1.9/media/fonts/思源宋体M.ttf');
+      src: url('https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.2.0/media/fonts/思源宋体M.ttf');
     }
     * {
         font-family: '思源宋体M';
@@ -2187,11 +2238,11 @@ body {
     .brand {
       background: #000000fe;
     }
-    .main-title {
-      color: #212529;
+    .main-title, .brand {
+      color: #f8f9fa !important;
     }
     .mist .site-title i {
-      background: #212529fe;
+      background: #f8f9fafe;
     }.box-scale > #landlord {
       transform: scale(0.7);
     }.box-shadow-wrapper {
