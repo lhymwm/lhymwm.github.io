@@ -2129,7 +2129,7 @@ body {
       }
     @font-face {
       font-family: '思源宋体M';
-      src: url('https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.2.3/media/fonts/思源宋体M.ttf');
+      src: url('https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.2.4/media/fonts/思源宋体M.ttf');
     }
     * {
         font-family: '思源宋体M';
@@ -2243,21 +2243,7 @@ body {
     }
     .mist .site-title i {
       background: #f8f9fafe;
-    } <div class="footer-box">
-  <footer class="footer">
-    <div class="copyright">
-      © 2019-2020 🔥 <strong><script type="text/javascript">
-          var urodz= new Date("11/22/2019");
-          var now = new Date();
-          var ile = now.getTime() - urodz.getTime();
-          var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
-          document.write(+dni)
-          </script>
-      </strong> Days
-      </div>
-      <div class="poweredby">
-      </div>
-      </footer>.box-scale > #landlord {
+    }.box-scale > #landlord {
       transform: scale(0.7);
     }.box-shadow-wrapper {
       box-shadow: none !important;
