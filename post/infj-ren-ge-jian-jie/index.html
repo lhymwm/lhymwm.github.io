@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="stay hungry, stay foolish">
 <meta name="theme-color" content="#000">
-<title>以梦为马</title>
+<title>INFJ人格简介 | 以梦为马</title>
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.2.7/favicon.ico?v=1589989376845">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.2.7/styles/main.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.2.7/media/css/gemini.css">
@@ -59,6 +59,8 @@
   })();
 </script>
 
+  <meta name="description" content="INFJ人格简介" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -94,7 +96,7 @@
             
               
             
-            <li class="nav-item nav-item-active">
+            <li class="nav-item ">
               
               
                 <a href="/" target="_self">
@@ -217,8 +219,24 @@
     <div
       class="section-layout gemini ">
       <div class="section-layout-wrapper">
-        <div id="sidebarMeta" class="sidebar">
-    
+        
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body gemini" id="sidebar_body">
+        
+          
+            <div class="post-side-meta" id="post_side_meta">
+              
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.2.7/images/avatar.png"/>
@@ -282,27 +300,278 @@
 
 
 </div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number no_compress"
+    id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li><a href="#mbti%E5%81%8F%E5%A5%BD">MBTI偏好</a></li>
+<li><a href="#%E7%89%B9%E5%BE%81">特征</a></li>
+</ul>
+
+  </div>
 </div>
+
 <script>
-  let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'gemini';
-  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-    document.addEventListener('scroll', function(e) {
-      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-        sidebarWrapper.classList.add('home-sidebar-fixed')
-      } else {
-        sidebarWrapper.classList.remove('home-sidebar-fixed')
+
+  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
+  let active = 'active-show', activeClass = 'active-current';
+  let tocWrapper = document.querySelector('#toc_wrapper');
+  let tocContent = tocWrapper.children[0];
+  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
+
+  function addTocNumber(elem, deep) {
+    if (!elem) {
+      return;
+    }
+    let prop = elem.__proto__;
+
+    if (prop === HTMLUListElement.prototype) {
+      for (let i = 0; i < elem.children.length; i++) {
+        addTocNumber(elem.children[i], deep + (i + 1) + '.');
       }
+    } else if (prop === HTMLLIElement.prototype) {
+      // 保存li元素
+      if (elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
+        lList.push(elem);
+      }
+      for (let i = 0; i < elem.children.length; i++) {
+        let cur = elem.children[i];
+        if (cur.__proto__ === HTMLAnchorElement.prototype) {
+          if (autoNumber) {
+            cur.text = deep + ' ' + cur.text;
+          }
+        } else if (cur.__proto__ === HTMLUListElement.prototype) {
+          addTocNumber(cur, deep);
+        }
+      }
+    }
+  }
+
+  function removeParentActiveClass() {
+    let parents = tocContent.querySelectorAll('.' + active)
+    parents.forEach(function (elem) {
+      elem.classList.remove(active);
     });
   }
-  </script>
-        <div class="section-box gemini">
-          <section class="section  posts-expand slide-down-in">
-            
-  <article class="post-list-box  post box-shadow-wrapper">
-    <div class="article-wrapper bg-color">
-      <header class="post-header">
+
+  function addActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.add(activeClass);
+    }
+  }
+
+  function removeActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.remove(activeClass);
+    }
+  }
+
+  function addActiveLiElemment(elem, parent) {
+    if (!elem || elem === parent) {
+      return;
+    } else {
+      if (elem.__proto__ === HTMLLIElement.prototype) {
+        elem.classList.add(active);
+      }
+      addActiveLiElemment(elem.parentElement, parent);
+    }
+  }
+
+  function showToc() {
+    if (tocWrapper) {
+      postBody = document.querySelector('#post_body');
+      for (let i = 0; i < postBody.children.length; i++) {
+        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+          hList.push(postBody.children[i]);
+        }
+      }
+      if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+      } else if (tocWrapper.classList.contains('no_compress')) {
+        tocContent.classList.add('expanded');
+      } else {
+        if (hList.length > 10) {
+          active = 'active-hidden'
+          tocContent.classList.add('closed');
+        } else {
+          tocContent.classList.add('expanded');
+        }
+      }
+    }
+  }
+
+  (function () {
+    // 处理不是从#一级标题开始目录
+    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
+      let con = tocContent.children[0].children[0];
+      tocContent.innerHTML = con.innerHTML;
+    }
+    let markdownItTOC = document.querySelector('.markdownIt-TOC');
+    let innerHeight = window.innerHeight;
+    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
+    addTocNumber(tocContent, '');
+  })();
+
+  document.addEventListener('scroll', function (e) {
+    if (lList.length <= 0) {
+      return;
+    }
+    let scrollTop = document.scrollingElement.scrollTop + 10;
+    let dir;
+
+    if (lastTop - scrollTop > 0) {
+      dir = 'up';
+    } else {
+      dir = 'down';
+    }
+
+    lastTop = scrollTop;
+    if (scrollTop <= 0) {
+      if (lastIndex >= 0 && lastIndex < hList.length) {
+        lList[lastIndex].classList.remove(activeClass);
+      }
+      return;
+    }
+
+    let current = 0, hasFind = false;
+    for (let i = 0; i < hList.length; i++) {
+      if (hList[i].offsetTop > scrollTop) {
+        current = i;
+        hasFind = true;
+        break;
+      }
+    }
+    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+      current = hList.length - 1;
+    } else {
+      current--;
+    }
+    if (dir === 'down') {
+      if (current > lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex)
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    } else {
+      if (current < lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex);
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    }
+  });
+
+
+  window.addEventListener('load', function () {
+    showToc();
+    document.querySelector('#sidebar').style = 'display: block;';
+    tocWrapper.classList.add('toc-active');
+    setTimeout(function () {
+      if ("createEvent" in document) {
+        let evt = document.createEvent("HTMLEvents");
+        evt.initEvent("scroll", false, true);
+        document.dispatchEvent(evt);
+      }
+      else {
+        document.fireEvent("scroll");
+      }
+    }, 500)
+  })
+
+</script>
+            </div>
+          
+        
+      </div>
+    </div>
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <header class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://lhymwm.github.io/post/infj-ren-ge-jian-jie/">
       INFJ人格简介
@@ -327,584 +596,124 @@
       <span>1362<span class="pc-show">字数</span></span>
     </span>
     
+    
+    
+    <span id="/post/infj-ren-ge-jian-jie/" data-flag-title="INFJ人格简介" class="meta-item pc-show leancloud_visitors">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-eye"></i>
+      <span>浏览量：<span class="leancloud-visitors-count"></span></span>
+    </span>
+    
   </div>
 </header>
-      <div class="post-body">
-        
-        
-          <p><em>声明：本文来自维基百科。</em><br>
+            <div class="post-body next-md-body" id="post_body">
+              <p><em>声明：本文来自维基百科。</em><br>
 INFJ（内倾/直觉/情感/判断）是迈尔斯·布里格斯性格分类法中十六种人格类型之一，在柯尔塞气质类型测试中被称为咨询师，属于理想者的四种类型之一。<br>
 INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为罕见，仅占0.25%。当代著名的INFJ名人有哈利波特的作者J·K·罗琳。</p>
-
-          
-        
-        
-        <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/infj-ren-ge-jian-jie/" rel="contents">
-            阅读全文 »
-          </a>
-        </div>
-        
-      </div>
-      
-    </div>
-  </article>
-
-  <article class="post-list-box  post box-shadow-wrapper">
-    <div class="article-wrapper bg-color">
-      <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://lhymwm.github.io/post/lun-san-xin-er-yi/">
-      论三心二意
-    </a>
-  </h1>
-  <div class="post-meta">
-    
-    <span class="meta-item pc-show">
-      <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
-      <span>2020-05-20</span>
-      <span class="post-meta-divider pc-show">|</span>
-    </span>
-    
-    <span class="meta-item">
-      <i class="fa fa-clock-o"></i>
-      <span>1分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="fa fa-file-word-o"></i>
-      <span>224<span class="pc-show">字数</span></span>
-    </span>
-    
-  </div>
-</header>
-      <div class="post-body">
-        
-        
-          <p>不喜欢和三心二意的人交朋友，更不喜欢和三心二意的人深入交往，无论这种三心二意是体现在外表上的，还是体现在内在上。</p>
-
-          
-        
-        
-        <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/lun-san-xin-er-yi/" rel="contents">
-            阅读全文 »
-          </a>
-        </div>
-        
-      </div>
-      
-    </div>
-  </article>
-
-  <article class="post-list-box  post box-shadow-wrapper">
-    <div class="article-wrapper bg-color">
-      <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://lhymwm.github.io/post/fang-dong-de-mao/">
-      房东的猫
-    </a>
-  </h1>
-  <div class="post-meta">
-    
-    <span class="meta-item pc-show">
-      <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
-      <span>2020-05-09</span>
-      <span class="post-meta-divider pc-show">|</span>
-    </span>
-    
-    <span class="meta-item">
-      <i class="fa fa-clock-o"></i>
-      <span>1分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="fa fa-file-word-o"></i>
-      <span>41<span class="pc-show">字数</span></span>
-    </span>
-    
-  </div>
-</header>
-      <div class="post-body">
-        
-        
-          <p>房东的猫是一个民谣组合，其曲风很清新，词也很有水准，总之是我喜欢的那种朴素自然干净的感觉。<br>
-<img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gelj75cyp5j308c08c3z3.jpg" alt="房东的猫" loading="lazy"></p>
-
-          
-        
-        
-      </div>
-      
-    </div>
-  </article>
-
-  <article class="post-list-box  post box-shadow-wrapper">
-    <div class="article-wrapper bg-color">
-      <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://lhymwm.github.io/post/ban-jing-quan-shui/">
-      坂井泉水
-    </a>
-  </h1>
-  <div class="post-meta">
-    
-    <span class="meta-item pc-show">
-      <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
-      <span>2020-04-16</span>
-      <span class="post-meta-divider pc-show">|</span>
-    </span>
-    
-    <span class="meta-item">
-      <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
-      
-      
-      <a href="https://lhymwm.github.io/tag/0QxZRts3c/">
-        <span>欣赏的人</span>
-      </a>
-      
-      
-    </span>
-    <span class="post-meta-divider">|</span>
-    
-    <span class="meta-item">
-      <i class="fa fa-clock-o"></i>
-      <span>1分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="fa fa-file-word-o"></i>
-      <span>65<span class="pc-show">字数</span></span>
-    </span>
-    
-  </div>
-</header>
-      <div class="post-body">
-        
-        
-          <p>气质恬静，温润如玉的泉水姐姐。<br>
-<img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gdvkbandhtj31340qrn3d.jpg" alt="坂井泉水" loading="lazy"></p>
-
-          
-        
-        
-        <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/ban-jing-quan-shui/" rel="contents">
-            阅读全文 »
-          </a>
-        </div>
-        
-      </div>
-      
-    </div>
-  </article>
-
-  <article class="post-list-box  post box-shadow-wrapper">
-    <div class="article-wrapper bg-color">
-      <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://lhymwm.github.io/post/pandoc-markdown-xie-zuo-gui-fan/">
-      Pandoc Markdown写作规范
-    </a>
-  </h1>
-  <div class="post-meta">
-    
-    <span class="meta-item pc-show">
-      <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
-      <span>2020-04-12</span>
-      <span class="post-meta-divider pc-show">|</span>
-    </span>
-    
-    <span class="meta-item">
-      <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
-      
-      
-      <a href="https://lhymwm.github.io/tag/bo-ke/">
-        <span>博客</span>
-      </a>
-      
-      
-    </span>
-    <span class="post-meta-divider">|</span>
-    
-    <span class="meta-item">
-      <i class="fa fa-clock-o"></i>
-      <span>6分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="fa fa-file-word-o"></i>
-      <span>1335<span class="pc-show">字数</span></span>
-    </span>
-    
-  </div>
-</header>
-      <div class="post-body">
-        
-        
-          <h1 id="写在前面">写在前面</h1>
-<p>本文是远程集体写书的格式规范说明文档。考虑到不少作者，已熟悉Markdown格式，因此，特别撰写一份基于Pandoc Markdown的写作格式规范。</p>
-
-          
-        
-        
-        <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/pandoc-markdown-xie-zuo-gui-fan/" rel="contents">
-            阅读全文 »
-          </a>
-        </div>
-        
-      </div>
-      
-    </div>
-  </article>
-
-  <article class="post-list-box  post box-shadow-wrapper">
-    <div class="article-wrapper bg-color">
-      <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://lhymwm.github.io/post/hexo-bo-ke-cha-ru-yin-pin-shi-pin/">
-      hexo博客插入音频、视频
-    </a>
-  </h1>
-  <div class="post-meta">
-    
-    <span class="meta-item pc-show">
-      <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
-      <span>2020-04-07</span>
-      <span class="post-meta-divider pc-show">|</span>
-    </span>
-    
-    <span class="meta-item">
-      <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
-      
-      
-      <a href="https://lhymwm.github.io/tag/bo-ke/">
-        <span>博客</span>
-      </a>
-      
-      
-    </span>
-    <span class="post-meta-divider">|</span>
-    
-    <span class="meta-item">
-      <i class="fa fa-clock-o"></i>
-      <span>3分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="fa fa-file-word-o"></i>
-      <span>357<span class="pc-show">字数</span></span>
-    </span>
-    
-  </div>
-</header>
-      <div class="post-body">
-        
-        
-          <p>瞎折腾了一波，这下知道了如何插入音频和视频了。</p>
-
-          
-        
-        
-        <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/hexo-bo-ke-cha-ru-yin-pin-shi-pin/" rel="contents">
-            阅读全文 »
-          </a>
-        </div>
-        
-      </div>
-      
-    </div>
-  </article>
-
-  <article class="post-list-box  post box-shadow-wrapper">
-    <div class="article-wrapper bg-color">
-      <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://lhymwm.github.io/post/guan-yu-zhong-wen-zi-you-pai-xue-zhe/">
-      资料收集
-    </a>
-  </h1>
-  <div class="post-meta">
-    
-    <span class="meta-item pc-show">
-      <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
-      <span>2020-03-21</span>
-      <span class="post-meta-divider pc-show">|</span>
-    </span>
-    
-    <span class="meta-item">
-      <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
-      
-      
-      <a href="https://lhymwm.github.io/tag/haQ5YTDzl/">
-        <span>医药行研方法论</span>
-      </a>
-      
-      
-    </span>
-    <span class="post-meta-divider">|</span>
-    
-    <span class="meta-item">
-      <i class="fa fa-clock-o"></i>
-      <span>4分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="fa fa-file-word-o"></i>
-      <span>990<span class="pc-show">字数</span></span>
-    </span>
-    
-  </div>
-</header>
-      <div class="post-body">
-        
-        
-          <p>资料搜集的重要意义：</p>
+<!-- more -->
+<h1 id="mbti偏好">MBTI偏好</h1>
+<p>MBTI通过以下偏好将人们归类：</p>
 <ul>
-<li>学会有效的资料搜集是报告撰写的的最核心环节之一，也是最锻炼自学能力的环节。</li>
-<li>一个合格的行业研究员，需要在1-2周内对一个行业从完全不了解到比较内行。这是建立在强大的资料搜索、信息整理和消化的能力基础上。</li>
-<li>首先报告中所有的论据都是从自己搜索的资料中来，而所有的观点都建立在对于现有资料的全方位了解和深度思考基础上。作为一个优秀研究员，在写行业报告时应该需要把所有能查到的资料都读一遍；而作为优秀的实习生，在写报告之前，至少需要对相关行业、公司中比较重要的资料都通读一遍。如果一个报告撰写时间1个月左右，我的建议是资料阅读和思考至少需要花10天以上的时间。</li>
-<li>个人建议学会使用印象笔记。因为行业工作每天需要接受海量的信息，将资料归类整理必不可少。印象笔记是一个非常适合资料归类整理的软件，个人认为最好的一点在于可以对信息进行分层级的归类，因为成体系的将信息吸收、在大脑里面建立一个系统性框架才是有效的学习。例如我会首先对医药板块各个子版块建立分组。</li>
+<li>如何集中注意力或他们的能量来源（外向性或内向性）</li>
+<li>如何接受信息（感觉或直觉）</li>
+<li>主要靠什么作出决定（情感或思考）</li>
+<li>如何对待外在的世界（判断或理解）<br>
+因为运用他们在这些领域的偏好，人们发展出了荣格和迈尔斯所说的人格类型。这根本的人格是来自四种偏好的动态交互作用，同时也有外在环境的影响以及个人的倾向。人们比较可能在他们的人格类型基础上发展习惯、举止和态度。每种人格类型都有它自己的潜在优势，和提供机遇能让这优势成长的领域。</li>
+<li>I——内倾相对于外倾。INFJ倾向于宁静和有所保留。于社交中，他们消耗能量（同样的情况下，外倾者获得能量）。</li>
+<li>N——直觉相对于感觉。相比关心具体事物，INFJ更加关心于抽象事物。他们更倾向于关注整体而不是细节，关注未来的可能性而非最切近的现实。</li>
+<li>F——感情相对于理性。INFJ通常认为个人偏好高于客观标准。在做决定的时候，他们通常更侧重于人情世故而非逻辑。</li>
+<li>J——判断相对于理解。INFJ倾向于计划他们的活动，并早早地作出决定。他们从可预见性得到掌控之感，在同一方面理解型的人可能看起来被限制。</li>
 </ul>
+<h1 id="特征">特征</h1>
+<p>INFJ是有责任心、受价值观驱使的类型。他们在关系、想法和事件中寻求意义，同时注意如何更好地理解自己与他人。INFJ利用他们的直觉及清晰而充满自信的洞察力用在现实生活中，因而让他们拥有更好的人生目标。和INTJ们一样，他们认为问题是能让他们计划并完成创造性解决办法的机遇。<br>
+INFJ们是安静、内敛的人，喜欢在幕后施展其影响力。虽然非常独立，INFJ们极度关心他人是否幸福。他们喜欢一对一的关系，而非在大的团体里。因为敏感而复杂的个性，他们擅长于理解复杂的问题，并天生被驱使去用一种协作和创造性的方式解决分歧。<br>
+INFJ们拥有富丽、鲜明的内在世界，但可能会不情愿将这内在世界和他人分享。虽然如此，他们在和别人交流时很友善，十分善解人意。通常深受同伴们喜爱，他们可能会被很多不同类型的人认为是密友或知己。然而，他们在表达自己感情的时候十分戒备，特别是对陌生人，因此他们倾向于较慢地建立亲密关系。INFJ们通常容易受到伤害，面对伤害时，INFJ们可能会以“沉默地撤退，作为划定界限的一种方式”，而不是表达他们受到伤害的感情——这样的举止可能会让别人感到困惑、沮丧。<br>
+INFJ们倾向于是沉默、敏感的领袖，性格深沉。他们很难被理解，神秘、高度复杂，有时候连他们自己都会被自己弄糊涂。他们的世界十分有秩序，但是却以一种复杂的方式安排布置，只有他们自己能理解。因为沟通方式倾向于抽象，他们住在一个充满隐含意义和可能性的世界里。天生喜好艺术，因此INFJ们倾向于富于创造性且很容易被感动。然而因了他们的直觉，他们通常在科学这一领域也做得不错。他们高度复杂的世界往往只有同样是INFJ的人才会明白，但正因为INFJ戒备自身世界的特性，INFJ们很常装作迟钝及思想简单，他们非常清楚只有装作迟钝呆滞才能带给自己安全感，他们仅会在自己高度信任的人面前表现出自己机智聪敏的一面。<br>
+在爱情方面，他们对伴侣的要求非常高，因此INFJ成功谈恋爱的次数往往比其他人格更为少，但他们通常是非常忠诚的伴侣，准备好了往一段关系中投入精力和时间并让它长久发展下去。<br>
+根据柯尔塞，基于对举止的观察，有名的INFJ可能包括歌德、甘地、柏拉图、曼德拉、马丁·路德·金恩、卡尔·荣格、列夫·托尔斯泰、汤玛斯·杰佛逊、陀思妥耶夫斯基、西蒙·波娃、阿嘉莎·克莉丝蒂、J·K·罗琳、李安、张国荣和宫崎骏。</p>
 
-          
-        
-        
-        <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/guan-yu-zhong-wen-zi-you-pai-xue-zhe/" rel="contents">
-            阅读全文 »
-          </a>
-        </div>
-        
-      </div>
-      
-    </div>
-  </article>
-
-  <article class="post-list-box  post box-shadow-wrapper">
-    <div class="article-wrapper bg-color">
-      <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://lhymwm.github.io/post/yi-xue-zhong-de-ren-wen/">
-      医学中的人文
-    </a>
-  </h1>
-  <div class="post-meta">
-    
-    <span class="meta-item pc-show">
-      <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
-      <span>2020-02-27</span>
-      <span class="post-meta-divider pc-show">|</span>
-    </span>
-    
-    <span class="meta-item">
-      <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
-      
-      
-      <a href="https://lhymwm.github.io/tag/8FJtxK_e8/">
-        <span>医学</span>
-      </a>、
-      
-      
-      
-      <a href="https://lhymwm.github.io/tag/VplPNvYDts/">
-        <span>人文</span>
-      </a>
-      
-      
-    </span>
-    <span class="post-meta-divider">|</span>
-    
-    <span class="meta-item">
-      <i class="fa fa-clock-o"></i>
-      <span>6分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="fa fa-file-word-o"></i>
-      <span>1766<span class="pc-show">字数</span></span>
-    </span>
-    
-  </div>
-</header>
-      <div class="post-body">
-        
-        
-          <p>樊代明院士写的《医学与科学》这篇文章，旁征博引，从17个方面系统论述了科学与医学之间的异同，并最终强调需要在医学实践中关注由科学的理论、方法、数据和共识可能引发的问题。我能体会到樊院士的高屋建瓴，在我看来文章的重点是在阐述科学与医学之异，强调在医学领域不能唯科学主义。樊院士是高瞻远瞩的，他在文中提到“狭义上讲,人文就是医学中除去科学以外的所有重要的成分。它与科学犹如车之双轮,鸟之两翼,共同推动医学的健康发展。”我认同此观点，下文我将阐述自己由此观点所引发的思考，由浅入深，简单归结为以下三点：1）人文的内涵是什么？2）人文在医学的发展中如何发挥作用？3）医学为什么需要人文？</p>
-
-          
-        
-        
-        <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/yi-xue-zhong-de-ren-wen/" rel="contents">
-            阅读全文 »
-          </a>
-        </div>
-        
-      </div>
-      
-    </div>
-  </article>
-
-  <article class="post-list-box  post box-shadow-wrapper">
-    <div class="article-wrapper bg-color">
-      <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://lhymwm.github.io/post/lesslessjian-qiao-er-shi-shi-ji-zheng-zhi-si-xiang-shi-greatergreater-du-hou-gan/">
-      《剑桥二十世纪政治思想史》读书笔记
-    </a>
-  </h1>
-  <div class="post-meta">
-    
-    <span class="meta-item pc-show">
-      <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
-      <span>2020-02-26</span>
-      <span class="post-meta-divider pc-show">|</span>
-    </span>
-    
-    <span class="meta-item">
-      <i class="fa fa-clock-o"></i>
-      <span>1分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="fa fa-file-word-o"></i>
-      <span>88<span class="pc-show">字数</span></span>
-    </span>
-    
-  </div>
-</header>
-      <div class="post-body">
-        
-        
-          
-          
-        
-        
-        <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/lesslessjian-qiao-er-shi-shi-ji-zheng-zhi-si-xiang-shi-greatergreater-du-hou-gan/" rel="contents">
-            阅读全文 »
-          </a>
-        </div>
-        
-      </div>
-      
-    </div>
-  </article>
-
-  <article class="post-list-box  post box-shadow-wrapper">
-    <div class="article-wrapper bg-color">
-      <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://lhymwm.github.io/post/ru-he-du-li-si-kao/">
-      如何独立思考🤔
-    </a>
-  </h1>
-  <div class="post-meta">
-    
-    <span class="meta-item pc-show">
-      <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
-      <span>2020-02-22</span>
-      <span class="post-meta-divider pc-show">|</span>
-    </span>
-    
-    <span class="meta-item">
-      <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
-      
-      
-      <a href="https://lhymwm.github.io/tag/QwnUYn5U9/">
-        <span>思维</span>
-      </a>
-      
-      
-    </span>
-    <span class="post-meta-divider">|</span>
-    
-    <span class="meta-item">
-      <i class="fa fa-clock-o"></i>
-      <span>8分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="fa fa-file-word-o"></i>
-      <span>2165<span class="pc-show">字数</span></span>
-    </span>
-    
-  </div>
-</header>
-      <div class="post-body">
-        
-        
-          <p><em>声明：本文整理自网络，如有侵权，请留言或者邮件博主删除。</em><br>
-“<strong>独立</strong>”是“<strong>自由</strong>”的前提，没有“<strong>独立思考</strong>”就没有“<strong>思想自由</strong>”🤔。</p>
-
-          
-        
-        
-        <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/ru-he-du-li-si-kao/" rel="contents">
-            阅读全文 »
-          </a>
-        </div>
-        
-      </div>
-      
-    </div>
-  </article>
-  
-            
-            
-<div class="page bg-color">
-  <ul class="pagination-ul">
-    
-    
-      
-        <li class="pagination-li pagination-active">
-            <a href="/page/../">
-              1
-            </a>
-        </li>
-      
-        <li class="pagination-li ">
-            <a href="/page/2">
-              2
-            </a>
-        </li>
-      
-        <li class="pagination-li ">
-            <a href="/page/3">
-              3
-            </a>
-        </li>
-      
-    
-    
-      <li class="pagination-dir">
-        <a href="/page/2">
-          <i class="fa fa-angle-right"></i>
-        </a>
-      </li>
-    
+            </div>
+            <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      以梦为马
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://lhymwm.github.io/post/infj-ren-ge-jian-jie/" title="INFJ人格简介">https://lhymwm.github.io/post/infj-ren-ge-jian-jie/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
   </ul>
+  <div class="tags">
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="论三心二意" href="https://lhymwm.github.io/post/lun-san-xin-er-yi/">论三心二意</a>
+        <a class="nav-mobile-next" title="论三心二意" href="https://lhymwm.github.io/post/lun-san-xin-er-yi/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
+      
+    </div>
+  </div>
 </div>
-          </section>
+            
+  <script src="https://cdn.jsdelivr.net/npm/valine@1.4.4/dist/Valine.min.js"></script>
+<div id="vcomments" style="padding: 10px 0px 0px 0px"></div>
+
+<style>
+  .v .veditor {
+    min-height: 10rem;
+    background-image: url('https://upimage.alexhchu.com/2020/04/21/47eda59424daa.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+  }
+
+  .v .vwrap {
+    border: 1px solid #000 !important;
+  }
+
+  .v .vbtn {
+    padding: .4rem 1.2rem !important;
+    border-color: #fff !important;
+    background-color: #49b1f5 !important;
+    color: #fff !important;
+    font-size: .7rem !important;
+  }
+
+  .v .vcards .vcard .vh .vmeta .vat {
+    padding: 0 .8rem !important;
+    border: 1px solid #00c4b6 !important;
+    border-radius: 5px !important;
+    color: #00c4b6 !important;
+  }
+</style>
+<script>
+  new Valine({
+    el: '#vcomments',
+    appId: 'm4eqRklI9x8IIIngVPfaVLti-MdYXbMMI',
+    appKey: '0UkAyCj4qACw5cAnXIYf5t3h',
+    avatar: '',
+    placeholder: '欢迎评论',
+    pageSize: '',
+    lang: 'zh-cn',
+    visitor: 'true' === 'true',
+    highlight: 'true' === 'true',
+    avatarForce: 'true' === 'false',
+  });
+</script>
+
+          </div>
         </div>
       </div>
     </div>
@@ -2674,7 +2483,6 @@ document.getElementById(&#34;spkj&#34;).style.height=document.getElementById(&#3
     searchBox.addEventListener('input', search(200));
   }()
 </script>
-
 
 
 </html>
