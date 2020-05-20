@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-05-19T23:40:09.911Z</updated>
+    <updated>2020-05-20T11:30:47.097Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -16,7 +16,11 @@
         <link href="https://lhymwm.github.io/post/lun-san-xin-er-yi/">
         </link>
         <updated>2020-05-19T16:33:19.000Z</updated>
-        <content type="html"><![CDATA[<p>不喜欢和三心二意的人交朋友，更不喜欢和三心二意的人深入交往，无论这种三心二意是体现在外表上的，还是体现在内在上。但凡在外表上或者内在上，我发现别人一点三心二意的行为，并思忖着这个人的人品或有点问题。我很讨厌人品出问题的人，我会自觉地远离这样的人。或许，这也是一种所谓的洁癖吧。<br>
+        <summary type="html"><![CDATA[<p>不喜欢和三心二意的人交朋友，更不喜欢和三心二意的人深入交往，无论这种三心二意是体现在外表上的，还是体现在内在上。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>不喜欢和三心二意的人交朋友，更不喜欢和三心二意的人深入交往，无论这种三心二意是体现在外表上的，还是体现在内在上。</p>
+<!-- more -->
+<p>但凡在外表上或者内在上，我发现别人一点三心二意的行为，并思忖着这个人的人品或有点问题。我很讨厌人品出问题的人，我会自觉地远离这样的人。或许，这也是一种所谓的洁癖吧。<br>
 不过，话说回来，与人相处应当遵守严于律己，宽以待人的准则。所以，或许未来我当降低对别人的期许，减少对别人的期待，这样是更好的。如果能够践行这一种领会，这也算是一种成长吧。<br>
 看淡这些，或许未来会走得更加坦诚与自然。如是真好。</p>
 ]]></content>
@@ -58,8 +62,12 @@
         <link href="https://lhymwm.github.io/post/pandoc-markdown-xie-zuo-gui-fan/">
         </link>
         <updated>2020-04-11T17:21:25.000Z</updated>
+        <summary type="html"><![CDATA[<h1 id="写在前面">写在前面</h1>
+<p>本文是远程集体写书的格式规范说明文档。考虑到不少作者，已熟悉Markdown格式，因此，特别撰写一份基于Pandoc Markdown的写作格式规范。</p>
+]]></summary>
         <content type="html"><![CDATA[<h1 id="写在前面">写在前面</h1>
 <p>本文是远程集体写书的格式规范说明文档。考虑到不少作者，已熟悉Markdown格式，因此，特别撰写一份基于Pandoc Markdown的写作格式规范。</p>
+<!-- more -->
 <h1 id="语法导读">语法导读</h1>
 <ul>
 <li>[Pandoc’s Markdown 語法中文翻譯]</li>
@@ -472,10 +480,10 @@ document.getElementById("spkj").style.height=document.getElementById("spkj").scr
         <link href="https://lhymwm.github.io/post/lesslesszhong-guo-guo-jia-zhi-li-de-zhi-du-luo-ji-greatergreater-du-shu-bi-ji/">
         </link>
         <updated>2020-02-17T17:53:21.000Z</updated>
-        <summary type="html"><![CDATA[<p>疫情期间，社会学家周雪光关于此次疫情的爆发发表了自己的见解，引人深思。《中国国家治理的制度逻辑》这本书是周雪光老师的一本著作，我读完感觉收获颇多。<br>
+        <summary type="html"><![CDATA[<p>疫情期间，社会学家周雪光关于此次疫情的爆发发表了自己的见解，引人深思。《中国国家治理的制度逻辑》是周雪光老师的一本著作，读完感觉收获颇多。<br>
 <img src="https://tva1.sinaimg.cn/large/00831rSTly1gcfq0taajbj30u016stbf.jpg" alt="《中国国家治理的制度逻辑》" loading="lazy"></p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>疫情期间，社会学家周雪光关于此次疫情的爆发发表了自己的见解，引人深思。《中国国家治理的制度逻辑》这本书是周雪光老师的一本著作，我读完感觉收获颇多。<br>
+        <content type="html"><![CDATA[<p>疫情期间，社会学家周雪光关于此次疫情的爆发发表了自己的见解，引人深思。《中国国家治理的制度逻辑》是周雪光老师的一本著作，读完感觉收获颇多。<br>
 <img src="https://tva1.sinaimg.cn/large/00831rSTly1gcfq0taajbj30u016stbf.jpg" alt="《中国国家治理的制度逻辑》" loading="lazy"></p>
 <!-- more -->
 <h1 id="结语-中国国家治理的制度逻辑">结语 中国国家治理的制度逻辑</h1>
