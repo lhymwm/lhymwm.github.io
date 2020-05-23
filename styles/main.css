@@ -2114,10 +2114,10 @@ pre > span.copy-code:hover {
   font-weight: bold;
 }
 body {
-      background-color: #eee;
+      background-color: #dee2e6;
     }
     .nav-toggle .line {
-      background-color: #eee !important;
+      background-color: #dee2e6 !important;
     }.header {
         width: 1080px;
         margin: 0 auto;
@@ -2129,7 +2129,7 @@ body {
       }
     @font-face {
       font-family: '思源宋体M';
-      src: url('https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.2.8/media/fonts/思源宋体M.ttf');
+      src: url('https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.2.9/media/fonts/思源宋体M.ttf');
     }
     * {
         font-family: '思源宋体M';
@@ -2227,7 +2227,7 @@ body {
       color: #ff6b6b;
       border-bottom-color: #ff6b6b;
     }.bg-color {
-      background-color: #f1f3f5fe;
+      background-color: #f8f9fafe;
     }
       .site-meta {
         background: #000 !important;
