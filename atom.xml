@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-05-23T03:23:51.348Z</updated>
+    <updated>2020-05-23T03:31:49.824Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2020, 以梦为马</rights>
     <entry>
         <title type="html"><![CDATA[INFJ人格简介]]></title>
-        <id>https://lhymwm.github.io/post/infj人格简介/</id>
-        <link href="https://lhymwm.github.io/post/infj人格简介/">
+        <id>https://lhymwm.github.io/post/infj/</id>
+        <link href="https://lhymwm.github.io/post/infj/">
         </link>
         <updated>2020-05-20T14:53:46.000Z</updated>
         <summary type="html"><![CDATA[<p>附人格测试链接，<a href="https://www.16personalities.com/ch/%E4%BA%BA%E6%A0%BC%E6%B5%8B%E8%AF%95">MBTI16型人格测试</a>。<br>
