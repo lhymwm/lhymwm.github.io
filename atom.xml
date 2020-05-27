@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-05-27T02:13:14.608Z</updated>
+    <updated>2020-05-27T12:14:22.771Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -66,7 +66,11 @@ INFJ们倾向于是沉默、敏感的领袖，性格深沉。他们很难被理�
 <iframe id="spkj" src="https://player.bilibili.com/player.html?aid=58424750&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=100%> </iframe>
 <script type="text/javascript">  
 document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth*0.76+"px";
-</script>]]></content>
+</script>
+---------------------
+<p>2020年5月27日是坂井泉水去世13周年，给姐姐献上一朵花，愿在天堂安好！<br>
+<img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gf79pp1y1bj31iv0u04qw.jpg" alt="坂井泉水" loading="lazy"></p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Pandoc Markdown写作规范]]></title>
