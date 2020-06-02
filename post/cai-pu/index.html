@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="stay hungry, stay foolish">
 <meta name="theme-color" content="#000">
-<title>重拾前辈的爱情观 | 以梦为马</title>
+<title>菜谱 | 以梦为马</title>
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.1/favicon.ico?v=1591094871023">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.1/styles/main.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.1/media/css/gemini.css">
@@ -59,8 +59,8 @@
   })();
 </script>
 
-  <meta name="description" content="重拾前辈的爱情观" />
-  <meta name="keywords" content="爱情观" />
+  <meta name="description" content="菜谱" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -235,7 +235,8 @@
       <div class="sidebar-body gemini" id="sidebar_body">
         
           
-            
+            <div class="post-side-meta" id="post_side_meta">
+              
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.1/images/avatar.png"/>
@@ -299,6 +300,191 @@
 
 
 </div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number no_compress"
+    id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li><a href="#%E9%85%B8%E8%BE%A3%E5%9C%9F%E8%B1%86%E4%B8%9D">酸辣土豆丝</a></li>
+</ul>
+
+  </div>
+</div>
+
+<script>
+
+  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
+  let active = 'active-show', activeClass = 'active-current';
+  let tocWrapper = document.querySelector('#toc_wrapper');
+  let tocContent = tocWrapper.children[0];
+  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
+
+  function addTocNumber(elem, deep) {
+    if (!elem) {
+      return;
+    }
+    let prop = elem.__proto__;
+
+    if (prop === HTMLUListElement.prototype) {
+      for (let i = 0; i < elem.children.length; i++) {
+        addTocNumber(elem.children[i], deep + (i + 1) + '.');
+      }
+    } else if (prop === HTMLLIElement.prototype) {
+      // 保存li元素
+      if (elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
+        lList.push(elem);
+      }
+      for (let i = 0; i < elem.children.length; i++) {
+        let cur = elem.children[i];
+        if (cur.__proto__ === HTMLAnchorElement.prototype) {
+          if (autoNumber) {
+            cur.text = deep + ' ' + cur.text;
+          }
+        } else if (cur.__proto__ === HTMLUListElement.prototype) {
+          addTocNumber(cur, deep);
+        }
+      }
+    }
+  }
+
+  function removeParentActiveClass() {
+    let parents = tocContent.querySelectorAll('.' + active)
+    parents.forEach(function (elem) {
+      elem.classList.remove(active);
+    });
+  }
+
+  function addActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.add(activeClass);
+    }
+  }
+
+  function removeActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.remove(activeClass);
+    }
+  }
+
+  function addActiveLiElemment(elem, parent) {
+    if (!elem || elem === parent) {
+      return;
+    } else {
+      if (elem.__proto__ === HTMLLIElement.prototype) {
+        elem.classList.add(active);
+      }
+      addActiveLiElemment(elem.parentElement, parent);
+    }
+  }
+
+  function showToc() {
+    if (tocWrapper) {
+      postBody = document.querySelector('#post_body');
+      for (let i = 0; i < postBody.children.length; i++) {
+        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+          hList.push(postBody.children[i]);
+        }
+      }
+      if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+      } else if (tocWrapper.classList.contains('no_compress')) {
+        tocContent.classList.add('expanded');
+      } else {
+        if (hList.length > 10) {
+          active = 'active-hidden'
+          tocContent.classList.add('closed');
+        } else {
+          tocContent.classList.add('expanded');
+        }
+      }
+    }
+  }
+
+  (function () {
+    // 处理不是从#一级标题开始目录
+    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
+      let con = tocContent.children[0].children[0];
+      tocContent.innerHTML = con.innerHTML;
+    }
+    let markdownItTOC = document.querySelector('.markdownIt-TOC');
+    let innerHeight = window.innerHeight;
+    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
+    addTocNumber(tocContent, '');
+  })();
+
+  document.addEventListener('scroll', function (e) {
+    if (lList.length <= 0) {
+      return;
+    }
+    let scrollTop = document.scrollingElement.scrollTop + 10;
+    let dir;
+
+    if (lastTop - scrollTop > 0) {
+      dir = 'up';
+    } else {
+      dir = 'down';
+    }
+
+    lastTop = scrollTop;
+    if (scrollTop <= 0) {
+      if (lastIndex >= 0 && lastIndex < hList.length) {
+        lList[lastIndex].classList.remove(activeClass);
+      }
+      return;
+    }
+
+    let current = 0, hasFind = false;
+    for (let i = 0; i < hList.length; i++) {
+      if (hList[i].offsetTop > scrollTop) {
+        current = i;
+        hasFind = true;
+        break;
+      }
+    }
+    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+      current = hList.length - 1;
+    } else {
+      current--;
+    }
+    if (dir === 'down') {
+      if (current > lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex)
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    } else {
+      if (current < lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex);
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    }
+  });
+
+
+  window.addEventListener('load', function () {
+    showToc();
+    document.querySelector('#sidebar').style = 'display: block;';
+    tocWrapper.classList.add('toc-active');
+    setTimeout(function () {
+      if ("createEvent" in document) {
+        let evt = document.createEvent("HTMLEvents");
+        evt.initEvent("scroll", false, true);
+        document.dispatchEvent(evt);
+      }
+      else {
+        document.fireEvent("scroll");
+      }
+    }, 500)
+  })
+
+</script>
+            </div>
           
         
       </div>
@@ -386,8 +572,8 @@
           <div class="section bg-color post post-page">
             <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://lhymwm.github.io/post/chong-shi-qian-bei-de-ai-qing-guan/">
-      重拾前辈的爱情观
+    <a class="post-title-link" href="https://lhymwm.github.io/post/cai-pu/">
+      菜谱
     </a>
   </h1>
   <div class="post-meta">
@@ -395,22 +581,9 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2019-11-24</span>
+      <span>2020-06-02</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
-    
-    <span class="meta-item">
-      <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
-      
-      
-      <a href="https://lhymwm.github.io/tag/PEVOjH27l/">
-        <span>爱情观</span>
-      </a>
-      
-      
-    </span>
-    <span class="post-meta-divider">|</span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
@@ -419,12 +592,12 @@
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>118<span class="pc-show">字数</span></span>
+      <span>19<span class="pc-show">字数</span></span>
     </span>
     
     
     
-    <span id="/post/chong-shi-qian-bei-de-ai-qing-guan/" data-flag-title="重拾前辈的爱情观" class="meta-item pc-show leancloud_visitors">
+    <span id="/post/cai-pu/" data-flag-title="菜谱" class="meta-item pc-show leancloud_visitors">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-eye"></i>
       <span>浏览量：<span class="leancloud-visitors-count"></span></span>
@@ -433,10 +606,8 @@
   </div>
 </header>
             <div class="post-body next-md-body" id="post_body">
-              <p>杨绛先生的爱情观</p>
-<blockquote>
-<p>在物质至上的时代潮流下，想提醒年轻的朋友，男女结合最最重要的是感情，双方理解的程度，理解深才能相互欣赏吸引、支持鼓励，两情相悦。门当户对及其他，并不重要。我以为，夫妻间最重要的是朋友关系，即使不能做知心朋友，也该是能做得伴侣朋友或相互尊重的伴侣。</p>
-</blockquote>
+              <p>生活需要过得有滋有味，所以做菜。</p>
+<h1 id="酸辣土豆丝">酸辣土豆丝</h1>
 
             </div>
             <div class="post-footer">
@@ -447,7 +618,7 @@
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://lhymwm.github.io/post/chong-shi-qian-bei-de-ai-qing-guan/" title="重拾前辈的爱情观">https://lhymwm.github.io/post/chong-shi-qian-bei-de-ai-qing-guan/</a>
+      <a href="https://lhymwm.github.io/post/cai-pu/" title="菜谱">https://lhymwm.github.io/post/cai-pu/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -456,18 +627,16 @@
   </ul>
   <div class="tags">
     
-      <a href="https://lhymwm.github.io/tag/PEVOjH27l/"># 爱情观</a>
-    
   </div>
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="换眼镜" href="https://lhymwm.github.io/post/huan-yan-jing/">换眼镜</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="换眼镜" href="https://lhymwm.github.io/post/huan-yan-jing/">上一篇</a>
-      
     </div>
     <div class="nav-next">
+      
+        <a class="nav-pc-next" title="INFJ人格简介" href="https://lhymwm.github.io/post/infj/">INFJ人格简介</a>
+        <a class="nav-mobile-next" title="INFJ人格简介" href="https://lhymwm.github.io/post/infj/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>
