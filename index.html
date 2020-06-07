@@ -9,21 +9,19 @@
 <meta name="description" content="stay hungry, stay foolish">
 <meta name="theme-color" content="#000">
 <title>以梦为马</title>
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.1/favicon.ico?v=1591095989467">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.1/styles/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.1/media/css/gemini.css">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.1/media/fonts/font-awesome.css">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/favicon.ico?v=1591497672134">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/media/css/gemini.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/media/fonts/font-awesome.css">
 <link
   href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
   rel="stylesheet" type="text/css">
 
-<link href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.1/media/hljs/styles/github.css"
+<link href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/media/hljs/styles/github.css"
   rel="stylesheet">
-  
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/styles/main.css">
 
-<script src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.1/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/media/hljs/highlight.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
@@ -58,6 +56,7 @@
     s.parentNode.insertBefore(hm, s);
   })();
 </script>
+
 
 </head>
 
@@ -192,11 +191,13 @@
               </li>
             
           
-          <li id="fa_search" class="nav-item">
-            <a href="javascript:void(0);">
-              <i class="fa fa-search"></i> 搜索
-            </a>
-          </li>
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
         </ul>
       </nav>
     </div>
@@ -234,7 +235,7 @@
     
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
-    <img class="site-author-image right-motion" src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.1/images/avatar.png"/>
+    <img class="site-author-image right-motion" src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/images/avatar.png"/>
     <p class="site-author-name">以梦为马</p>
     
     <div class="site-description right-motion">
@@ -252,19 +253,19 @@
       <a href="/archives/">
         
         <span class="site-item-stat-count">18</span>
-        <span class="site-item-stat-name">文章</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="">
         <span class="site-item-stat-count">12</span>
-        <span class="site-item-stat-name">分类</span>
+        <span class="site-item-stat-name language" data-lan="category">分类</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
         <span class="site-item-stat-count">12</span>
-        <span class="site-item-stat-name">标签</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
   </div>
@@ -293,6 +294,12 @@
     </div>
   
 
+
+
+  <div style="width: 100%; position: relative;">
+    <canvas id="canvasDiyBlock" style="width:100%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+    <script src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/media/js/magic/clock.js"></script>
+  </div>
 
 </div>
 </div>
@@ -325,19 +332,19 @@
     
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
+      <span class="language" data-lan="publish">发布于</span>
       <span>2020-06-02</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>1分钟</span>
+      <span>1<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>19<span class="pc-show">字数</span></span>
+      <span>19<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
   </div>
@@ -350,7 +357,7 @@
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/cai-pu/" rel="contents">
+          <a class="btn language" data-lan="read-more" href="https://lhymwm.github.io/post/cai-pu/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -372,14 +379,14 @@
     
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
+      <span class="language" data-lan="publish">发布于</span>
       <span>2020-05-20</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
+      <span class="pc-show language" data-lan="category-in">分类于</span>
       
       
       <a href="https://lhymwm.github.io/tag/du-ren/">
@@ -392,12 +399,12 @@
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>5分钟</span>
+      <span>5<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>1375<span class="pc-show">字数</span></span>
+      <span>1375<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
   </div>
@@ -414,7 +421,7 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/infj/" rel="contents">
+          <a class="btn language" data-lan="read-more" href="https://lhymwm.github.io/post/infj/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -436,14 +443,14 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
+      <span class="language" data-lan="publish">发布于</span>
       <span>2020-04-16</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
+      <span class="pc-show language" data-lan="category-in">分类于</span>
       
       
       <a href="https://lhymwm.github.io/tag/0QxZRts3c/">
@@ -456,12 +463,12 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>1分钟</span>
+      <span>1<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>73<span class="pc-show">字数</span></span>
+      <span>73<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
   </div>
@@ -476,7 +483,7 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/ban-jing-quan-shui/" rel="contents">
+          <a class="btn language" data-lan="read-more" href="https://lhymwm.github.io/post/ban-jing-quan-shui/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -498,14 +505,14 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
+      <span class="language" data-lan="publish">发布于</span>
       <span>2020-04-12</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
+      <span class="pc-show language" data-lan="category-in">分类于</span>
       
       
       <a href="https://lhymwm.github.io/tag/bo-ke/">
@@ -518,12 +525,12 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>6分钟</span>
+      <span>6<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>1335<span class="pc-show">字数</span></span>
+      <span>1335<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
   </div>
@@ -538,7 +545,7 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/pandoc-markdown-xie-zuo-gui-fan/" rel="contents">
+          <a class="btn language" data-lan="read-more" href="https://lhymwm.github.io/post/pandoc-markdown-xie-zuo-gui-fan/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -560,14 +567,14 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
+      <span class="language" data-lan="publish">发布于</span>
       <span>2020-04-07</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
+      <span class="pc-show language" data-lan="category-in">分类于</span>
       
       
       <a href="https://lhymwm.github.io/tag/bo-ke/">
@@ -580,12 +587,12 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>3分钟</span>
+      <span>3<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>357<span class="pc-show">字数</span></span>
+      <span>357<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
   </div>
@@ -599,7 +606,7 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/hexo-bo-ke-cha-ru-yin-pin-shi-pin/" rel="contents">
+          <a class="btn language" data-lan="read-more" href="https://lhymwm.github.io/post/hexo-bo-ke-cha-ru-yin-pin-shi-pin/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -621,14 +628,14 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
+      <span class="language" data-lan="publish">发布于</span>
       <span>2020-03-21</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
+      <span class="pc-show language" data-lan="category-in">分类于</span>
       
       
       <a href="https://lhymwm.github.io/tag/haQ5YTDzl/">
@@ -641,12 +648,12 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>4分钟</span>
+      <span>4<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>990<span class="pc-show">字数</span></span>
+      <span>990<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
   </div>
@@ -666,7 +673,7 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/guan-yu-zhong-wen-zi-you-pai-xue-zhe/" rel="contents">
+          <a class="btn language" data-lan="read-more" href="https://lhymwm.github.io/post/guan-yu-zhong-wen-zi-you-pai-xue-zhe/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -688,14 +695,14 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
+      <span class="language" data-lan="publish">发布于</span>
       <span>2020-02-27</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
+      <span class="pc-show language" data-lan="category-in">分类于</span>
       
       
       <a href="https://lhymwm.github.io/tag/8FJtxK_e8/">
@@ -714,12 +721,12 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>6分钟</span>
+      <span>6<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>1766<span class="pc-show">字数</span></span>
+      <span>1766<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
   </div>
@@ -733,7 +740,7 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/yi-xue-zhong-de-ren-wen/" rel="contents">
+          <a class="btn language" data-lan="read-more" href="https://lhymwm.github.io/post/yi-xue-zhong-de-ren-wen/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -755,19 +762,19 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
+      <span class="language" data-lan="publish">发布于</span>
       <span>2020-02-26</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>1分钟</span>
+      <span>1<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>88<span class="pc-show">字数</span></span>
+      <span>88<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
   </div>
@@ -780,7 +787,7 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/lesslessjian-qiao-er-shi-shi-ji-zheng-zhi-si-xiang-shi-greatergreater-du-hou-gan/" rel="contents">
+          <a class="btn language" data-lan="read-more" href="https://lhymwm.github.io/post/lesslessjian-qiao-er-shi-shi-ji-zheng-zhi-si-xiang-shi-greatergreater-du-hou-gan/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -802,14 +809,14 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
+      <span class="language" data-lan="publish">发布于</span>
       <span>2020-02-22</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
+      <span class="pc-show language" data-lan="category-in">分类于</span>
       
       
       <a href="https://lhymwm.github.io/tag/QwnUYn5U9/">
@@ -822,12 +829,12 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>8分钟</span>
+      <span>8<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>2165<span class="pc-show">字数</span></span>
+      <span>2165<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
   </div>
@@ -842,7 +849,7 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/ru-he-du-li-si-kao/" rel="contents">
+          <a class="btn language" data-lan="read-more" href="https://lhymwm.github.io/post/ru-he-du-li-si-kao/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -864,14 +871,14 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
+      <span class="language" data-lan="publish">发布于</span>
       <span>2020-02-18</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
+      <span class="pc-show language" data-lan="category-in">分类于</span>
       
       
       <a href="https://lhymwm.github.io/tag/dlaCxCZBE/">
@@ -890,12 +897,12 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>4分钟</span>
+      <span>4<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>1173<span class="pc-show">字数</span></span>
+      <span>1173<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
   </div>
@@ -910,7 +917,7 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
         
         
         <div class="post-button text-center">
-          <a class="btn" href="https://lhymwm.github.io/post/lesslesszhong-guo-guo-jia-zhi-li-de-zhi-du-luo-ji-greatergreater-du-shu-bi-ji/" rel="contents">
+          <a class="btn language" data-lan="read-more" href="https://lhymwm.github.io/post/lesslesszhong-guo-guo-jia-zhi-li-de-zhi-du-luo-ji-greatergreater-du-shu-bi-ji/" rel="contents">
             阅读全文 »
           </a>
         </div>
@@ -956,7 +963,8 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     <div class="footer-box">
   <footer class="footer">
     <div class="copyright">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a
+        href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
     </div>
     <div class="poweredby">
        <div class="footer-box">
@@ -996,13 +1004,13 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
   let sideBarOpen = 'sidebar-open';
   let body = document.body;
   let back2Top = document.querySelector('#back_to_top'),
-  back2TopText = document.querySelector('#back_to_top_text'),
-  drawerBox = document.querySelector('#drawer_box'),
-  rightSideBar = document.querySelector('.sidebar'),
-  viewport = document.querySelector('body');
+    back2TopText = document.querySelector('#back_to_top_text'),
+    drawerBox = document.querySelector('#drawer_box'),
+    rightSideBar = document.querySelector('.sidebar'),
+    viewport = document.querySelector('body');
 
   function scrollAnimation(currentY, targetY) {
-   
+
     let needScrollTop = targetY - currentY
     let _currentY = currentY
     setTimeout(() => {
@@ -1017,13 +1025,13 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     }, 1)
   }
 
-  back2Top.addEventListener("click", function(e) {
+  back2Top.addEventListener("click", function (e) {
     scrollAnimation(document.scrollingElement.scrollTop, 0);
     e.stopPropagation();
     return false;
   });
-  
-  window.addEventListener('scroll', function(e) {
+
+  window.addEventListener('scroll', function (e) {
     let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
     if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
       back2Top.classList.add('back-top-active');
@@ -1036,14 +1044,10 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     }
   });
 
-  
+
   let hasCacu = false;
-  window.onresize = function() {
-    if (window.width > 991) {
-      calcuHeight();
-    } else {
-      hasCacu = false;
-    }
+  window.onresize = function () {
+    calcuHeight();
   }
 
   function calcuHeight() {
@@ -1056,7 +1060,7 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     }
   }
   calcuHeight();
-  
+
   let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
 
   if (drawerBox) {
@@ -1068,21 +1072,21 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     let openProp, closeProp;
     if (right) {
       openProp = {
-        paddingRight: RIGHT_MOVE_DIS 
+        paddingRight: RIGHT_MOVE_DIS
       };
       closeProp = {
         paddingRight: '0px'
       };
     } else {
       openProp = {
-        paddingLeft: RIGHT_MOVE_DIS 
+        paddingLeft: RIGHT_MOVE_DIS
       };
       closeProp = {
         paddingLeft: '0px'
       };
     }
 
-    drawerBox.onclick = function() {
+    drawerBox.onclick = function () {
       open = !open;
       window.Velocity(rightSideBar, 'stop');
       window.Velocity(viewport, 'stop');
@@ -1092,11 +1096,11 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
           width: RIGHT_MOVE_DIS
         }, {
           duration: MOTION_TIME,
-          begin: function() {
-            window.Velocity(rightMotions, transitionDir,{ });
+          begin: function () {
+            window.Velocity(rightMotions, transitionDir, {});
           }
         })
-        window.Velocity(viewport, openProp,{
+        window.Velocity(viewport, openProp, {
           duration: MOTION_TIME
         });
       } else {
@@ -1104,13 +1108,13 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
           width: '0px'
         }, {
           duration: MOTION_TIME,
-          begin: function() {
+          begin: function () {
             window.Velocity(rightMotions, {
               opacity: 0
             });
           }
         })
-        window.Velocity(viewport, closeProp ,{
+        window.Velocity(viewport, closeProp, {
           duration: MOTION_TIME
         });
       }
@@ -1127,18 +1131,31 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
     let links = document.querySelectorAll('.post-body a')
     links.forEach(item => {
       if (!item.classList.contains('btn')) {
-        item.setAttribute("target","_blank");
+        item.setAttribute("target", "_blank");
       }
     })
   }
 
   let faSearch = document.querySelector('#fa_search');
-  faSearch.addEventListener('click', function() {
+  faSearch.addEventListener('click', function () {
     document.querySelector('#search_mask').style = ''
   })
 
   // 代码高亮
   hljs.initHighlightingOnLoad();
+  
+  // 离开当前页title变化
+  var leaveTitle = '';
+  if (leaveTitle) {
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState == 'hidden') {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
 
 </script>
     <div class="light-box" id="light_box"></div>
@@ -1173,115 +1190,18 @@ INFJ是最稀少的类型之一，大概占人口的1%，其中男性INFJ最为�
 </script>
   </div>
 </body>
-<input hidden id="copy" />
-<script>
-  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
-  window.Clipboard = (function (window, document, navigator) {
-    var textArea,
-      copy;
 
-    // 判断是不是ios端
-    function isOS() {
-      return navigator.userAgent.match(/ipad|iphone/i);
-    }
-    //创建文本元素
-    function createTextArea(text) {
-      textArea = document.createElement('textArea');
-      textArea.value = text;
-      textArea.style.width = 0;
-      textArea.style.height = 0;
-      textArea.clientHeight = 0;
-      textArea.clientWidth = 0;
-      document.body.appendChild(textArea);
-    }
-    //选择内容
-    function selectText() {
-      var range,
-        selection;
-
-      if (isOS()) {
-        range = document.createRange();
-        range.selectNodeContents(textArea);
-        selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-        textArea.setSelectionRange(0, 999999);
-      } else {
-        textArea.select();
-      }
-    }
-
-    //复制到剪贴板
-    function copyToClipboard() {
-      try {
-        document.execCommand("Copy")
-      } catch (err) {
-        alert("复制错误！请手动复制！")
-      }
-      document.body.removeChild(textArea);
-    }
-
-    copy = function (text) {
-      createTextArea(text);
-      selectText();
-      copyToClipboard();
-    };
-
-    return {
-      copy: copy
-    };
-  })(window, document, navigator);
-
-  function copyCode(e) {
-    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
-      let code = e.currentTarget.querySelector('code');
-      var text = code.innerText;
-      if (e.srcElement.textContent === '复制成功') {
-        console.log('复制操作频率过高');
-        return;
-      }
-      e.srcElement.textContent = '复制成功';
-      (function (elem) {
-        setTimeout(() => {
-          if (elem.textContent === '复制成功') {
-            elem.textContent = '复制代码'
-          }
-        }, 1000);
-      })(e.srcElement)
-      Clipboard.copy(text);
-    }
-  }
-
-  let pres = document.querySelectorAll('pre');
-  pres.forEach(pre => {
-    let code = pre.querySelector('code');
-    let copyElem = document.createElement('span');
-    copyElem.classList.add('copy-code');
-    copyElem.textContent = '复制代码';
-    pre.appendChild(copyElem);
-    pre.onclick = copyCode
-  })
-</script>
-<script src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.1/media/js/motion.js"></script>
-
-<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-<script>
-  var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 200
-  });
-</script>
-
-<div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-mask" id="search_mask" style="display: none;">
   <div class="search-box">
     <div class="search-title">
       <i class="fa fa-search"></i>
       <div class="input-box">
-        <input id="search" type="text" placeholder="搜索">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
       </div>
       <i id="close" class="fa fa-times-circle"></i>
     </div>
     <div class="stat-box">
-      <span id="stat_count">0</span>条相关条目，使用了<span id="stat_times">0</span>毫秒
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
       <hr>
     </div>
     <div class="result" id="result">
@@ -2183,6 +2103,154 @@ document.getElementById(&#34;spkj&#34;).style.height=document.getElementById(&#3
     searchBox.addEventListener('input', search(200));
   }()
 </script>
+
+<input hidden id="copy" />
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        console.log('复制操作频率过高');
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/media/js/motion.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 200
+  });
+</script>
+
 
 
 

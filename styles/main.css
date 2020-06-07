@@ -209,8 +209,7 @@ pre > span.copy-code:hover {
   overflow-y: hidden !important;
 }
 .head-top-line {
-  height: 3px;
-  background: #222;
+  height: 2px;
 }
 .header-box {
   position: relative;
@@ -604,7 +603,7 @@ pre > span.copy-code:hover {
 }
 .post-footer .post-eof {
   display: block;
-  margin: 80px auto 60px;
+  margin: 40px auto 30px;
   width: 8%;
   height: 1px;
   background: #ccc;
@@ -2115,9 +2114,6 @@ pre > span.copy-code:hover {
 }
 body {
       background-color: #dee2e6;
-    }
-    .nav-toggle .line {
-      background-color: #dee2e6 !important;
     }.header {
         width: 1080px;
         margin: 0 auto;
@@ -2129,7 +2125,7 @@ body {
       }
     @font-face {
       font-family: '思源宋体M';
-      src: url('https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.1/media/fonts/思源宋体M.ttf');
+      src: url('https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/media/fonts/思源宋体M.ttf');
     }
     * {
         font-family: '思源宋体M';
@@ -2182,6 +2178,9 @@ body {
       color: #495057;
       border-bottom-color: #495057;
     }
+    .nav-toggle .line {
+      background-color:  !important;
+    }
       .nav-item a {
         color:  #868e96;
       }.nav-item a:hover {
@@ -2226,15 +2225,17 @@ body {
     .active-hidden > a {
       color: #ff6b6b;
       border-bottom-color: #ff6b6b;
-    }.bg-color {
+    }.reward-btn-text {
+        background-color: #f03e3efe !important;
+      }.bg-color {
       background-color: #f8f9fafe;
     }
-      .site-meta {
-        background: #000 !important;
-      }
-      .head-top-line {
-        background: #000 !important;
-      }
+    .site-meta {
+      background: #000 !important;
+    }
+    .head-top-line {
+      background: #000;
+    }
     .brand {
       background: #000000fe;
     }
