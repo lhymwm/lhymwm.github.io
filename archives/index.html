@@ -9,19 +9,19 @@
 <meta name="description" content="stay hungry, stay foolish">
 <meta name="theme-color" content="#000">
 <title>以梦为马</title>
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/favicon.ico?v=1593238665760">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/media/css/gemini.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/media/fonts/font-awesome.css">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.3/favicon.ico?v=1593786677767">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.3/media/css/gemini.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.3/media/fonts/font-awesome.css">
 <link
   href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
   rel="stylesheet" type="text/css">
 
-<link href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/media/hljs/styles/github.css"
+<link href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.3/media/hljs/styles/github.css"
   rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.3/styles/main.css">
 
-<script src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.3/media/hljs/highlight.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
@@ -236,7 +236,7 @@
     
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
-    <img class="site-author-image right-motion" src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/images/avatar.png"/>
+    <img class="site-author-image right-motion" src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.3/images/avatar.png"/>
     <p class="site-author-name">以梦为马</p>
     
     <div class="site-description right-motion">
@@ -602,8 +602,8 @@
        <div class="footer-box">
   <footer class="footer">
     <div class="copyright">
-      © 2019-2020 🔥 <strong><script type="text/javascript">
-          var urodz= new Date("11/22/2019");
+      © 1998-2020 🔥 <strong><script type="text/javascript">
+          var urodz= new Date("1/13/1998");
           var now = new Date();
           var ile = now.getTime() - urodz.getTime();
           var dni = Math.floor(ile / (1000 * 60 * 60 * 24));
@@ -627,6 +627,13 @@
     </span>
     
   </div>
+  
+  
+  
+  <div class="bg-img">
+    <img src="http://www.neweb.top/bing.php" />
+  </div>
+  
   
   
   
@@ -793,7 +800,7 @@
   </div>
 </body>
 
-  <div class="search-mask" id="search_mask" style="display: none;">
+<div class="search-mask" id="search_mask" style="display: none;">
   <div class="search-box">
     <div class="search-title">
       <i class="fa fa-search"></i>
@@ -1709,6 +1716,28 @@ document.getElementById(&#34;spkj&#34;).style.height=document.getElementById(&#3
 
 <input hidden id="copy" />
 <script>
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
   let language = '';
   if (language !== '') {
     let map = new Map();
@@ -1844,7 +1873,7 @@ document.getElementById(&#34;spkj&#34;).style.height=document.getElementById(&#3
   })
 
 </script>
-<script src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.2/media/js/motion.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.3/media/js/motion.js"></script>
 
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 <script>
@@ -1853,6 +1882,8 @@ document.getElementById(&#34;spkj&#34;).style.height=document.getElementById(&#3
   });
 </script>
 
+
+<script src="/media/js/mouse/peace.js"></script>
 
 
 
