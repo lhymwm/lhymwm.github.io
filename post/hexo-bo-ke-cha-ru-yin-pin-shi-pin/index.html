@@ -9,19 +9,19 @@
 <meta name="description" content="stay hungry, stay foolish">
 <meta name="theme-color" content="#000">
 <title>hexo博客插入音频、视频 | 以梦为马</title>
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.5/favicon.ico?v=1596088531984">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.5/media/css/gemini.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.5/media/fonts/font-awesome.css">
+<link rel="shortcut icon" href=" https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.6/favicon.ico?v=1596342601868">
+<link rel="stylesheet" href=" https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.6/media/css/gemini.css">
+<link rel="stylesheet" href=" https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.6/media/fonts/font-awesome.css">
 <link
   href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
   rel="stylesheet" type="text/css">
 
-<link href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.5/media/hljs/styles/github.css"
+<link href=" https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.6/media/hljs/styles/github.css"
   rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.5/styles/main.css">
+<link rel="stylesheet" href=" https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.6/styles/main.css">
 
-<script src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.5/media/hljs/highlight.js"></script>
+<script src=" https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.6/media/hljs/highlight.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
@@ -252,7 +252,7 @@
             
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
-    <img class="site-author-image right-motion" src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.5/images/avatar.png"/>
+    <img class="site-author-image right-motion" src=" https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.6/images/avatar.png"/>
     <p class="site-author-name">以梦为马</p>
     
     <div class="site-description right-motion">
@@ -316,7 +316,7 @@
 
   <div style="width: 100%; position: relative;">
     <canvas id="canvasDiyBlock" style="width:100%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
-    <script src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.5/media/js/magic/clock.js"></script>
+    <script src=" https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.6/media/js/magic/clock.js"></script>
   </div>
 
 </div>
@@ -632,6 +632,48 @@ document.getElementById("spkj").style.height=document.getElementById("spkj").scr
   
   
   
+  
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <div class="aplayer" id="aplayer"></div>
+  <script>
+  let musics = JSON.parse('[{"author":"张亚东","cover":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQmrZiWknG-6y7L2ugPxUeeL2gZJXKb-Nerww&usqp=CAU","lrc":"","musicLink":"http://sparkandshine.net/wordpress/wp-content/uploads/2017/01/%E3%80%8A%E5%9C%86%E6%A1%8C%E6%B4%BE%E3%80%8B%E7%89%87%E5%B0%BE%E6%9B%B2.mp3","musicName":"圆桌派主题曲"}]');
+  let mediaMusic = [];
+  for (let i = 0; i < musics.length; i++) {
+    let item = musics[i];
+    mediaMusic.push({
+      name: item.musicName,
+      artist: item.author,
+      url: item.musicLink,
+      lrc: item.lrc,
+      cover: item.cover
+    });
+  }
+
+  const ap = new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      lrcType: 3,
+      listFolded: false,
+      listMaxHeight: 90,
+      audio: mediaMusic
+  });
+  window.addEventListener('load', function() {
+    let postBody = document.querySelector('#post_body');
+    let hs = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+    postBody && hs.forEach(h => {
+      let helems = postBody.querySelectorAll(h);
+      if (helems.length > 0) {
+        helems.forEach(elem => {
+          elem.id = encodeURI(elem.id);
+        })
+      }
+    })
+  })
+  </script>
+
+
   
 </div>
 <script>
@@ -2178,22 +2220,15 @@ document.getElementById(&#34;spkj&#34;).style.height=document.getElementById(&#3
   })
 
 </script>
-<script src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.5/media/js/motion.js"></script>
-
-<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-<script>
-  var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 200
-  });
-</script>
+<script src=" https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.6/media/js/motion.js"></script>
 
 
 <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
 <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.5/media/js/mouse/fireworks.js"></script>
+<script type="text/javascript" src=" https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.6/media/js/mouse/fireworks.js"></script>
 
 
-<script src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.5/media/js/cool.js"></script>
+<script src=" https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.3.6/media/js/cool.js"></script>
 
 
 
