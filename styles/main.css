@@ -2051,9 +2051,7 @@ p > code {
     margin-bottom: 10px;
   }
 }
-.bg-color .bg-color {
-      background: transparent !important;
-    }body {
+body {
       background-color: #dee2e6;
     }.header {
         width: 1080px;
@@ -2066,7 +2064,7 @@ p > code {
       }
     @font-face {
       font-family: '思源宋体M';
-      src: url('https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.4.8/media/fonts/思源宋体M.ttf');
+      src: url('https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.4.9/media/fonts/思源宋体M.ttf');
     }
     * {
         font-family: '思源宋体M';
@@ -2080,7 +2078,7 @@ p > code {
       border-bottom-color: #495057;
     }
     .archive-timeline-box::after, .tag-timeline-wrapper::after {
-      background: #e9ecefd8;
+      background: #e9eceffe;
     }h1, h2, h3, h4, h5, h6 {
       color: #212529;
     }
@@ -2127,11 +2125,11 @@ p > code {
       }.nav-item a:hover {
         color: #212529;
       }.nav-item-active {
-      background: #f1f3f5d8;
+      background: #f1f3f5fe;
     }
 
     .nav-item:hover {
-      background: #f1f3f5d8;
+      background: #f1f3f5fe;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2167,9 +2165,9 @@ p > code {
       color: #ff6b6b;
       border-bottom-color: #ff6b6b;
     }.reward-btn-text {
-        background-color: #f03e3ed8 !important;
+        background-color: #f03e3efe !important;
       }.bg-color {
-      background-color: #f8f9fad8;
+      background-color: #f8f9fafe;
     }
     .site-meta {
       background: #000 !important;
@@ -2178,13 +2176,13 @@ p > code {
       background: #000;
     }
     .brand {
-      background: #000000d8;
+      background: #000000fe;
     }
     .main-title, .brand {
       color: #f8f9fa !important;
     }
     .mist .site-title i {
-      background: #f8f9fad8;
+      background: #f8f9fafe;
     }.box-scale > #landlord {
       transform: scale(0.7);
     }.box-shadow-wrapper {
