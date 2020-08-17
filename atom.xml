@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-08-17T05:52:30.909Z</updated>
+    <updated>2020-08-17T06:33:15.998Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -24,10 +24,6 @@
 <audio src="http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_40832197&response=res&type=convert_url&" controls="controls"></audio><br>
 <img src="https://tva1.sinaimg.cn/large/007S8ZIlly1ghtqzvwadtj30ic0hd781.jpg" alt="中岛美雪" loading="lazy"></p>
 <!-- more -->
-<iframe id="spkj" src="https://player.bilibili.com/player.html?aid=17206606&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=100%> </iframe>
-<script type="text/javascript">  
-document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth*0.76+"px";
-</script>
 <p>这首歌由中岛美雪一人作词作曲，于 1992 年发行，后续，又有多人翻唱此曲，可谓相当经典。分享此歌，意在言志：独自等待，一期一会。</p>
 <p>歌词如下：<br>
 《糸》中日歌词对照：</p>
@@ -75,6 +71,15 @@ document.getElementById("spkj").style.height=document.getElementById("spkj").scr
 等遇见了命中注定要相逢的那条线时</p>
 <p>人ひと は  仕合しあ わせと 呼よ びます<br>
 人们说这个时候就是幸福</p>
+<p>最后，奉上《糸》演唱合集，希望大家喜欢(#<sup>.</sup>#)。</p>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe 
+src="//player.bilibili.com/player.html?aid=17206606&cid=28120679&page=1" scrolling="no" border="0" 
+frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
+height: 100%; left: 0; top: 0;"> </iframe></div>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe 
+src="//player.bilibili.com/player.html?aid=17202371&cid=28114139&page=1" scrolling="no" border="0" 
+frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
+height: 100%; left: 0; top: 0;"> </iframe></div>
 ]]></content>
     </entry>
     <entry>
