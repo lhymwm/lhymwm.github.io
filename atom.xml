@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-08-17T05:44:10.365Z</updated>
+    <updated>2020-08-17T05:48:49.213Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -29,10 +29,6 @@
 document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth*0.76+"px";
 </script>
 <p>这首歌由中岛美雪一人作词作曲，于 1992 年发行，后续，又有多人翻唱此曲，可谓相当经典。分享此歌，意在言志：独自等待，一期一会。</p>
-<iframe id="spkj" src="https://player.bilibili.com/player.html?aid=17202371&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=100%> </iframe>
-<script type="text/javascript">  
-document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth*0.76+"px";
-</script>
 <p>歌词如下：<br>
 《糸》中日歌词对照：</p>
 <p>糸いと  -  中島 みゆき<br>
