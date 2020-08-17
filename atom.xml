@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-08-16T06:23:30.407Z</updated>
+    <updated>2020-08-17T05:35:08.562Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -10,6 +10,76 @@
     <logo>https://lhymwm.github.io/images/avatar.png</logo>
     <icon>https://lhymwm.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 以梦为马</rights>
+    <entry>
+        <title type="html"><![CDATA[歌以明志]]></title>
+        <id>https://lhymwm.github.io/post/ge-yi-ming-zhi/</id>
+        <link href="https://lhymwm.github.io/post/ge-yi-ming-zhi/">
+        </link>
+        <updated>2020-08-17T04:34:32.000Z</updated>
+        <summary type="html"><![CDATA[<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1ghtqzvwadtj30ic0hd781.jpg" alt="中岛美雪" loading="lazy"><br>
+分享一首中岛美雪的名曲《糸》。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1ghtqzvwadtj30ic0hd781.jpg" alt="中岛美雪" loading="lazy"><br>
+分享一首中岛美雪的名曲《糸》。</p>
+<!-- more -->
+<p><audio src="http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_40832197&response=res&type=convert_url&" controls="controls"></audio></p>
+<iframe id="spkj" src="https://player.bilibili.com/player.html?aid=17202371&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=100%> </iframe>
+<script type="text/javascript">  
+document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth*0.76+"px";
+</script>
+<iframe id="spkj" src="https://player.bilibili.com/player.html?aid=17206606&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=100%> </iframe>
+<script type="text/javascript">  
+document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth*0.76+"px";
+</script>
+<p>这首歌由中岛美雪一人作词作曲，于 1992 年发行，后续，又有多人翻唱此曲，可谓相当经典。分享此歌，意在言志：独自等待，一期一会。</p>
+<p>歌词如下：<br>
+《糸》中日歌词对照：</p>
+<p>糸いと  -  中島 みゆき<br>
+线 - 中岛美雪</p>
+<p>なぜ めぐり 逢あ うのかを<br>
+为什么会相遇？</p>
+<p>私わたし たちは なにも 知し らない<br>
+我们不知道</p>
+<p>いつ めぐり 逢あ うのかを<br>
+什麼時候會相遇？</p>
+<p>私わたし たちは いつも 知し らない<br>
+我们不会知道</p>
+<p>どこにいたの  生い きてきたの<br>
+现在在哪里？ 是如何生活着的？</p>
+<p>遠とお い 空そら の 下した  ふたつの 物語ものがたり<br>
+在遥远的天空下 有着两个故事</p>
+<p>縦たて の 糸いと はあなた  横よこ の 糸いと は 私わたし<br>
+直的那条线是你 橫的那条线是我</p>
+<p>織お りなす 布ぬの は いつか 誰だれ かを<br>
+你我相互织成的布 有一天能够给谁</p>
+<p>暖あたた めうるかもしれない<br>
+温暖也说不定</p>
+<p>なぜ  生い きてゆくのかを<br>
+为何要这样生活下去呢?</p>
+<p>迷まよ った 日ひ の 跡あと の ささくれ<br>
+那些迷惘的日子所留下的痕迹带来刺痛</p>
+<p>夢ゆめ  追お いかけ 走はし って<br>
+那些追着梦想奔跑</p>
+<p>ころんだ 日ひ の 跡あと の ささくれ<br>
+跌跌撞撞的日子所留下的伤痕带来刺痛</p>
+<p>こんな 糸いと が なんになるの<br>
+这样的线会变成什么样子</p>
+<p>心許こころもと なくて ふるえてた 風かぜ の 中なか<br>
+不安的心瓢在微微颤抖的风中</p>
+<p>縦たて の 糸いと はあなた  横よこ の 糸いと は 私わたし<br>
+直的那条线是你 横的那条线是我</p>
+<p>織お りなす 布ぬの は いつか 誰だれ かの<br>
+你我相互织成的布 有一天能够庇护谁的</p>
+<p>傷きず をかばうかもしれない<br>
+伤痕也说不定</p>
+<p>縦たて の 糸いと はあなた  横よこ の 糸いと は 私わたし<br>
+直的那条线是你 横的那条线是我</p>
+<p>逢あ うべき 糸いと に  出逢であ えることを<br>
+等遇见了命中注定要相逢的那条线时</p>
+<p>人ひと は  仕合しあ わせと 呼よ びます<br>
+人们说这个时候就是幸福</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[尚未苍老，渐已怀旧]]></title>
         <id>https://lhymwm.github.io/post/shang-wei-cang-lao-jian-yi-huai-jiu/</id>
@@ -470,25 +540,6 @@ document.getElementById("spkj").style.height=document.getElementById("spkj").scr
 <p>最后回到一个关键的问题，也是本文的出发点和落脚点——医学为什么需要人文。我所想到的最直接的原因也是最根本的原因就是医学面对的对象是人，这就必然要求我们在医学实践的过程中以人为本，给予患者以人文关怀。如果仅仅是医学仅有单纯的科学，我们终将无法预测医学的发展的指向。正如诺奖获得者费因曼说过:“科学这把钥匙既可以开启天堂之门,也可以开启地狱之门,究竟打开哪扇门?有待人文的引领。”归根结底，科学的本质是解决求真，而人文则解决善恶，涉及到人生观、世界观和价值观，二者在医学这一面向人的学科中必然需要走向深度融合。</p>
 <h1 id="结语">结语</h1>
 <p>科学与人文都是医学中不可或缺的两面。借用樊院士在《医学与科学》一文中的比喻，科学像降落伞的伞罩,医学像跳伞员，成功着陆最重要的是那17根绳子,是医学和科学的17种关系，而人文则像方向控制器，它在一定程度上不仅影响医学可以落向何方而且是应该落向何方。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[《剑桥二十世纪政治思想史》读书笔记]]></title>
-        <id>https://lhymwm.github.io/post/lesslessjian-qiao-er-shi-shi-ji-zheng-zhi-si-xiang-shi-greatergreater-du-hou-gan/</id>
-        <link href="https://lhymwm.github.io/post/lesslessjian-qiao-er-shi-shi-ji-zheng-zhi-si-xiang-shi-greatergreater-du-hou-gan/">
-        </link>
-        <updated>2020-02-26T12:56:01.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://tva1.sinaimg.cn/large/0082zybply1gca48udyt8j30ci0g4my3.jpg" alt="《剑桥二十世纪政治思想史》" loading="lazy"></figure>
-<h1 id="自由民主的得时与失时">自由民主的得时与失时</h1>
-<h2 id="福利国家的来临">福利国家的来临</h2>
-<h2 id="政治与市场凯恩斯及其批评者">政治与市场：凯恩斯及其批评者</h2>
-<h2 id="大众的出现与现代民主理论的形成">大众的出现与现代民主理论的形成</h2>
-<h2 id="民族主义与帝国主义">民族主义与帝国主义</h2>
-<h2 id="法西斯主义与种族主义">法西斯主义与种族主义</h2>
-<h2 id="保守主义">保守主义</h2>
-<h2 id="基督教民主">基督教民主</h2>
-<h2 id="极权主义的批评者">极权主义的批评者</h2>
-<h2 id="福利国家的终结">福利国家的终结？</h2>
 ]]></content>
     </entry>
 </feed>
