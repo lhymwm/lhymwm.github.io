@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-09-14T14:11:17.776Z</updated>
+    <updated>2020-09-14T15:38:07.825Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -10,6 +10,101 @@
     <logo>https://lhymwm.github.io/images/avatar.png</logo>
     <icon>https://lhymwm.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 以梦为马</rights>
+    <entry>
+        <title type="html"><![CDATA[医药行研学习笔记（一）]]></title>
+        <id>https://lhymwm.github.io/post/yi-yao-xing-yan-xue-xi-bi-ji-yi/</id>
+        <link href="https://lhymwm.github.io/post/yi-yao-xing-yan-xue-xi-bi-ji-yi/">
+        </link>
+        <updated>2020-09-14T14:25:27.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="行业研究">行业研究</h1>
+<h2 id="行业研究定义">行业研究定义</h2>
+<p>何为行业研究？简单来讲就是对某一个特定行业及行业内的企业进行深入了解与研究，包括行业<strong>发展历史</strong>、<strong>目前现状</strong>、<strong>规模结构</strong>、<strong>竞争格局</strong>以及<strong>未来趋势</strong>等因素，为企业自身或行业投资者提供重要的参考依据。</p>
+<h2 id="医药子领域">医药子领域</h2>
+<p>医药行业子领域包括：化药（原料药、化学制剂）、中药、生物制品、医疗器械、医药商业及医疗服务等六大子行业。</p>
+<ul>
+<li>化学药：原料药、辅料等；化学制剂</li>
+<li>中药：中药材，中药饮片，配方</li>
+<li>生物制品：疫苗、血液制品、抗体、多肽等</li>
+<li>医疗器械：IVD、设备&amp;耗材、大型医疗设备等</li>
+<li>医药商业：连锁药店、流通企业</li>
+<li>医疗服务：医院、移动医疗、养老、外包服务等</li>
+</ul>
+<h2 id="政府部门">政府部门</h2>
+<p>医药行业的监管涉及到多个相关部门，包括药监局（管药企和药品注册、生产，重在保药品安全、有效、质量可控方面），卫生部（管医院和卫生事业，重在关注医疗服务利用方面）、发改委（管药品价格和企业项目投资）、医保局（管支付）。</p>
+<h2 id="产业链分析">产业链分析</h2>
+<ul>
+<li>医药
+<ul>
+<li>研发端（临床数据自查、优先审评审批、药品上市许可持有人制度、其他药审制度改革）</li>
+<li>生产端（仿制药一致性评价、新版GMP、环保法、药品生产工艺核对、飞行检查）</li>
+<li>应用端（限制抗生素滥用、限制辅助用药）</li>
+</ul>
+</li>
+<li>医疗
+<ul>
+<li>公立医院改革（医药分开（取消药品加成，处方外流，药占比）、理顺医疗服务价格、严控医疗费用、城市及县级公立医院改革试点）</li>
+<li>分级诊疗（医联体、提升基层服务能力、家庭医生制度、分级诊疗试点、区域内资源共享）</li>
+<li>促进社会办医（取消“两定”、将社会办医纳入医保定点范围、允许多点执业）</li>
+</ul>
+</li>
+<li>医保
+<ul>
+<li>收入（完善筹资机制和管理服务、渐进式延迟退休年龄政策）</li>
+<li>支出（医保支付方式改革、大力发展商业健康保险、医保控费）</li>
+<li>体制（四个统筹、大病保险制度、医保全国联网、异地就医直接结算、医保目录调整）</li>
+</ul>
+</li>
+<li>流通
+<ul>
+<li>采购（集中采购、GPO、二次议价）</li>
+<li>药价（药价市场化、国家谈判、带量采购）</li>
+<li>批发（营改增、两票制、流通自查、取消从事第三方药品物流业务批准）</li>
+<li>零售（处方外流、新版GSP、鼓励连锁）</li>
+</ul>
+</li>
+</ul>
+<h2 id="产业链分析本质">产业链分析本质</h2>
+<p>产业链分析本质其实是供需模型的应用。</p>
+<ul>
+<li>供给提高
+<ul>
+<li>提高资源利用效率，加强行业规范性，提高行业集中度（临床数据自查、一致性评价、临床机构备案制、两票制、飞检等）</li>
+<li>新供给增加（优先审评、MAH、临床路径）</li>
+</ul>
+</li>
+<li>需求提高
+<ul>
+<li>购买力和消费力提高，受益政策改革，消费升级属性（医保目录动态调整、消费升级、老年化、制剂出口等）</li>
+</ul>
+</li>
+</ul>
+<h1 id="公司研究">公司研究</h1>
+<ul>
+<li>公司在售品种的各种信息</li>
+<li>公司在研品种的各种信息</li>
+<li>公司竞争对手的各种信息</li>
+<li>公司的管理团队<br>
+如何度量？</li>
+<li>非量化指标：管理层、企业文化、商誉；</li>
+<li>量化指标（财务报表）：销售费用、管理费用、财务费用、应收账款、经营现金流、毛利率、净利率等</li>
+<li>公司创造价值的能力（产品价值、研发平台、产业壁垒、竞争格局等）<br>
+公司研究常用材料：招股说明书和年报。</li>
+</ul>
+<h1 id="常用数据库软件">常用数据库软件</h1>
+<p>资料搜集：宏观数据</p>
+<ul>
+<li>政府相关机构
+<ul>
+<li>统计局：统计年鉴内容</li>
+<li>商务部：信息大杂烩</li>
+<li>发改委：价格监测</li>
+<li>海关总署：进出口数据及分析</li>
+<li>国研网：深入资料需要交费</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[国内药品注册分类]]></title>
         <id>https://lhymwm.github.io/post/guo-nei-yao-pin-zhu-ce-fen-lei/</id>
@@ -525,50 +620,6 @@ Marr，一个大牛。
 </ul>
 <p># Markdown 增加文献引用</p>
 <p>这边文章是介绍如何在 Markdown 中增加文献引用。<a href="#refer-anchor-1"><sup>1</sup></a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[hexo博客插入音频、视频]]></title>
-        <id>https://lhymwm.github.io/post/hexo-bo-ke-cha-ru-yin-pin-shi-pin/</id>
-        <link href="https://lhymwm.github.io/post/hexo-bo-ke-cha-ru-yin-pin-shi-pin/">
-        </link>
-        <updated>2020-04-06T20:38:45.000Z</updated>
-        <summary type="html"><![CDATA[<p>瞎折腾了一波，这下知道了如何插入音频和视频了。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>瞎折腾了一波，这下知道了如何插入音频和视频了。</p>
-<!-- more -->
-<p>网易云音乐：</p>
-<pre><code>&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=430 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=114389&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
-</code></pre>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=430 height=86 src="//music.163.com/outchain/player?type=2&id=114389&auto=0&height=66"></iframe>
-<p>B站视频只适配于电脑端：</p>
-<pre><code>&lt;iframe id=sbrxp src=&quot;//player.bilibili.com/player.html?aid=37399076&amp;bvid=BV1Vt411Q78x&amp;cid=65733298&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot; style=&quot;width: 640px; height: 430px; max-width: 100%&quot;&gt; &lt;/iframe&gt;
-</code></pre>
-<iframe id=sbrxp src="//player.bilibili.com/player.html?aid=37399076&bvid=BV1Vt411Q78x&cid=65733298&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 640px; height: 430px; max-width: 100%"> </iframe>
-<p>B站视频适配于移动端和电脑端：</p>
-<pre><code>&lt;div style=&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;&gt;&lt;iframe 
-src=&quot;//player.bilibili.com/player.html?aid=39807850&amp;cid=69927212&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; 
-frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot; style=&quot;position: absolute; width: 100%; 
-height: 100%; left: 0; top: 0;&quot;&gt; &lt;/iframe&gt;&lt;/div&gt;
-</code></pre>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe 
-src="//player.bilibili.com/player.html?aid=39807850&cid=69927212&page=1" scrolling="no" border="0" 
-frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
-height: 100%; left: 0; top: 0;"> </iframe></div>
-<p>B站视频适配于移动端和电脑端：</p>
-<pre><code>&lt;iframe id=&quot;spkj&quot; src=&quot;https://player.bilibili.com/player.html?aid=39807850&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot; width=100%&gt; &lt;/iframe&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;  
-document.getElementById(&quot;spkj&quot;).style.height=document.getElementById(&quot;spkj&quot;).scrollWidth*0.76+&quot;px&quot;;
-&lt;/script&gt;
-</code></pre>
-<iframe id="spkj" src="https://player.bilibili.com/player.html?aid=39807850&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=100%> </iframe>
-<script type="text/javascript">  
-document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth*0.76+"px";
-</script>
-<p>音乐直链：</p>
-<pre><code>&lt;audio src=&quot;https://sharefs.yun.kugou.com/202004081309/e6ecd0a8c8e8f46864deac53bc22d2bd/G209/M0A/1A/0B/EQ4DAF6IMG6ANQ4cADO8tHkl4_s235.mp3&quot; controls=&quot;controls&quot;&gt;&lt;/audio&gt;
-</code></pre>
-<p><audio src="https://sharefs.yun.kugou.com/202004081309/e6ecd0a8c8e8f46864deac53bc22d2bd/G209/M0A/1A/0B/EQ4DAF6IMG6ANQ4cADO8tHkl4_s235.mp3" controls="controls"></audio></p>
 ]]></content>
     </entry>
 </feed>
