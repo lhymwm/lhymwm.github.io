@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-09-14T15:45:51.844Z</updated>
+    <updated>2020-09-14T16:22:56.382Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -17,13 +17,13 @@
         </link>
         <updated>2020-09-14T14:25:27.000Z</updated>
         <summary type="html"><![CDATA[<h1 id="行业研究">行业研究</h1>
-<h2 id="行业研究定义">行业研究定义</h2>
-<p>何为行业研究？简单来讲就是对某一个特定行业及行业内的企业进行深入了解与研究，包括行业<strong>发展历史</strong>、<strong>目前现状</strong>、<strong>规模结构</strong>、<strong>竞争格局</strong>以及<strong>未来趋势</strong>等因素，为企业自身或行业投资者提供重要的参考依据。</p>
+<p>何为行业研究？</p>
 ]]></summary>
         <content type="html"><![CDATA[<h1 id="行业研究">行业研究</h1>
-<h2 id="行业研究定义">行业研究定义</h2>
-<p>何为行业研究？简单来讲就是对某一个特定行业及行业内的企业进行深入了解与研究，包括行业<strong>发展历史</strong>、<strong>目前现状</strong>、<strong>规模结构</strong>、<strong>竞争格局</strong>以及<strong>未来趋势</strong>等因素，为企业自身或行业投资者提供重要的参考依据。</p>
+<p>何为行业研究？</p>
 <!-- more -->
+<h2 id="行业研究定义">行业研究定义</h2>
+<p>简单来讲就是对某一个特定行业及行业内的企业进行深入了解与研究，包括行业<strong>发展历史</strong>、<strong>目前现状</strong>、<strong>规模结构</strong>、<strong>竞争格局</strong>以及<strong>未来趋势</strong>等因素，为企业自身或行业投资者提供重要的参考依据。</p>
 <h2 id="医药子领域">医药子领域</h2>
 <p>医药行业子领域包括：化药（原料药、化学制剂）、中药、生物制品、医疗器械、医药商业及医疗服务等六大子行业。</p>
 <ul>
@@ -116,8 +116,12 @@
         <link href="https://lhymwm.github.io/post/guo-nei-yao-pin-zhu-ce-fen-lei/">
         </link>
         <updated>2020-09-14T13:23:24.000Z</updated>
+        <summary type="html"><![CDATA[<h1 id="化学药品注册分类">化学药品注册分类</h1>
+<p>化学药品新注册分类共分为5个类别，具体如下：</p>
+]]></summary>
         <content type="html"><![CDATA[<h1 id="化学药品注册分类">化学药品注册分类</h1>
 <p>化学药品新注册分类共分为5个类别，具体如下：</p>
+<!-- more -->
 <ul>
 <li>1类：<strong>境内外均未上市的创新药</strong>。指含有新的结构明确的、具有药理作用的化合物，且具有临床价值的药品。</li>
 <li>2类：<strong>境内外均未上市的改良型新药</strong>。指在已知活性成份的基础上，对其结构、剂型、处方工艺、给药途径、适应症等进行优化，且具有明显临床优势的药品。
