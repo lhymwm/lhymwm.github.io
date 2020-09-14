@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-09-14T13:06:04.943Z</updated>
+    <updated>2020-09-14T13:09:24.279Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -16,9 +16,11 @@
         <link href="https://lhymwm.github.io/post/yi-xue-xiang-guan-xue-zhu-lun-wen-tou-gao/">
         </link>
         <updated>2020-09-14T12:57:58.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1giqhc0nrydj31fk0prack.jpg" alt="JCR期刊" loading="lazy"><br>
-期刊引证报告（Journal Citation Reports，JCR）中医学大学科下属的小学科领域如下：<br>
-ACOUSTICS  声学<br>
+        <summary type="html"><![CDATA[<p>期刊引证报告（Journal Citation Reports，JCR）中医学大学科下属的小学科领域如下：</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>期刊引证报告（Journal Citation Reports，JCR）中医学大学科下属的小学科领域如下：</p>
+<!-- more -->
+<p>ACOUSTICS  声学<br>
 ALLERGY 过敏<br>
 ANATOMY &amp; MORPHOLOGY 解剖学和形态学<br>
 ANDROLOGY 男科学<br>
