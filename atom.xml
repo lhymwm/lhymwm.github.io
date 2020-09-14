@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-09-14T15:38:07.825Z</updated>
+    <updated>2020-09-14T15:45:51.844Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -16,9 +16,14 @@
         <link href="https://lhymwm.github.io/post/yi-yao-xing-yan-xue-xi-bi-ji-yi/">
         </link>
         <updated>2020-09-14T14:25:27.000Z</updated>
+        <summary type="html"><![CDATA[<h1 id="行业研究">行业研究</h1>
+<h2 id="行业研究定义">行业研究定义</h2>
+<p>何为行业研究？简单来讲就是对某一个特定行业及行业内的企业进行深入了解与研究，包括行业<strong>发展历史</strong>、<strong>目前现状</strong>、<strong>规模结构</strong>、<strong>竞争格局</strong>以及<strong>未来趋势</strong>等因素，为企业自身或行业投资者提供重要的参考依据。</p>
+]]></summary>
         <content type="html"><![CDATA[<h1 id="行业研究">行业研究</h1>
 <h2 id="行业研究定义">行业研究定义</h2>
 <p>何为行业研究？简单来讲就是对某一个特定行业及行业内的企业进行深入了解与研究，包括行业<strong>发展历史</strong>、<strong>目前现状</strong>、<strong>规模结构</strong>、<strong>竞争格局</strong>以及<strong>未来趋势</strong>等因素，为企业自身或行业投资者提供重要的参考依据。</p>
+<!-- more -->
 <h2 id="医药子领域">医药子领域</h2>
 <p>医药行业子领域包括：化药（原料药、化学制剂）、中药、生物制品、医疗器械、医药商业及医疗服务等六大子行业。</p>
 <ul>
