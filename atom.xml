@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-09-27T14:50:47.261Z</updated>
+    <updated>2020-09-28T00:04:07.561Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -123,6 +123,68 @@
 <li>发改委：价格监测</li>
 <li>海关总署：进出口数据及分析</li>
 <li>国研网：深入资料需要交费</li>
+<li>中国宏观经济信息网：专家对宏观形势判断</li>
+<li>中国价格信息网：价格监测，与国家发改委相似，可能会有分析报告</li>
+<li>中国资讯行：热点行业百日动态</li>
+<li>中经专网：各种数据综合</li>
+<li>中国投资指南：各种投资统计</li>
+</ul>
+</li>
+<li>民间机构
+<ul>
+<li>和君：研究中心、信息库和资料库</li>
+<li>Wind 资讯:宏观经济板块</li>
+<li>知名博主:关注其微博言论</li>
+<li>曹山石</li>
+<li>CPhi制药在线</li>
+</ul>
+</li>
+<li>门户网站<br>
+- 新浪<br>
+- 搜狐<br>
+- 腾讯<br>
+- 凤凰网<br>
+- FT中文网<br>
+- 和讯</li>
+<li>专业调研公司网站
+<ul>
+<li>尼尔森</li>
+<li>CTR</li>
+<li>益普索</li>
+<li>零点</li>
+<li>新生代</li>
+<li>赛立信</li>
+<li>TNS中国</li>
+</ul>
+</li>
+<li>咨询公司
+<ul>
+<li>麦肯锡：麦肯锡季刊、《2008中国消费者调研报告》</li>
+<li>波士顿：各类报告</li>
+<li>罗兰贝格：《罗兰贝格行业评论》、《思与行》</li>
+<li>贝恩：各类报告如《2009 中国私人财富报告》</li>
+<li>科尔尼：《科尔尼从论》</li>
+<li>IBM商业价值研究院:各类报告</li>
+<li>埃森哲:《埃森哲卓越绩效》</li>
+</ul>
+</li>
+<li>行业报告
+<ul>
+<li>经管类文档：畅享网、web迅雷、百度行业报告栏目、百度文库</li>
+<li>专业论坛：如通信人家园、丁香园论坛</li>
+<li>行业报告提供机构：简版的行业报告目录</li>
+<li>各种微信公众号：赛柏蓝、新康界、医药经济报、医药云端数据、医药魔方数据、E药经理人、米内网、医药精英俱乐部、生物谷、药渡、同写意、研发客、蒲公英、医药代表</li>
+</ul>
+</li>
+<li>券商、投行行业分析
+<ul>
+<li>迈博汇金</li>
+<li>Wind</li>
+</ul>
+</li>
+<li>数据库
+<ul>
+<li>PDB药物综合数据库</li>
 </ul>
 </li>
 </ul>
