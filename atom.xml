@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-10-23T06:21:09.311Z</updated>
+    <updated>2020-10-23T06:27:57.647Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -16,6 +16,15 @@
         <link href="https://lhymwm.github.io/post/pu-lu-si-te-wen-juan/">
         </link>
         <updated>2020-10-23T06:17:37.000Z</updated>
+        <summary type="html"><![CDATA[<h1 id="你认为最完美的快乐是怎样的">你认为最完美的快乐是怎样的</h1>
+<p>纯净的快乐，无用的快乐，自由的快乐，不过度建立于外物基础上的快乐。</p>
+<h1 id="你最希望拥有哪种才华">你最希望拥有哪种才华？</h1>
+<p>语言吧，我在口头表达上略拙，想会多种语言，一能看得更多，二能听得更多，三则能多些理解世界的思维方式。</p>
+<h1 id="你最恐惧的是什么">你最恐惧的是什么？</h1>
+<p>突患重病。</p>
+<h1 id="你目前的心境怎样">你目前的心境怎样？</h1>
+<p>半分焦虑，半分平静</p>
+]]></summary>
         <content type="html"><![CDATA[<h1 id="你认为最完美的快乐是怎样的">你认为最完美的快乐是怎样的</h1>
 <p>纯净的快乐，无用的快乐，自由的快乐，不过度建立于外物基础上的快乐。</p>
 <h1 id="你最希望拥有哪种才华">你最希望拥有哪种才华？</h1>
@@ -24,6 +33,7 @@
 <p>突患重病。</p>
 <h1 id="你目前的心境怎样">你目前的心境怎样？</h1>
 <p>半分焦虑，半分平静</p>
+<!-- more -->
 <h1 id="还在世的人中你最钦佩的是谁">还在世的人中你最钦佩的是谁？</h1>
 <h1 id="你认为自己最伟大的成就是什么">你认为自己最伟大的成就是什么？</h1>
 <h1 id="你自己的哪个特点让你最觉得痛恨">你自己的哪个特点让你最觉得痛恨？</h1>
