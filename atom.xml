@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2020-10-06T02:36:50.774Z</updated>
+    <updated>2020-10-23T06:21:09.311Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -10,6 +10,56 @@
     <logo>https://lhymwm.github.io/images/avatar.png</logo>
     <icon>https://lhymwm.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 以梦为马</rights>
+    <entry>
+        <title type="html"><![CDATA[ 普鲁斯特问卷]]></title>
+        <id>https://lhymwm.github.io/post/pu-lu-si-te-wen-juan/</id>
+        <link href="https://lhymwm.github.io/post/pu-lu-si-te-wen-juan/">
+        </link>
+        <updated>2020-10-23T06:17:37.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="你认为最完美的快乐是怎样的">你认为最完美的快乐是怎样的</h1>
+<p>纯净的快乐，无用的快乐，自由的快乐，不过度建立于外物基础上的快乐。</p>
+<h1 id="你最希望拥有哪种才华">你最希望拥有哪种才华？</h1>
+<p>语言吧，我在口头表达上略拙，想会多种语言，一能看得更多，二能听得更多，三则能多些理解世界的思维方式。</p>
+<h1 id="你最恐惧的是什么">你最恐惧的是什么？</h1>
+<p>突患重病。</p>
+<h1 id="你目前的心境怎样">你目前的心境怎样？</h1>
+<p>半分焦虑，半分平静</p>
+<h1 id="还在世的人中你最钦佩的是谁">还在世的人中你最钦佩的是谁？</h1>
+<h1 id="你认为自己最伟大的成就是什么">你认为自己最伟大的成就是什么？</h1>
+<h1 id="你自己的哪个特点让你最觉得痛恨">你自己的哪个特点让你最觉得痛恨？</h1>
+<p>不够果断</p>
+<h1 id="你最喜欢的旅行是哪一次">你最喜欢的旅行是哪一次？</h1>
+<h1 id="你最痛恨别人的什么特点">你最痛恨别人的什么特点？</h1>
+<p>虚伪</p>
+<h1 id="你最珍惜的财产是什么">你最珍惜的财产是什么？</h1>
+<h1 id="你最奢侈的是什么">你最奢侈的是什么？</h1>
+<p>懂得坚守</p>
+<h1 id="你认为程度最浅的痛苦是什么">你认为程度最浅的痛苦是什么？</h1>
+<p>小时候打皮试带来的痛苦</p>
+<h1 id="你认为哪种美德是被过高的评估的">你认为哪种美德是被过高的评估的？</h1>
+<p>谦虚</p>
+<h1 id="你最喜欢的职业是什么">你最喜欢的职业是什么？</h1>
+<p>投资研究与学术研究</p>
+<h1 id="你对自己的外表哪一点不满意">你对自己的外表哪一点不满意？</h1>
+<p>腿</p>
+<h1 id="你最后悔的事情是什么">你最后悔的事情是什么？</h1>
+<h1 id="还在世的人中你最鄙视的是谁">还在世的人中你最鄙视的是谁？</h1>
+<h1 id="你最喜欢的女性身上的什么特质">你最喜欢的女性身上的什么特质？</h1>
+<p>善良温柔细腻独立且坚定</p>
+<h1 id="你最伤痛的事是什么">你最伤痛的事是什么？</h1>
+<h1 id="你最看重朋友的什么特点">你最看重朋友的什么特点？</h1>
+<p>坦诚且值得信任</p>
+<h1 id="你这一生中最爱的人或东西是什么">你这一生中最爱的人或东西是什么？</h1>
+<h1 id="你希望以什么样的方式死去">你希望以什么样的方式死去？</h1>
+<p>温暖的午后，阳光洒进房间一角，我躺在床上，梦见你在的时候，就这样安详地睡过去。</p>
+<h1 id="何时何地让你感觉到最快乐">何时何地让你感觉到最快乐？</h1>
+<h1 id="如果你可以改变你的家庭一件事那会是什么">如果你可以改变你的家庭一件事，那会是什么？</h1>
+<p>拥有更多的财富(￣.￣)</p>
+<h1 id="如果你能选择的话你希望让什么重现">如果你能选择的话，你希望让什么重现？</h1>
+<h1 id="你的座右铭是什么">你的座右铭是什么？</h1>
+<p>Stay hungry, Stay foolish.</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[工作流]]></title>
         <id>https://lhymwm.github.io/post/gong-zuo-liu/</id>
@@ -503,28 +553,6 @@ INFJ们拥有富丽、鲜明的内在世界，但可能会不情愿将这内在�
 INFJ们倾向于是沉默、敏感的领袖，性格深沉。他们很难被理解，神秘、高度复杂，有时候连他们自己都会被自己弄糊涂。他们的世界十分有秩序，但是却以一种复杂的方式安排布置，只有他们自己能理解。因为沟通方式倾向于抽象，他们住在一个充满隐含意义和可能性的世界里。天生喜好艺术，因此INFJ们倾向于富于创造性且很容易被感动。然而因了他们的直觉，他们通常在科学这一领域也做得不错。他们高度复杂的世界往往只有同样是INFJ的人才会明白，但正因为INFJ戒备自身世界的特性，INFJ们很常装作迟钝及思想简单，他们非常清楚只有装作迟钝呆滞才能带给自己安全感，他们仅会在自己高度信任的人面前表现出自己机智聪敏的一面。<br>
 在爱情方面，他们对伴侣的要求非常高，因此INFJ成功谈恋爱的次数往往比其他人格更为少，但他们通常是非常忠诚的伴侣，准备好了往一段关系中投入精力和时间并让它长久发展下去。<br>
 根据柯尔塞，基于对举止的观察，有名的INFJ可能包括歌德、甘地、柏拉图、曼德拉、马丁·路德·金恩、卡尔·荣格、列夫·托尔斯泰、汤玛斯·杰佛逊、陀思妥耶夫斯基、西蒙·波娃、阿嘉莎·克莉丝蒂、J·K·罗琳、李安、张国荣和宫崎骏。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[坂井泉水]]></title>
-        <id>https://lhymwm.github.io/post/ban-jing-quan-shui/</id>
-        <link href="https://lhymwm.github.io/post/ban-jing-quan-shui/">
-        </link>
-        <updated>2020-04-16T05:52:36.000Z</updated>
-        <summary type="html"><![CDATA[<p>气质恬静，温润如玉的泉水姐姐。<br>
-<img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gf2rofs8m7j30f00m80u2.jpg" alt="坂井泉水" loading="lazy"></p>
-]]></summary>
-        <content type="html"><![CDATA[<p>气质恬静，温润如玉的泉水姐姐。<br>
-<img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gf2rofs8m7j30f00m80u2.jpg" alt="坂井泉水" loading="lazy"></p>
-<!-- more -->
-<p>送上坂井泉水一生中唯一一次巡回演唱会的视频！</p>
-<iframe id="spkj" src="https://player.bilibili.com/player.html?aid=58424750&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=100%> </iframe>
-<script type="text/javascript">  
-document.getElementById("spkj").style.height=document.getElementById("spkj").scrollWidth*0.76+"px";
-</script>
----------------------
-<p>2020年5月27日是坂井泉水去世13周年，给姐姐献上一朵花，愿在天堂安好！<br>
-<img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gf79pp1y1bj31iv0u04qw.jpg" alt="坂井泉水" loading="lazy"></p>
 ]]></content>
     </entry>
 </feed>
