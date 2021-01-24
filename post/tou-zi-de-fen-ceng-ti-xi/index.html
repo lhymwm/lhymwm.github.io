@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="stay hungry, stay foolish">
 <meta name="theme-color" content="#000">
-<title>《剑桥二十世纪政治思想史》读书笔记 | 以梦为马</title>
+<title>投资的分层体系 | 以梦为马</title>
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.5.8/favicon.ico?v=1611504955450">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.5.8/media/css/gemini.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.5.8/media/fonts/font-awesome.css">
@@ -61,8 +61,8 @@
 </script>
 
 
-  <meta name="description" content="《剑桥二十世纪政治思想史》读书笔记" />
-  <meta name="keywords" content="政治,读书" />
+  <meta name="description" content="投资的分层体系" />
+  <meta name="keywords" content="投资观" />
 </head>
 
 <body>
@@ -317,8 +317,7 @@
       <div class="sidebar-body gemini" id="sidebar_body">
         
           
-            <div class="post-side-meta" id="post_side_meta">
-              
+            
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="https://cdn.jsdelivr.net/gh/lhymwm/lhymwm.github.io@2.5.8/images/avatar.png"/>
@@ -389,203 +388,6 @@
   </div>
 
 </div>
-            </div>
-            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
-              <div class="toc-box right-motion">
-  <div class="toc-wrapper auto-number no_compress"
-    id="toc_wrapper">
-    <ul class="markdownIt-TOC">
-<li><a href="#%E8%87%AA%E7%94%B1%E6%B0%91%E4%B8%BB%E7%9A%84%E5%BE%97%E6%97%B6%E4%B8%8E%E5%A4%B1%E6%97%B6">自由民主的得时与失时</a>
-<ul>
-<li><a href="#%E7%A6%8F%E5%88%A9%E5%9B%BD%E5%AE%B6%E7%9A%84%E6%9D%A5%E4%B8%B4">福利国家的来临</a></li>
-<li><a href="#%E6%94%BF%E6%B2%BB%E4%B8%8E%E5%B8%82%E5%9C%BA%E5%87%AF%E6%81%A9%E6%96%AF%E5%8F%8A%E5%85%B6%E6%89%B9%E8%AF%84%E8%80%85">政治与市场：凯恩斯及其批评者</a></li>
-<li><a href="#%E5%A4%A7%E4%BC%97%E7%9A%84%E5%87%BA%E7%8E%B0%E4%B8%8E%E7%8E%B0%E4%BB%A3%E6%B0%91%E4%B8%BB%E7%90%86%E8%AE%BA%E7%9A%84%E5%BD%A2%E6%88%90">大众的出现与现代民主理论的形成</a></li>
-<li><a href="#%E6%B0%91%E6%97%8F%E4%B8%BB%E4%B9%89%E4%B8%8E%E5%B8%9D%E5%9B%BD%E4%B8%BB%E4%B9%89">民族主义与帝国主义</a></li>
-<li><a href="#%E6%B3%95%E8%A5%BF%E6%96%AF%E4%B8%BB%E4%B9%89%E4%B8%8E%E7%A7%8D%E6%97%8F%E4%B8%BB%E4%B9%89">法西斯主义与种族主义</a></li>
-<li><a href="#%E4%BF%9D%E5%AE%88%E4%B8%BB%E4%B9%89">保守主义</a></li>
-<li><a href="#%E5%9F%BA%E7%9D%A3%E6%95%99%E6%B0%91%E4%B8%BB">基督教民主</a></li>
-<li><a href="#%E6%9E%81%E6%9D%83%E4%B8%BB%E4%B9%89%E7%9A%84%E6%89%B9%E8%AF%84%E8%80%85">极权主义的批评者</a></li>
-<li><a href="#%E7%A6%8F%E5%88%A9%E5%9B%BD%E5%AE%B6%E7%9A%84%E7%BB%88%E7%BB%93">福利国家的终结？</a></li>
-</ul>
-</li>
-</ul>
-
-  </div>
-</div>
-
-<script>
-
-  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
-  let active = 'active-show', activeClass = 'active-current';
-  let tocWrapper = document.querySelector('#toc_wrapper');
-  let tocContent = tocWrapper.children[0];
-  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
-
-  function addTocNumber(elem, deep) {
-    if (!elem) {
-      return;
-    }
-    let prop = elem.__proto__;
-
-    if (prop === HTMLUListElement.prototype) {
-      for (let i = 0; i < elem.children.length; i++) {
-        addTocNumber(elem.children[i], deep + (i + 1) + '.');
-      }
-    } else if (prop === HTMLLIElement.prototype) {
-      // 保存li元素
-      if (elem.children[0] && elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
-        lList.push(elem);
-      }
-      for (let i = 0; i < elem.children.length; i++) {
-        let cur = elem.children[i];
-        if (cur.__proto__ === HTMLAnchorElement.prototype) {
-          if (autoNumber) {
-            cur.text = deep + ' ' + cur.text;
-          }
-        } else if (cur.__proto__ === HTMLUListElement.prototype) {
-          addTocNumber(cur, deep);
-        }
-      }
-    }
-  }
-
-  function removeParentActiveClass() {
-    let parents = tocContent.querySelectorAll('.' + active)
-    parents.forEach(function (elem) {
-      elem.classList.remove(active);
-    });
-  }
-
-  function addActiveClass(index) {
-    if (index >= 0 && index < hList.length) {
-      lList[index].classList.add(activeClass);
-    }
-  }
-
-  function removeActiveClass(index) {
-    if (index >= 0 && index < hList.length) {
-      lList[index].classList.remove(activeClass);
-    }
-  }
-
-  function addActiveLiElemment(elem, parent) {
-    if (!elem || elem === parent) {
-      return;
-    } else {
-      if (elem.__proto__ === HTMLLIElement.prototype) {
-        elem.classList.add(active);
-      }
-      addActiveLiElemment(elem.parentElement, parent);
-    }
-  }
-
-  function showToc() {
-    if (tocWrapper) {
-      postBody = document.querySelector('#post_body');
-      for (let i = 0; i < postBody.children.length; i++) {
-        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
-          hList.push(postBody.children[i]);
-        }
-      }
-      if (tocWrapper.classList.contains('compress')) {
-        tocContent.classList.add('closed');
-      } else if (tocWrapper.classList.contains('no_compress')) {
-        tocContent.classList.add('expanded');
-      } else {
-        if (hList.length > 10) {
-          active = 'active-hidden'
-          tocContent.classList.add('closed');
-        } else {
-          tocContent.classList.add('expanded');
-        }
-      }
-    }
-  }
-
-  (function () {
-    // 处理不是从#一级标题开始目录
-    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
-      let con = tocContent.children[0].children[0];
-      tocContent.innerHTML = con.innerHTML;
-    }
-    let markdownItTOC = document.querySelector('.markdownIt-TOC');
-    let innerHeight = window.innerHeight;
-    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
-    addTocNumber(tocContent, '');
-  })();
-
-  document.addEventListener('scroll', function (e) {
-    if (lList.length <= 0) {
-      return;
-    }
-    let scrollTop = document.scrollingElement.scrollTop + 10;
-    let dir;
-
-    if (lastTop - scrollTop > 0) {
-      dir = 'up';
-    } else {
-      dir = 'down';
-    }
-
-    lastTop = scrollTop;
-    if (scrollTop <= 0) {
-      if (lastIndex >= 0 && lastIndex < hList.length) {
-        lList[lastIndex].classList.remove(activeClass);
-      }
-      return;
-    }
-
-    let current = 0, hasFind = false;
-    for (let i = 0; i < hList.length; i++) {
-      if (hList[i].offsetTop > scrollTop) {
-        current = i;
-        hasFind = true;
-        break;
-      }
-    }
-    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
-      current = hList.length - 1;
-    } else {
-      current--;
-    }
-    if (dir === 'down') {
-      if (current > lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex)
-        lastIndex = current;
-        removeParentActiveClass();
-        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
-      }
-    } else {
-      if (current < lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex);
-        lastIndex = current;
-        removeParentActiveClass();
-        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
-      }
-    }
-  });
-
-
-  window.addEventListener('load', function () {
-    showToc();
-    document.querySelector('#sidebar').style = 'display: block;';
-    tocWrapper.classList.add('toc-active');
-    setTimeout(function () {
-      if ("createEvent" in document) {
-        let evt = document.createEvent("HTMLEvents");
-        evt.initEvent("scroll", false, true);
-        document.dispatchEvent(evt);
-      }
-      else {
-        document.fireEvent("scroll");
-      }
-    }, 500)
-  })
-
-</script>
-            </div>
           
         
       </div>
@@ -673,8 +475,8 @@
           <div class="section bg-color post post-page">
             <section class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://lhymwm.github.io/post/lesslessjian-qiao-er-shi-shi-ji-zheng-zhi-si-xiang-shi-greatergreater-du-hou-gan/">
-      《剑桥二十世纪政治思想史》读书笔记
+    <a class="post-title-link" href="https://lhymwm.github.io/post/tou-zi-de-fen-ceng-ti-xi/">
+      投资的分层体系
     </a>
   </h1>
   <div class="post-meta">
@@ -682,7 +484,7 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span class="language" data-lan="publish">发布于</span>
-      <span class="publish-time" data-t="2020-02-26 20:56:01">2020-02-26</span>
+      <span class="publish-time" data-t="2021-01-24 22:29:38">2021-01-24</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
@@ -691,14 +493,8 @@
       <span class="pc-show language" data-lan="category-in">分类于</span>
       
       
-      <a href="https://lhymwm.github.io/tag/dlaCxCZBE/">
-        <span>政治</span>
-      </a>、
-      
-      
-      
-      <a href="https://lhymwm.github.io/tag/-0e_Ljztt/">
-        <span>读书</span>
+      <a href="https://lhymwm.github.io/tag/tou-zi-guan/">
+        <span>投资观</span>
       </a>
       
       
@@ -707,17 +503,17 @@
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>1<span class="language" data-lan="minute">分钟</span></span>
+      <span>2<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>88<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>411<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
     
     
-    <span id="/post/lesslessjian-qiao-er-shi-shi-ji-zheng-zhi-si-xiang-shi-greatergreater-du-hou-gan/" data-flag-title="《剑桥二十世纪政治思想史》读书笔记" class="meta-item pc-show leancloud_visitors">
+    <span id="/post/tou-zi-de-fen-ceng-ti-xi/" data-flag-title="投资的分层体系" class="meta-item pc-show leancloud_visitors">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-eye"></i>
       <span><span class="language" data-lan="view">浏览量</span>：<span class="leancloud-visitors-count"></span></span>
@@ -726,17 +522,10 @@
   </div>
 </section>
             <div class="post-body next-md-body" id="post_body">
-              <figure data-type="image" tabindex="1"><img src="https://tva1.sinaimg.cn/large/0082zybply1gca48udyt8j30ci0g4my3.jpg" alt="《剑桥二十世纪政治思想史》" loading="lazy"></figure>
-<h1 id="自由民主的得时与失时">自由民主的得时与失时</h1>
-<h2 id="福利国家的来临">福利国家的来临</h2>
-<h2 id="政治与市场凯恩斯及其批评者">政治与市场：凯恩斯及其批评者</h2>
-<h2 id="大众的出现与现代民主理论的形成">大众的出现与现代民主理论的形成</h2>
-<h2 id="民族主义与帝国主义">民族主义与帝国主义</h2>
-<h2 id="法西斯主义与种族主义">法西斯主义与种族主义</h2>
-<h2 id="保守主义">保守主义</h2>
-<h2 id="基督教民主">基督教民主</h2>
-<h2 id="极权主义的批评者">极权主义的批评者</h2>
-<h2 id="福利国家的终结">福利国家的终结？</h2>
+              <p>投资可以分为四个层次。前两层次以权益投资为出发点，第一层次是行业内标的的比较与筛选，第二层次是行业间的配置，如能源、原材料、工业、可选消费、主要消费、医疗保健、金融地产、信息技术、电信业务、公用事业等行业；第三层次是大类资产间的配置，如现金和货币类、固定收益类、权益类、商品外汇、另类资产及保险等资产，最后一层次则是全球宏观配置。</p>
+<!-- more -->
+<p>低一层次的总量问题构成高一层次的结构问题。而最高层次的全球宏观总量问题或又需诉诸一个更高层次的思维框架，而这个思维框架当反求诸人类既有学科知识之总和，哲学、经济学、法学、教育学、文学、历史学、理学、管理学、工学、农学、医学、军事学、艺术学，凡此种种。<br>
+对高层次问题的理解依赖于对低层次问题的理解，同时对高层次问题的理解又会深化对低层次问题的理解。没有人生来就站在研究层次的制高点，做出出色的研究，需要在每身每时每地充分利用好现有的资源，将自上而下与自下而上的思维框架与实践策略有机结合。如此，研究能力升级的过程好比攀峰，踏实地走好每一步，时而仰望山巅的云彩，时而俯瞰山下的松林，是为最好的状态。</p>
 
             </div>
             
@@ -753,7 +542,7 @@
     </li>
     <li class="post-copyright-link">
       <strong class="language" data-lan="link">本文链接：</strong>
-      <a href="https://lhymwm.github.io/post/lesslessjian-qiao-er-shi-shi-ji-zheng-zhi-si-xiang-shi-greatergreater-du-hou-gan/" title="《剑桥二十世纪政治思想史》读书笔记">https://lhymwm.github.io/post/lesslessjian-qiao-er-shi-shi-ji-zheng-zhi-si-xiang-shi-greatergreater-du-hou-gan/</a>
+      <a href="https://lhymwm.github.io/post/tou-zi-de-fen-ceng-ti-xi/" title="投资的分层体系">https://lhymwm.github.io/post/tou-zi-de-fen-ceng-ti-xi/</a>
     </li>
     <li class="post-copyright-license">
       <strong class="language" data-lan="copyright">版权声明： </strong>
@@ -762,23 +551,17 @@
   </ul>
   <div class="tags">
     
-      <a href="https://lhymwm.github.io/tag/dlaCxCZBE/"># 政治</a>
-    
-      <a href="https://lhymwm.github.io/tag/-0e_Ljztt/"># 读书</a>
+      <a href="https://lhymwm.github.io/tag/tou-zi-guan/"># 投资观</a>
     
   </div>
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="医学中的人文" href="https://lhymwm.github.io/post/yi-xue-zhong-de-ren-wen/">医学中的人文</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="医学中的人文" href="https://lhymwm.github.io/post/yi-xue-zhong-de-ren-wen/">上一篇</a>
-      
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="如何独立思考🤔" href="https://lhymwm.github.io/post/ru-he-du-li-si-kao/">如何独立思考🤔</a>
-        <a class="nav-mobile-next" title="如何独立思考🤔" href="https://lhymwm.github.io/post/ru-he-du-li-si-kao/">下一篇</a>
+        <a class="nav-pc-next" title="做一个终身的价值投资者" href="https://lhymwm.github.io/post/zuo-yi-ge-zhong-shen-jie-zhi-tou-zi-zhe/">做一个终身的价值投资者</a>
+        <a class="nav-mobile-next" title="做一个终身的价值投资者" href="https://lhymwm.github.io/post/zuo-yi-ge-zhong-shen-jie-zhi-tou-zi-zhe/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>

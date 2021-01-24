@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2021-01-19T15:48:43.097Z</updated>
+    <updated>2021-01-24T16:16:00.327Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -10,6 +10,20 @@
     <logo>https://lhymwm.github.io/images/avatar.png</logo>
     <icon>https://lhymwm.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 以梦为马</rights>
+    <entry>
+        <title type="html"><![CDATA[投资的分层体系]]></title>
+        <id>https://lhymwm.github.io/post/tou-zi-de-fen-ceng-ti-xi/</id>
+        <link href="https://lhymwm.github.io/post/tou-zi-de-fen-ceng-ti-xi/">
+        </link>
+        <updated>2021-01-24T14:29:38.000Z</updated>
+        <summary type="html"><![CDATA[<p>投资可以分为四个层次。前两层次以权益投资为出发点，第一层次是行业内标的的比较与筛选，第二层次是行业间的配置，如能源、原材料、工业、可选消费、主要消费、医疗保健、金融地产、信息技术、电信业务、公用事业等行业；第三层次是大类资产间的配置，如现金和货币类、固定收益类、权益类、商品外汇、另类资产及保险等资产，最后一层次则是全球宏观配置。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>投资可以分为四个层次。前两层次以权益投资为出发点，第一层次是行业内标的的比较与筛选，第二层次是行业间的配置，如能源、原材料、工业、可选消费、主要消费、医疗保健、金融地产、信息技术、电信业务、公用事业等行业；第三层次是大类资产间的配置，如现金和货币类、固定收益类、权益类、商品外汇、另类资产及保险等资产，最后一层次则是全球宏观配置。</p>
+<!-- more -->
+<p>低一层次的总量问题构成高一层次的结构问题。而最高层次的全球宏观总量问题或又需诉诸一个更高层次的思维框架，而这个思维框架当反求诸人类既有学科知识之总和，哲学、经济学、法学、教育学、文学、历史学、理学、管理学、工学、农学、医学、军事学、艺术学，凡此种种。<br>
+对高层次问题的理解依赖于对低层次问题的理解，同时对高层次问题的理解又会深化对低层次问题的理解。没有人生来就站在研究层次的制高点，做出出色的研究，需要在每身每时每地充分利用好现有的资源，将自上而下与自下而上的思维框架与实践策略有机结合。如此，研究能力升级的过程好比攀峰，踏实地走好每一步，时而仰望山巅的云彩，时而俯瞰山下的松林，是为最好的状态。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[做一个终身的价值投资者]]></title>
         <id>https://lhymwm.github.io/post/zuo-yi-ge-zhong-shen-jie-zhi-tou-zi-zhe/</id>
@@ -1666,15 +1680,6 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
 src="//player.bilibili.com/player.html?aid=17202371&cid=28114139&page=1" scrolling="no" border="0" 
 frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
 height: 100%; left: 0; top: 0;"> </iframe></div>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[尚未苍老，渐已怀旧]]></title>
-        <id>https://lhymwm.github.io/post/shang-wei-cang-lao-jian-yi-huai-jiu/</id>
-        <link href="https://lhymwm.github.io/post/shang-wei-cang-lao-jian-yi-huai-jiu/">
-        </link>
-        <updated>2020-07-26T05:41:47.000Z</updated>
-        <content type="html"><![CDATA[<p>如题。</p>
 ]]></content>
     </entry>
 </feed>
