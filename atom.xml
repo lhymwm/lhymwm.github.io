@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2021-06-23T09:07:56.518Z</updated>
+    <updated>2021-07-10T04:46:11.029Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://lhymwm.github.io/images/avatar.png</logo>
     <icon>https://lhymwm.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 以梦为马</rights>
+    <entry>
+        <title type="html"><![CDATA[寻找心底的平静]]></title>
+        <id>https://lhymwm.github.io/post/xun-zhao-xin-di-de-ping-jing/</id>
+        <link href="https://lhymwm.github.io/post/xun-zhao-xin-di-de-ping-jing/">
+        </link>
+        <updated>2021-07-10T04:37:04.000Z</updated>
+        <summary type="html"><![CDATA[<p>豆瓣算是心里少有的平静港湾，会在这里坚持记录下去。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>豆瓣算是心里少有的平静港湾，会在这里坚持记录下去。</p>
+<!-- more -->
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gsbr77j9tyj31hc0u0dny.jpg" alt="起风了" loading="lazy"><br>
+欢迎关注~<br>
+<a href="https://www.douban.com/people/151166631/">我的豆瓣个人主页</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[投资的分层体系]]></title>
         <id>https://lhymwm.github.io/post/tou-zi-de-fen-ceng-ti-xi/</id>
@@ -1608,78 +1623,6 @@ TRANSPLANTATION 移植<br>
 TROPICAL MEDICINE 热带医学<br>
 UROLOGY &amp; NEPHROLOGY 泌尿学与肾脏学<br>
 VIROLOGY 病毒学</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[歌以明志]]></title>
-        <id>https://lhymwm.github.io/post/ge-yi-ming-zhi/</id>
-        <link href="https://lhymwm.github.io/post/ge-yi-ming-zhi/">
-        </link>
-        <updated>2020-08-17T04:34:32.000Z</updated>
-        <summary type="html"><![CDATA[<p>分享一首中岛美雪的名曲《糸》。<br>
-<audio src="http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_40832197&response=res&type=convert_url&" controls="controls"></audio><br>
-<img src="https://tva1.sinaimg.cn/large/007S8ZIlly1ghtqzvwadtj30ic0hd781.jpg" alt="中岛美雪" loading="lazy"></p>
-]]></summary>
-        <content type="html"><![CDATA[<p>分享一首中岛美雪的名曲《糸》。<br>
-<audio src="http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_40832197&response=res&type=convert_url&" controls="controls"></audio><br>
-<img src="https://tva1.sinaimg.cn/large/007S8ZIlly1ghtqzvwadtj30ic0hd781.jpg" alt="中岛美雪" loading="lazy"></p>
-<!-- more -->
-<p>这首歌由中岛美雪一人作词作曲，于 1992 年发行，后续，又有多人翻唱此曲，可谓相当经典。分享此歌，意在言志：独自等待，一期一会。</p>
-<p>歌词如下：<br>
-《糸》中日歌词对照：</p>
-<p>糸いと  -  中島 みゆき<br>
-线 - 中岛美雪</p>
-<p>なぜ めぐり 逢あ うのかを<br>
-为什么会相遇？</p>
-<p>私わたし たちは なにも 知し らない<br>
-我们不知道</p>
-<p>いつ めぐり 逢あ うのかを<br>
-什么时候会相遇？</p>
-<p>私わたし たちは いつも 知し らない<br>
-我们不会知道</p>
-<p>どこにいたの  生い きてきたの<br>
-现在在哪里？ 是如何生活着的？</p>
-<p>遠とお い 空そら の 下した  ふたつの 物語ものがたり<br>
-在遥远的天空下 有着两个故事</p>
-<p>縦たて の 糸いと はあなた  横よこ の 糸いと は 私わたし<br>
-直的那条线是你 橫的那条线是我</p>
-<p>織お りなす 布ぬの は いつか 誰だれ かを<br>
-你我相互织成的布 有一天能够给谁</p>
-<p>暖あたた めうるかもしれない<br>
-温暖也说不定</p>
-<p>なぜ  生い きてゆくのかを<br>
-为何要这样生活下去呢?</p>
-<p>迷まよ った 日ひ の 跡あと の ささくれ<br>
-那些迷惘的日子所留下的痕迹带来刺痛</p>
-<p>夢ゆめ  追お いかけ 走はし って<br>
-那些追着梦想奔跑</p>
-<p>ころんだ 日ひ の 跡あと の ささくれ<br>
-跌跌撞撞的日子所留下的伤痕带来刺痛</p>
-<p>こんな 糸いと が なんになるの<br>
-这样的线会变成什么样子</p>
-<p>心許こころもと なくて ふるえてた 風かぜ の 中なか<br>
-不安的心瓢在微微颤抖的风中</p>
-<p>縦たて の 糸いと はあなた  横よこ の 糸いと は 私わたし<br>
-直的那条线是你 横的那条线是我</p>
-<p>織お りなす 布ぬの は いつか 誰だれ かの<br>
-你我相互织成的布 有一天能够庇护谁的</p>
-<p>傷きず をかばうかもしれない<br>
-伤痕也说不定</p>
-<p>縦たて の 糸いと はあなた  横よこ の 糸いと は 私わたし<br>
-直的那条线是你 横的那条线是我</p>
-<p>逢あ うべき 糸いと に  出逢であ えることを<br>
-等遇见了命中注定要相逢的那条线时</p>
-<p>人ひと は  仕合しあ わせと 呼よ びます<br>
-人们说这个时候就是幸福</p>
-<p>最后，奉上《糸》演唱合集，希望大家喜欢(#<sup>.</sup>#)。</p>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe 
-src="//player.bilibili.com/player.html?aid=17206606&cid=28120679&page=1" scrolling="no" border="0" 
-frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
-height: 100%; left: 0; top: 0;"> </iframe></div>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe 
-src="//player.bilibili.com/player.html?aid=17202371&cid=28114139&page=1" scrolling="no" border="0" 
-frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
-height: 100%; left: 0; top: 0;"> </iframe></div>
 ]]></content>
     </entry>
 </feed>
