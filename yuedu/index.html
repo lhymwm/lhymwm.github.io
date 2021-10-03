@@ -328,19 +328,19 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">28</span>
+        <span class="site-item-stat-count">30</span>
         <span class="site-item-stat-name">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="">
-        <span class="site-item-stat-count">18</span>
+        <span class="site-item-stat-count">19</span>
         <span class="site-item-stat-name">分类</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">18</span>
+        <span class="site-item-stat-count">19</span>
         <span class="site-item-stat-name">标签</span>
       </a>
     </div>
@@ -461,18 +461,13 @@
         <div class="section-box box-shadow-wrapper">
           <section class="section bg-color post post-page">
             <div class="container"></div>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iMuFeng/bmdb@1.8.0/dist/Bmdb.min.css">
-            <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/gh/iMuFeng/bmdb@1.8.0/dist/Bmdb.min.js"></script>         
+            <script src="https://cdn.jsdelivr.net/combine/npm/react@17.0.2/umd/react.production.min.js,npm/react-dom@17.0.2/umd/react-dom.production.min.js,gh/iMuFeng/bmdb@3.4.1/dist/bmdb.js"></script>
               <script src="https://cdn.jsdelivr.net/npm/valine@1.4.4/dist/Valine.min.js"></script>
               <script>
                 new Bmdb({
-                  type: 'books',
-                  limit: 30,
+                  type: 'book',
                   selector: '.container',
-                  cache: true,
-                  showCategories: true,
-                  noMoreText: '韶华匆匆',
+                  noMoreDataTips: '韶华匆匆',
                   secret: 'epQf2nGC6zsg8R8Eq6DYoaZVco8BiLQZIK2eAEeL9k0mmuOrP8rmtn0Ld6EwOOUW'
                 })
               </script>
