@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2021-10-22T12:10:24.150Z</updated>
+    <updated>2021-11-23T14:43:05.568Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://lhymwm.github.io/images/avatar.png</logo>
     <icon>https://lhymwm.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 以梦为马</rights>
+    <entry>
+        <title type="html"><![CDATA[求职随想]]></title>
+        <id>https://lhymwm.github.io/post/qiu-zhi-xin-de/</id>
+        <link href="https://lhymwm.github.io/post/qiu-zhi-xin-de/">
+        </link>
+        <updated>2021-11-23T13:26:07.000Z</updated>
+        <content type="html"><![CDATA[<p>完美的offer固然可以作为短期追求的目标，但追求的过程本身可能更有意义。很多东西并不是自己一方付出努力就一定能得到的，也有缘分和运气的因素在里面。假若实现了短期目标，也还要设立更长远的目标，否则个人难免会陷入虚妄。为了避免这种虚妄，而不断设立新的短期目标，倘若凡事又以实现这短期的目标为成功，忽略追寻长期目标的过程的意义，那个人终将会失去平常心。若不设短期目标，放眼长期，享受不断靠近长期目标的过程，一切便会豁然开朗。谨记：设立长期目标，走在正确的路上，少犯错，专注于过程，戒骄戒躁。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[宁静港湾]]></title>
         <id>https://lhymwm.github.io/post/xun-zhao-xin-di-de-ping-jing/</id>
@@ -1530,101 +1539,6 @@
 <ul>
 <li>[1] <a href="https://members.wto.org/crnattachments/2016/TBT/CHN/16_0779_00_x.pdf">化学药品注册分类改革工作方案</a></li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[医学相关学术论文投稿]]></title>
-        <id>https://lhymwm.github.io/post/yi-xue-xiang-guan-xue-zhu-lun-wen-tou-gao/</id>
-        <link href="https://lhymwm.github.io/post/yi-xue-xiang-guan-xue-zhu-lun-wen-tou-gao/">
-        </link>
-        <updated>2020-09-14T12:57:58.000Z</updated>
-        <summary type="html"><![CDATA[<p>期刊引证报告（Journal Citation Reports，JCR）中医学大学科下属的小学科领域如下：</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>期刊引证报告（Journal Citation Reports，JCR）中医学大学科下属的小学科领域如下：</p>
-<!-- more -->
-<p>ACOUSTICS  声学<br>
-ALLERGY 过敏<br>
-ANATOMY &amp; MORPHOLOGY 解剖学和形态学<br>
-ANDROLOGY 男科学<br>
-ANESTHESIOLOGY 麻醉学<br>
-AUDIOLOGY &amp; SPEECH-LANGUAGE 听力学与言语病理学<br>
-BEHAVIORAL SCIENCES 行为科学<br>
-BIOCHEMICAL RESEARCH METHODS 生化研究方法<br>
-BIOCHEMISTRY &amp; MOLECULAR BIOLOGY 生化和分子生物学<br>
-BIOPHYSICS  生物物理<br>
-BIOTECHNOLOGY &amp; APPLIED MICROBIOLOGY  生物工程与应用微生物<br>
-CARDIAC &amp; CARDIOVASCULAR SYSTEMS 心脏和心血管系统<br>
-CELL &amp; TISSUE ENGINEERING 细胞与组织工程<br>
-CELL BIOLOGY  细胞生物学<br>
-CHEMISTRY, ANALYTICAL  分析化学<br>
-CHEMISTRY, APPLIED 应用化学<br>
-CHEMISTRY, INORGANIC &amp; NUCLEAR 无机化学与核化学<br>
-CHEMISTRY, MEDICINAL  药物化学<br>
-CHEMISTRY, MULTIDISCIPLINARY 化学综合<br>
-CHEMISTRY, ORGANIC 有机化学<br>
-CHEMISTRY, PHYSICAL 物理化学<br>
-CLINICAL NEUROLOGY 临床神经病学<br>
-CRITICAL CARE MEDICINE 危重病医学<br>
-DENTISTRY, ORAL SURGERY &amp; MEDICINE 牙科与口腔外科<br>
-DERMATOLOGY 皮肤病学<br>
-DEVELOPMENTAL BIOLOGY 发育生物学<br>
-EMERGENCY MEDICINE  急救医学<br>
-ENDOCRINOLOGY &amp; METABOLISM 内分泌学与代谢<br>
-ENGINEERING, BIOMEDICAL 工程：生物医学<br>
-GASTROENTEROLOGY &amp; HEPATOLOGY 胃肠肝病学<br>
-GENETICS &amp; HEREDITY 遗传学<br>
-GERIATRICS &amp; GERONTOLOGY 老年医学<br>
-<strong>HEALTH CARE SCIENCES &amp; SERVICES 卫生保健与服务</strong><br>
-HEMATOLOGY 血液学<br>
-IMMUNOLOGY 免疫学<br>
-INFECTIOUS DISEASES 传染病学<br>
-INTEGRATIVE &amp; COMPLEMENTARY MEDICINE 全科医学与补充医学<br>
-MATERIALS SCIENCE, BIOMATERIALS 材料科学：生物材料<br>
-MATHEMATICAL &amp; COMPUTATIONAL BIOLOGY 数学与计算生物学<br>
-MEDICAL ETHICS 医学：伦理<br>
-MEDICAL INFORMATICS 医学：信息<br>
-MEDICAL LABORATORY TECHNOLOGY 医学实验技术<br>
-MEDICINE, GENERAL &amp; INTERNAL 医学：内科<br>
-MEDICINE, LEGAL 医学：法<br>
-MEDICINE, RESEARCH &amp; EXPERIMENTAL 医学：研究与实验<br>
-MICROBIOLOGY 微生物学<br>
-MICROSCOPY 显微镜技术<br>
-MULTIDISCIPLINARY SCIENCES 综合性期刊<br>
-MYCOLOGY 真菌学<br>
-NEUROIMAGING 神经成像<br>
-NEUROSCIENCES 神经科学<br>
-NUCLEAR SCIENCE &amp; TECHNOLOGY 核科学技术<br>
-NURSING 护理<br>
-NUTRITION &amp; DIETETICS 营养学<br>
-OBSTETRICS &amp; GYNECOLOGY 妇产科学<br>
-ONCOLOGY 肿瘤学<br>
-OPHTHALMOLOGY 眼科学<br>
-ORTHOPEDICS 骨科<br>
-OTORHINOLARYNGOLOGY 耳鼻喉科学<br>
-PARASITOLOGY 寄生虫学<br>
-PATHOLOGY 病理学<br>
-PEDIATRICS 儿科<br>
-PERIPHERAL VASCULAR DISEASE 外周血管病<br>
-PHARMACOLOGY &amp; PHARMACY 药学<br>
-PHYSICS, APPLIED 物理：应用<br>
-PHYSIOLOGY 生理学<br>
-PRIMARY HEALTH CARE 初级卫生保健<br>
-PSYCHIATRY 精神病学<br>
-PSYCHOLOGY 心理学<br>
-PUBLIC, ENVIRONMENTAL &amp; OCCUPATIONAL HEALTH 公共卫生、环境卫生与职业卫生<br>
-RADIOLOGY, NUCLEAR MEDICINE &amp; MEDICAL IMAGING 核医学<br>
-REHABILITATION 康复医学<br>
-REPRODUCTIVE BIOLOGY 生殖生物学<br>
-RESPIRATORY SYSTEM 呼吸系统<br>
-RHEUMATOLOGY 风湿病学<br>
-SPORT SCIENCES 运动科学<br>
-SUBSTANCE ABUSE 药物滥用<br>
-SURGERY 外科<br>
-TOXICOLOGY 毒理学<br>
-TRANSPLANTATION 移植<br>
-TROPICAL MEDICINE 热带医学<br>
-UROLOGY &amp; NEPHROLOGY 泌尿学与肾脏学<br>
-VIROLOGY 病毒学</p>
 ]]></content>
     </entry>
 </feed>
