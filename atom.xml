@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lhymwm.github.io/</id>
     <title>以梦为马</title>
-    <updated>2022-05-07T04:52:32.717Z</updated>
+    <updated>2022-05-07T05:02:14.409Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lhymwm.github.io/"/>
     <link rel="self" href="https://lhymwm.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://lhymwm.github.io/images/avatar.png</logo>
     <icon>https://lhymwm.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 以梦为马</rights>
+    <entry>
+        <title type="html"><![CDATA[絮语]]></title>
+        <id>https://lhymwm.github.io/post/xu-yu/</id>
+        <link href="https://lhymwm.github.io/post/xu-yu/">
+        </link>
+        <updated>2022-05-07T04:53:07.000Z</updated>
+        <content type="html"><![CDATA[<p>学着王兴在饭否上碎碎念。如果我一整天都没看到、想到、或做过什么值得在此博客上想说的事，那这一天就太浑浑噩噩了。——20220507</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[宁静港湾]]></title>
         <id>https://lhymwm.github.io/post/xun-zhao-xin-di-de-ping-jing/</id>
@@ -1188,80 +1197,6 @@ document.getElementById("spkj").style.height=document.getElementById("spkj").scr
 <pre><code>&lt;audio src=&quot;https://sharefs.yun.kugou.com/202004081309/e6ecd0a8c8e8f46864deac53bc22d2bd/G209/M0A/1A/0B/EQ4DAF6IMG6ANQ4cADO8tHkl4_s235.mp3&quot; controls=&quot;controls&quot;&gt;&lt;/audio&gt;
 </code></pre>
 <p><audio src="https://sharefs.yun.kugou.com/202004081309/e6ecd0a8c8e8f46864deac53bc22d2bd/G209/M0A/1A/0B/EQ4DAF6IMG6ANQ4cADO8tHkl4_s235.mp3" controls="controls"></audio></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[资料收集]]></title>
-        <id>https://lhymwm.github.io/post/guan-yu-zhong-wen-zi-you-pai-xue-zhe/</id>
-        <link href="https://lhymwm.github.io/post/guan-yu-zhong-wen-zi-you-pai-xue-zhe/">
-        </link>
-        <updated>2020-03-21T13:08:15.000Z</updated>
-        <summary type="html"><![CDATA[<p>资料搜集的重要意义：</p>
-<ul>
-<li>学会有效的资料搜集是报告撰写的的最核心环节之一，也是最锻炼自学能力的环节。</li>
-<li>一个合格的行业研究员，需要在1-2周内对一个行业从完全不了解到比较内行。这是建立在强大的资料搜索、信息整理和消化的能力基础上。</li>
-<li>首先报告中所有的论据都是从自己搜索的资料中来，而所有的观点都建立在对于现有资料的全方位了解和深度思考基础上。作为一个优秀研究员，在写行业报告时应该需要把所有能查到的资料都读一遍；而作为优秀的实习生，在写报告之前，至少需要对相关行业、公司中比较重要的资料都通读一遍。如果一个报告撰写时间1个月左右，我的建议是资料阅读和思考至少需要花10天以上的时间。</li>
-<li>个人建议学会使用印象笔记。因为行业工作每天需要接受海量的信息，将资料归类整理必不可少。印象笔记是一个非常适合资料归类整理的软件，个人认为最好的一点在于可以对信息进行分层级的归类，因为成体系的将信息吸收、在大脑里面建立一个系统性框架才是有效的学习。例如我会首先对医药板块各个子版块建立分组。</li>
-</ul>
-]]></summary>
-        <content type="html"><![CDATA[<p>资料搜集的重要意义：</p>
-<ul>
-<li>学会有效的资料搜集是报告撰写的的最核心环节之一，也是最锻炼自学能力的环节。</li>
-<li>一个合格的行业研究员，需要在1-2周内对一个行业从完全不了解到比较内行。这是建立在强大的资料搜索、信息整理和消化的能力基础上。</li>
-<li>首先报告中所有的论据都是从自己搜索的资料中来，而所有的观点都建立在对于现有资料的全方位了解和深度思考基础上。作为一个优秀研究员，在写行业报告时应该需要把所有能查到的资料都读一遍；而作为优秀的实习生，在写报告之前，至少需要对相关行业、公司中比较重要的资料都通读一遍。如果一个报告撰写时间1个月左右，我的建议是资料阅读和思考至少需要花10天以上的时间。</li>
-<li>个人建议学会使用印象笔记。因为行业工作每天需要接受海量的信息，将资料归类整理必不可少。印象笔记是一个非常适合资料归类整理的软件，个人认为最好的一点在于可以对信息进行分层级的归类，因为成体系的将信息吸收、在大脑里面建立一个系统性框架才是有效的学习。例如我会首先对医药板块各个子版块建立分组。</li>
-</ul>
-<!-- more -->
-<h1 id="资料来源">资料来源</h1>
-<h2 id="研报">研报</h2>
-<ul>
-<li>慧博</li>
-<li>Wind</li>
-<li>建议看中信家电组、汽车、商贸零售的报告，很多都是当年新财富白金分析师带出来</li>
-<li>医药板块，看看海通、兴业、国君、银河、国金等报告，但总体质量不高，只建议参考，中信对于报告的要求跟其他券商比是最高的。</li>
-</ul>
-<h2 id="各大医药网站">各大医药网站</h2>
-<ul>
-<li>雪球：非常好的网站有些分析很深入，但信息比较琐碎，垃圾信息也很多，建议慢慢积累，找到一些写的比较好的作者关注。</li>
-<li>数据类<br>
-<img src="https://tva1.sinaimg.cn/large/00831rSTly1gd1y3d7yg4j30m40z2gs1.jpg" alt="数据库" loading="lazy"></li>
-<li>医药资讯类<br>
-<img src="https://tva1.sinaimg.cn/large/00831rSTly1gd1y5rjsl6j30m80sujxg.jpg" alt="医药资讯类" loading="lazy"></li>
-<li>政策类<br>
-<img src="https://tva1.sinaimg.cn/large/00831rSTly1gd1ybxhrqbj30hc0jcad7.jpg" alt="政策类" loading="lazy"></li>
-</ul>
-<h2 id="上市公司公告">上市公司公告</h2>
-<p>最第一手的资料；包括各种定期报告，收购、增发等。</p>
-<h2 id="卫计委统计年鉴">卫计委统计年鉴</h2>
-<p>写报告的神器，需要非常熟悉。</p>
-<h2 id="wind最重要的工具">Wind：最重要的工具</h2>
-<ul>
-<li>学会使用excel的wind插件，熟悉wind函数，基本所有常用数据都可以调出来。在excel利用wind函数，比在wind中直接浏览数据的好处在于可以利用公式构建任意勾稽关系，构建自己的分析体系。建议大家需要逐步熟悉wind。</li>
-<li>其他常用功能：
-<ul>
-<li>公司数据：公司按F9</li>
-<li>股票标签的“多维数据”“专题统计”模块比较常用</li>
-<li>宏观标签的经济数据库，尤其是行业数据的医药生物</li>
-</ul>
-</li>
-</ul>
-<h2 id="google">Google</h2>
-<p>谷歌搜索很好用的。</p>
-<h2 id="文献中国知网等">文献：中国知网等</h2>
-<p>知网用于检索学术文献。</p>
-<h2 id="咨询公司研报各大咨询公司网站">咨询公司研报：各大咨询公司网站</h2>
-<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gd1zk98gl6j30m60hqjuq.jpg" alt="咨询公司研报" loading="lazy"><br>
-学习各大咨询公司的研报。</p>
-<h2 id="其他">其他</h2>
-<ul>
-<li>药智网：然后临床实验结果（包括临床几期进展，审批进度） 编号是CTR开头</li>
-<li>Clinicaltrials：国外临床进度     编号是N开头</li>
-<li>其他：Pdb、卫计委数据库、国家统计局、Wind、OECD health data（世界宏观数据）</li>
-<li>微信公众号：可以用搜狗来搜索相关推送，有些文章的质量还很高的</li>
-<li>公司官网：有一些概况、产品介绍、在研产品线、发展历史等信息</li>
-</ul>
-<h1 id="注意事项">注意事项</h1>
-<p>数据一定要严谨准确，追本溯源，资料来源要标清楚出处。如果是文献或者是个人、机构的出版物，务必标明作者或机构。如果是文献，务必标明期刊名、期刊号，如下。</p>
 ]]></content>
     </entry>
 </feed>
